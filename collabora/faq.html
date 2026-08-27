@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>FAQ - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="fw-bold mb-3">Frequently Asked Questions</h1>
+                    <p class="lead mb-4">Find answers to the most common questions about Collabora</p>
+                    <div class="input-group mb-3 mx-auto" style="max-width: 600px;">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search for answers..." id="faqSearch">
+                        <button class="btn btn-primary" type="button">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#general" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-question-answer-line ri-2x"></i>
+                        </div>
+                        <h5>General</h5>
+                        <p class="text-muted small mb-0">Basic questions about our platform</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#brands" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-building-line ri-2x"></i>
+                        </div>
+                        <h5>For Brands</h5>
+                        <p class="text-muted small mb-0">Information for businesses and agencies</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#influencers" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-user-star-line ri-2x"></i>
+                        </div>
+                        <h5>For Influencers</h5>
+                        <p class="text-muted small mb-0">Help for content creators</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#payments" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-secure-payment-line ri-2x"></i>
+                        </div>
+                        <h5>Payments</h5>
+                        <p class="text-muted small mb-0">Billing and payment processing</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#account" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-user-settings-line ri-2x"></i>
+                        </div>
+                        <h5>Account</h5>
+                        <p class="text-muted small mb-0">Managing your account settings</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#campaigns" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-megaphone-line ri-2x"></i>
+                        </div>
+                        <h5>Campaigns</h5>
+                        <p class="text-muted small mb-0">Creating and managing campaigns</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#technical" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-settings-3-line ri-2x"></i>
+                        </div>
+                        <h5>Technical</h5>
+                        <p class="text-muted small mb-0">Technical issues and troubleshooting</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#legal" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-scales-3-line ri-2x"></i>
+                        </div>
+                        <h5>Legal</h5>
+                        <p class="text-muted small mb-0">Privacy, terms, and compliance</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General FAQ Section -->
+    <section class="py-5 bg-light" id="general">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary px-3 py-2 mb-2">General</span>
+                <h2 class="fw-bold">About Collabora</h2>
+                <p class="lead">Basic questions about our platform</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="generalFAQ">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="generalOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneralOne" aria-expanded="true" aria-controls="collapseGeneralOne">
+                                    What is Collabora?
+                                </button>
+                            </h2>
+                            <div id="collapseGeneralOne" class="accordion-collapse collapse show" aria-labelledby="generalOne" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body">
+                                    Collabora is a comprehensive influencer marketing platform that connects brands with social media influencers. Our platform streamlines the entire influencer marketing process, from discovery and outreach to campaign management and performance tracking. We provide tools for both brands looking to grow their presence through influencer partnerships and content creators seeking brand collaborations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="generalTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneralTwo" aria-expanded="false" aria-controls="collapseGeneralTwo">
+                                    Which social media platforms does Collabora support?
+                                </button>
+                            </h2>
+                            <div id="collapseGeneralTwo" class="accordion-collapse collapse" aria-labelledby="generalTwo" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body">
+                                    Collabora supports all major social media platforms, including Instagram, TikTok, YouTube, Twitter, Facebook, LinkedIn, Twitch, and Pinterest. Our analytics tools integrate with these platforms to provide comprehensive performance metrics and audience insights for your campaigns.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="generalThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneralThree" aria-expanded="false" aria-controls="collapseGeneralThree">
+                                    How does Collabora verify influencers?
+                                </button>
+                            </h2>
+                            <div id="collapseGeneralThree" class="accordion-collapse collapse" aria-labelledby="generalThree" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body">
+                                    We have a comprehensive verification process that includes authenticating social media accounts, reviewing content quality and engagement metrics, and checking for any history of fraudulent activity. We also continuously monitor influencer accounts to ensure they maintain authentic engagement and followers. Our verification badge indicates that an influencer has passed our vetting process and is a trusted member of our community.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="generalFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneralFour" aria-expanded="false" aria-controls="collapseGeneralFour">
+                                    Is Collabora available internationally?
+                                </button>
+                            </h2>
+                            <div id="collapseGeneralFour" class="accordion-collapse collapse" aria-labelledby="generalFour" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body">
+                                    Yes, Collabora is available worldwide. We have influencers and brands from over 150 countries on our platform. Our payment system supports multiple currencies, and our platform is available in English, Spanish, French, German, and Japanese, with more languages coming soon.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="generalFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneralFive" aria-expanded="false" aria-controls="collapseGeneralFive">
+                                    How do I get started with Collabora?
+                                </button>
+                            </h2>
+                            <div id="collapseGeneralFive" class="accordion-collapse collapse" aria-labelledby="generalFive" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body">
+                                    Getting started is easy! Simply <a href="auth.html?register=true">sign up</a> for an account, choose whether you're joining as a brand or an influencer, and complete your profile. Brands can then start searching for influencers, while influencers can set up their profiles to be discovered by brands. Our platform guides you through each step of the process, and our support team is available to help if you have any questions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Brands FAQ Section -->
+    <section class="py-5" id="brands">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary px-3 py-2 mb-2">For Brands</span>
+                <h2 class="fw-bold">Brand Questions</h2>
+                <p class="lead">Information for businesses and agencies</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="brandsFAQ">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="brandsOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrandsOne" aria-expanded="true" aria-controls="collapseBrandsOne">
+                                    How do I find the right influencers for my brand?
+                                </button>
+                            </h2>
+                            <div id="collapseBrandsOne" class="accordion-collapse collapse show" aria-labelledby="brandsOne" data-bs-parent="#brandsFAQ">
+                                <div class="accordion-body">
+                                    Collabora offers several ways to find the perfect influencers for your brand:
+                                    <ul>
+                                        <li><strong>Advanced Search:</strong> Use our search filters to narrow down influencers by platform, category, audience demographics, engagement rate, location, and more.</li>
+                                        <li><strong>AI Matching:</strong> Our proprietary algorithm analyzes your brand profile and campaign goals to recommend influencers who are most likely to deliver results.</li>
+                                        <li><strong>Collections:</strong> Browse our curated collections of influencers organized by industry, content style, and audience type.</li>
+                                        <li><strong>Discovery Feed:</strong> Explore our personalized feed of influencers tailored to your brand's preferences and past collaborations.</li>
+                                    </ul>
+                                    You can also save your favorite influencers to lists for future reference and collaboration.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="brandsTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrandsTwo" aria-expanded="false" aria-controls="collapseBrandsTwo">
+                                    What types of campaigns can I run on Collabora?
+                                </button>
+                            </h2>
+                            <div id="collapseBrandsTwo" class="accordion-collapse collapse" aria-labelledby="brandsTwo" data-bs-parent="#brandsFAQ">
+                                <div class="accordion-body">
+                                    Collabora supports a wide range of campaign types, including:
+                                    <ul>
+                                        <li><strong>Sponsored Content:</strong> One-time posts or videos featuring your product or service</li>
+                                        <li><strong>Brand Ambassadorships:</strong> Long-term partnerships with influencers who regularly promote your brand</li>
+                                        <li><strong>Product Reviews:</strong> Honest reviews of your products by influencers</li>
+                                        <li><strong>Affiliate Marketing:</strong> Performance-based campaigns where influencers earn commission on sales</li>
+                                        <li><strong>Giveaways and Contests:</strong> Promotions to engage the influencer's audience and increase brand awareness</li>
+                                        <li><strong>Event Coverage:</strong> Influencers attending and covering your events</li>
+                                        <li><strong>Content Creation:</strong> Hiring influencers to create content for your own channels</li>
+                                        <li><strong>Takeovers:</strong> Influencers temporarily managing your social media accounts</li>
+                                    </ul>
+                                    Our platform provides templates and guidance for each campaign type to help you set clear objectives and deliverables.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="brandsThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrandsThree" aria-expanded="false" aria-controls="collapseBrandsThree">
+                                    How much should I budget for influencer marketing?
+                                </button>
+                            </h2>
+                            <div id="collapseBrandsThree" class="accordion-collapse collapse" aria-labelledby="brandsThree" data-bs-parent="#brandsFAQ">
+                                <div class="accordion-body">
+                                    Influencer marketing budgets vary widely depending on your goals, industry, and the influencers you want to work with. Micro-influencers (10K-50K followers) might charge $200-$500 per post, while macro-influencers (100K-1M followers) might charge $1,000-$10,000+ per post. Celebrity influencers with millions of followers can command $50,000+ per post.
+                                    <br><br>
+                                    We recommend starting with a test budget to run a small campaign with a few influencers, then scaling based on performance. Our platform provides rate benchmarks for different influencer tiers and content types to help you budget appropriately. You can also use our ROI calculator to estimate potential returns based on your investment.
+                                    <br><br>
+                                    Remember to factor in your Collabora subscription cost, content production expenses, and any additional promotional costs when planning your overall influencer marketing budget.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="brandsFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrandsFour" aria-expanded="false" aria-controls="collapseBrandsFour">
+                                    How do I measure the success of my influencer campaigns?
+                                </button>
+                            </h2>
+                            <div id="collapseBrandsFour" class="accordion-collapse collapse" aria-labelledby="brandsFour" data-bs-parent="#brandsFAQ">
+                                <div class="accordion-body">
+                                    Collabora provides comprehensive analytics to measure the performance of your campaigns:
+                                    <ul>
+                                        <li><strong>Engagement Metrics:</strong> Likes, comments, shares, saves, and overall engagement rate</li>
+                                        <li><strong>Reach and Impressions:</strong> How many people saw the content</li>
+                                        <li><strong>Audience Growth:</strong> New followers gained during the campaign</li>
+                                        <li><strong>Traffic:</strong> Website visits generated through tracked links</li>
+                                        <li><strong>Conversions:</strong> Sign-ups, downloads, or purchases attributed to the campaign</li>
+                                        <li><strong>ROI:</strong> Return on investment based on campaign costs and results</li>
+                                        <li><strong>Sentiment Analysis:</strong> The tone and sentiment of audience reactions</li>
+                                    </ul>
+                                    Our platform integrates with your website analytics, e-commerce platforms, and social media accounts to provide a holistic view of campaign performance. You can also create custom KPIs based on your specific goals and generate detailed reports to share with stakeholders.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="brandsFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrandsFive" aria-expanded="false" aria-controls="collapseBrandsFive">
+                                    Can Collabora help with FTC compliance and disclosure requirements?
+                                </button>
+                            </h2>
+                            <div id="collapseBrandsFive" class="accordion-collapse collapse" aria-labelledby="brandsFive" data-bs-parent="#brandsFAQ">
+                                <div class="accordion-body">
+                                    Yes, we take compliance seriously. Our platform includes built-in disclosure reminders and guidelines to ensure that all influencer collaborations comply with FTC regulations and similar requirements in other countries. Our contract templates include clear language about disclosure requirements, and our campaign briefs remind influencers to properly disclose their partnerships.
+                                    <br><br>
+                                    We also provide educational resources about compliance best practices and monitor content to ensure proper disclosures are being used. However, it's ultimately the responsibility of both brands and influencers to ensure that all sponsored content is properly disclosed according to applicable laws and regulations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Influencers FAQ Section -->
+    <section class="py-5 bg-light" id="influencers">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary px-3 py-2 mb-2">For Influencers</span>
+                <h2 class="fw-bold">Influencer Questions</h2>
+                <p class="lead">Help for content creators</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="influencersFAQ">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="influencersOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfluencersOne" aria-expanded="true" aria-controls="collapseInfluencersOne">
+                                    How do I join Collabora as an influencer?
+                                </button>
+                            </h2>
+                            <div id="collapseInfluencersOne" class="accordion-collapse collapse show" aria-labelledby="influencersOne" data-bs-parent="#influencersFAQ">
+                                <div class="accordion-body">
+                                    Joining Collabora as an influencer is free and straightforward:
+                                    <ol>
+                                        <li><a href="auth.html?register=true&type=influencer">Sign up</a> for an account and select "I'm an Influencer" during registration.</li>
+                                        <li>Complete your profile with details about your content niche, audience demographics, and past collaborations.</li>
+                                        <li>Connect your social media accounts to verify your following and provide analytics.</li>
+                                        <li>Upload your best content samples to showcase your work.</li>
+                                        <li>Set your collaboration preferences, including rates and the types of brands you want to work with.</li>
+                                    </ol>
+                                    Once your profile is complete, our team will review it for verification. This typically takes 1-3 business days. Once verified, your profile will be visible to brands searching for influencers, and you'll start receiving collaboration opportunities.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="influencersTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfluencersTwo" aria-expanded="false" aria-controls="collapseInfluencersTwo">
+                                    How much should I charge for sponsored content?
+                                </button>
+                            </h2>
+                            <div id="collapseInfluencersTwo" class="accordion-collapse collapse" aria-labelledby="influencersTwo" data-bs-parent="#influencersFAQ">
+                                <div class="accordion-body">
+                                    Determining your rates depends on several factors:
+                                    <ul>
+                                        <li><strong>Audience Size:</strong> Your follower count across platforms</li>
+                                        <li><strong>Engagement Rate:</strong> How actively your audience interacts with your content</li>
+                                        <li><strong>Content Quality:</strong> The production value and creativity of your content</li>
+                                        <li><strong>Niche:</strong> Some industries command higher rates than others</li>
+                                        <li><strong>Exclusivity:</strong> Whether the brand wants exclusivity in their category</li>
+                                        <li><strong>Usage Rights:</strong> How and where the brand can use your content</li>
+                                        <li><strong>Content Type:</strong> Video content typically costs more than photos</li>
+                                    </ul>
+                                    As a general benchmark, many influencers use the "$100 per 10K followers" rule as a starting point, but this varies widely. Our platform provides rate benchmarks based on data from thousands of collaborations to help you price competitively.
+                                    <br><br>
+                                    You can set different rates for different content types in your profile, and you always have the opportunity to negotiate with brands before accepting a collaboration.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="influencersThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfluencersThree" aria-expanded="false" aria-controls="collapseInfluencersThree">
+                                    How do I get paid for brand collaborations?
+                                </button>
+                            </h2>
+                            <div id="collapseInfluencersThree" class="accordion-collapse collapse" aria-labelledby="influencersThree" data-bs-parent="#influencersFAQ">
+                                <div class="accordion-body">
+                                    Collabora offers secure payment processing for all collaborations:
+                                    <ol>
+                                        <li>When you accept a collaboration, the brand deposits the agreed payment into our secure escrow system.</li>
+                                        <li>You create and publish the content according to the campaign brief.</li>
+                                        <li>Once the brand approves the content, the funds are released to your account.</li>
+                                        <li>You can withdraw funds to your preferred payment method (bank account, PayPal, etc.).</li>
+                                    </ol>
+                                    Payments are typically processed within 3-5 business days after withdrawal. For long-term collaborations, you can set up milestone payments to receive funds at different stages of the campaign.
+                                    <br><br>
+                                    We charge a 5% service fee on payments to cover payment processing and platform maintenance. This fee is transparent and clearly displayed before you accept any collaboration.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="influencersFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfluencersFour" aria-expanded="false" aria-controls="collapseInfluencersFour">
+                                    Can I decline brand collaboration requests?
+                                </button>
+                            </h2>
+                            <div id="collapseInfluencersFour" class="accordion-collapse collapse" aria-labelledby="influencersFour" data-bs-parent="#influencersFAQ">
+                                <div class="accordion-body">
+                                    Absolutely. You have complete control over which brands you work with. When you receive a collaboration request, you can:
+                                    <ul>
+                                        <li><strong>Accept:</strong> Agree to the collaboration as proposed</li>
+                                        <li><strong>Negotiate:</strong> Suggest changes to the deliverables, timeline, or compensation</li>
+                                        <li><strong>Decline:</strong> Politely decline the opportunity</li>
+                                    </ul>
+                                    We encourage you to only accept collaborations with brands that align with your values and content style. Maintaining authenticity is crucial for your audience trust and long-term success.
+                                    <br><br>
+                                    You can also set brand preferences in your profile to filter the types of collaboration requests you receive. For example, you can exclude certain industries or specify that you only want to work with eco-friendly brands.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="influencersFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfluencersFive" aria-expanded="false" aria-controls="collapseInfluencersFive">
+                                    How can I improve my chances of getting brand deals?
+                                </button>
+                            </h2>
+                            <div id="collapseInfluencersFive" class="accordion-collapse collapse" aria-labelledby="influencersFive" data-bs-parent="#influencersFAQ">
+                                <div class="accordion-body">
+                                    Here are some tips to increase your visibility and appeal to brands:
+                                    <ul>
+                                        <li><strong>Complete Your Profile:</strong> Fill out every section of your Collabora profile with detailed information.</li>
+                                        <li><strong>Showcase Your Best Work:</strong> Upload high-quality content samples that demonstrate your style and capabilities.</li>
+                                        <li><strong>Keep Your Analytics Updated:</strong> Regularly update your audience demographics and engagement metrics.</li>
+                                        <li><strong>Set Clear Rates:</strong> Provide transparent pricing for different content types.</li>
+                                        <li><strong>Be Responsive:</strong> Reply promptly to brand inquiries, even if you're declining.</li>
+                                        <li><strong>Create a Media Kit:</strong> Upload a professional media kit that summarizes your value proposition.</li>
+                                        <li><strong>Build Your Portfolio:</strong> Document past collaborations with case studies and results.</li>
+                                        <li><strong>Engage with Brands:</strong> Follow and meaningfully engage with brands you'd like to work with.</li>
+                                    </ul>
+                                    We also offer resources and webinars on how to pitch to brands, create compelling content, and negotiate favorable terms. Check out our <a href="influencer-resources.html">Influencer Resources</a> section for more guidance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payments FAQ Section -->
+    <section class="py-5" id="payments">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary px-3 py-2 mb-2">Payments</span>
+                <h2 class="fw-bold">Payment Questions</h2>
+                <p class="lead">Billing and payment processing</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="paymentsFAQ">
+                        <!-- Payment FAQs would go here -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="paymentsOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePaymentsOne" aria-expanded="true" aria-controls="collapsePaymentsOne">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapsePaymentsOne" class="accordion-collapse collapse show" aria-labelledby="paymentsOne" data-bs-parent="#paymentsFAQ">
+                                <div class="accordion-body">
+                                    For platform subscriptions, we accept all major credit cards (Visa, Mastercard, American Express, Discover), PayPal, and bank transfers for annual plans.
+                                    <br><br>
+                                    For influencer payments, brands can fund their campaigns using credit cards, PayPal, or bank transfers. Influencers can withdraw their earnings via bank transfer, PayPal, or Stripe. We support payments in multiple currencies to accommodate our global user base.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More payment FAQs would follow -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More FAQ sections would follow for Account, Campaigns, Technical, and Legal -->
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Still have questions?</h2>
+                    <p class="lead mb-0">Our support team is here to help you with any questions or concerns.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

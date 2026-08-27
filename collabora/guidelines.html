@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Community Guidelines - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="fw-bold mb-3">Community Guidelines</h1>
+                    <p class="lead mb-4">Last updated: May 13, 2025</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Guidelines Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Navigation -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="sticky-lg-top pt-lg-5" style="top: 100px;">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3">Table of Contents</h5>
+                                <nav class="nav flex-column">
+                                    <a class="nav-link px-0 py-2" href="#introduction">1. Introduction</a>
+                                    <a class="nav-link px-0 py-2" href="#respect">2. Respect & Inclusivity</a>
+                                    <a class="nav-link px-0 py-2" href="#authenticity">3. Authenticity</a>
+                                    <a class="nav-link px-0 py-2" href="#content">4. Content Standards</a>
+                                    <a class="nav-link px-0 py-2" href="#safety">5. Safety & Privacy</a>
+                                    <a class="nav-link px-0 py-2" href="#intellectual">6. Intellectual Property</a>
+                                    <a class="nav-link px-0 py-2" href="#compliance">7. Legal Compliance</a>
+                                    <a class="nav-link px-0 py-2" href="#enforcement">8. Enforcement</a>
+                                    <a class="nav-link px-0 py-2" href="#reporting">9. Reporting Violations</a>
+                                    <a class="nav-link px-0 py-2" href="#changes">10. Changes to Guidelines</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Guidelines Content -->
+                <div class="col-lg-9">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <div id="introduction" class="mb-5">
+                                <h3 class="fw-bold mb-3">1. Introduction</h3>
+                                <p>Welcome to the Collabora community! These Community Guidelines outline the standards and expectations for all users of our platform. They are designed to create a positive, respectful, and productive environment for brands and influencers to connect and collaborate.</p>
+                                <p>By using Collabora, you agree to follow these guidelines. Failure to comply may result in content removal, account restrictions, or termination, depending on the severity and frequency of violations.</p>
+                                <p>Our guidelines apply to all content and interactions on the platform, including profiles, messages, campaign briefs, proposals, reviews, and any other form of communication or content sharing.</p>
+                                <p>We encourage all community members to report content or behavior that violates these guidelines. Together, we can maintain a safe, inclusive, and valuable platform for everyone.</p>
+                            </div>
+                            
+                            <div id="respect" class="mb-5">
+                                <h3 class="fw-bold mb-3">2. Respect & Inclusivity</h3>
+                                <p>At Collabora, we value diversity and inclusion. We expect all users to treat each other with respect and dignity, regardless of background, identity, or beliefs.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">2.1 Prohibited Behavior</h4>
+                                <p>The following behaviors are not tolerated on our platform:</p>
+                                <ul>
+                                    <li><strong>Harassment:</strong> Any form of unwelcome or hostile conduct targeted at an individual or group.</li>
+                                    <li><strong>Hate Speech:</strong> Content that promotes, encourages, or incites hatred, discrimination, or violence against individuals or groups based on attributes such as race, ethnicity, national origin, religion, disability, gender, gender identity, or sexual orientation.</li>
+                                    <li><strong>Bullying:</strong> Aggressive behavior that involves unwanted, offensive, or intimidating actions directed at an individual or group.</li>
+                                    <li><strong>Discrimination:</strong> Unfair treatment of individuals or groups based on protected characteristics.</li>
+                                    <li><strong>Threats:</strong> Statements of intent to inflict harm, injury, damage, or other hostile action.</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">2.2 Professional Communication</h4>
+                                <p>We expect all users to communicate professionally and constructively:</p>
+                                <ul>
+                                    <li>Be courteous and respectful in all interactions</li>
+                                    <li>Provide constructive feedback rather than criticism</li>
+                                    <li>Respond to messages and inquiries in a timely manner</li>
+                                    <li>Be clear and transparent about expectations, requirements, and deliverables</li>
+                                    <li>Resolve disagreements through respectful dialogue</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="authenticity" class="mb-5">
+                                <h3 class="fw-bold mb-3">3. Authenticity</h3>
+                                <p>Trust is essential to our community. We expect all users to be honest and transparent in their representations and interactions.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">3.1 Accurate Information</h4>
+                                <p>Users must provide accurate information about themselves and their businesses:</p>
+                                <ul>
+                                    <li>Use your real name or registered business name</li>
+                                    <li>Provide accurate information about your experience, qualifications, and capabilities</li>
+                                    <li>Do not misrepresent your identity, credentials, or affiliations</li>
+                                    <li>Do not impersonate individuals, brands, or organizations</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">3.2 Authentic Engagement</h4>
+                                <p>For influencers, we require authentic engagement and audience building:</p>
+                                <ul>
+                                    <li>Do not use artificial methods to inflate follower counts or engagement metrics (e.g., buying followers, using engagement pods, or automated engagement)</li>
+                                    <li>Do not misrepresent your audience demographics or engagement statistics</li>
+                                    <li>Be transparent about sponsored content and brand relationships as required by applicable laws and regulations</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">3.3 Transparent Business Practices</h4>
+                                <p>For brands, we require transparent business practices:</p>
+                                <ul>
+                                    <li>Provide clear campaign briefs with accurate information about expectations, requirements, and compensation</li>
+                                    <li>Honor agreements and commitments made to influencers</li>
+                                    <li>Do not misrepresent products, services, or campaign results</li>
+                                    <li>Be transparent about product claims and ensure they comply with applicable laws and regulations</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="content" class="mb-5">
+                                <h3 class="fw-bold mb-3">4. Content Standards</h3>
+                                <p>All content shared on Collabora must meet our content standards to ensure a safe, appropriate, and valuable experience for all users.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">4.1 Prohibited Content</h4>
+                                <p>The following types of content are prohibited:</p>
+                                <ul>
+                                    <li><strong>Adult Content:</strong> Sexually explicit or pornographic material.</li>
+                                    <li><strong>Violence:</strong> Graphic depictions of violence, gore, or content that glorifies or promotes violence.</li>
+                                    <li><strong>Illegal Activities:</strong> Content that promotes, encourages, or facilitates illegal activities.</li>
+                                    <li><strong>Harmful or Dangerous Content:</strong> Content that encourages dangerous activities that may lead to physical harm or death.</li>
+                                    <li><strong>Misinformation:</strong> False or misleading information that could cause public harm.</li>
+                                    <li><strong>Spam:</strong> Unsolicited, repetitive, or irrelevant content.</li>
+                                    <li><strong>Malware:</strong> Content containing viruses, malware, or other harmful code.</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">4.2 Restricted Content</h4>
+                                <p>The following types of content are restricted and subject to additional review:</p>
+                                <ul>
+                                    <li><strong>Alcohol and Tobacco:</strong> Content promoting alcohol or tobacco products must comply with applicable laws and regulations and include appropriate age restrictions.</li>
+                                    <li><strong>Gambling:</strong> Content promoting gambling must comply with applicable laws and regulations and include appropriate age restrictions.</li>
+                                    <li><strong>Pharmaceuticals and Healthcare:</strong> Content promoting pharmaceuticals or making health claims must comply with applicable laws and regulations.</li>
+                                    <li><strong>Financial Products and Services:</strong> Content promoting financial products or services must comply with applicable laws and regulations and not make misleading claims.</li>
+                                    <li><strong>Political Content:</strong> Content promoting political candidates, parties, or causes must comply with applicable laws and regulations and be clearly labeled as political content.</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">4.3 Quality Standards</h4>
+                                <p>We encourage high-quality content that provides value to our community:</p>
+                                <ul>
+                                    <li>Create original, creative, and engaging content</li>
+                                    <li>Ensure content is relevant to your audience and the campaign objectives</li>
+                                    <li>Use clear, professional, and appropriate language</li>
+                                    <li>Provide accurate and helpful information</li>
+                                    <li>Respect cultural sensitivities and diverse perspectives</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="safety" class="mb-5">
+                                <h3 class="fw-bold mb-3">5. Safety & Privacy</h3>
+                                <p>We are committed to protecting the safety and privacy of our users. All users must respect the privacy and security of others.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">5.1 Personal Information</h4>
+                                <p>Respect the privacy of others:</p>
+                                <ul>
+                                    <li>Do not share personal information about others without their explicit consent</li>
+                                    <li>Do not request personal information that is not necessary for legitimate business purposes</li>
+                                    <li>Handle personal information in accordance with our Privacy Policy and applicable data protection laws</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">5.2 Security</h4>
+                                <p>Maintain the security of the platform:</p>
+                                <ul>
+                                    <li>Do not attempt to breach or circumvent platform security measures</li>
+                                    <li>Do not use the platform to distribute malware, viruses, or other harmful code</li>
+                                    <li>Report security vulnerabilities to us immediately</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">5.3 Child Safety</h4>
+                                <p>Protect the safety and privacy of children:</p>
+                                <ul>
+                                    <li>Do not target content or campaigns at children under 13 years of age</li>
+                                    <li>Comply with all applicable laws and regulations regarding children's privacy and marketing to minors</li>
+                                    <li>Report any content or behavior that may harm children</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="intellectual" class="mb-5">
+                                <h3 class="fw-bold mb-3">6. Intellectual Property</h3>
+                                <p>We respect intellectual property rights and expect all users to do the same.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">6.1 Copyright</h4>
+                                <p>Respect copyright laws:</p>
+                                <ul>
+                                    <li>Only share content that you own or have the right to use</li>
+                                    <li>Obtain proper licenses or permissions for third-party content</li>
+                                    <li>Provide appropriate attribution when required</li>
+                                    <li>Do not use copyrighted material without permission</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">6.2 Trademarks</h4>
+                                <p>Respect trademark rights:</p>
+                                <ul>
+                                    <li>Do not use trademarks in a way that suggests affiliation, endorsement, or sponsorship without permission</li>
+                                    <li>Do not use trademarks in a way that is likely to cause confusion</li>
+                                    <li>Comply with brand guidelines when using trademarks with permission</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">6.3 Content Ownership</h4>
+                                <p>Be clear about content ownership and usage rights:</p>
+                                <ul>
+                                    <li>Clearly define content ownership and usage rights in campaign agreements</li>
+                                    <li>Respect the agreed-upon terms for content usage</li>
+                                    <li>Do not use content beyond the scope of the agreed-upon terms without permission</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="compliance" class="mb-5">
+                                <h3 class="fw-bold mb-3">7. Legal Compliance</h3>
+                                <p>All users must comply with applicable laws and regulations when using Collabora.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">7.1 Advertising Regulations</h4>
+                                <p>Comply with advertising laws and regulations:</p>
+                                <ul>
+                                    <li>Clearly disclose sponsored content and material connections between brands and influencers</li>
+                                    <li>Do not make false or misleading claims about products or services</li>
+                                    <li>Comply with industry-specific advertising regulations</li>
+                                    <li>Follow platform-specific guidelines for sponsored content</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">7.2 Tax and Financial Regulations</h4>
+                                <p>Comply with tax and financial regulations:</p>
+                                <ul>
+                                    <li>Report income and pay applicable taxes as required by law</li>
+                                    <li>Comply with contract and payment regulations</li>
+                                    <li>Do not engage in money laundering or other financial crimes</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">7.3 Industry-Specific Regulations</h4>
+                                <p>Comply with industry-specific regulations:</p>
+                                <ul>
+                                    <li>Follow regulations specific to your industry or product category</li>
+                                    <li>Obtain necessary licenses, certifications, or approvals</li>
+                                    <li>Adhere to professional standards and codes of conduct</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="enforcement" class="mb-5">
+                                <h3 class="fw-bold mb-3">8. Enforcement</h3>
+                                <p>We enforce these Community Guidelines to maintain a safe, respectful, and valuable platform for all users.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">8.1 Monitoring</h4>
+                                <p>We monitor the platform for violations of these guidelines through:</p>
+                                <ul>
+                                    <li>Automated systems that detect potential violations</li>
+                                    <li>Manual review by our Trust & Safety team</li>
+                                    <li>User reports of potential violations</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">8.2 Enforcement Actions</h4>
+                                <p>When we identify violations, we may take one or more of the following actions:</p>
+                                <ul>
+                                    <li><strong>Content Removal:</strong> Removing the violating content from the platform.</li>
+                                    <li><strong>Warning:</strong> Issuing a warning to the user about the violation.</li>
+                                    <li><strong>Temporary Restriction:</strong> Temporarily restricting the user's ability to use certain features of the platform.</li>
+                                    <li><strong>Account Suspension:</strong> Temporarily suspending the user's account.</li>
+                                    <li><strong>Account Termination:</strong> Permanently terminating the user's account.</li>
+                                    <li><strong>Legal Action:</strong> Taking legal action in serious cases, such as illegal activities or severe harm.</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">8.3 Appeals</h4>
+                                <p>If you believe an enforcement action was taken in error, you may appeal the decision:</p>
+                                <ul>
+                                    <li>Submit an appeal through the platform or by contacting our Trust & Safety team</li>
+                                    <li>Provide relevant information and context to support your appeal</li>
+                                    <li>We will review your appeal and respond within a reasonable timeframe</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="reporting" class="mb-5">
+                                <h3 class="fw-bold mb-3">9. Reporting Violations</h3>
+                                <p>We encourage all users to report content or behavior that violates these guidelines. Your reports help us maintain a safe and positive community.</p>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">9.1 How to Report</h4>
+                                <p>You can report violations in several ways:</p>
+                                <ul>
+                                    <li>Use the "Report" button next to the content or user profile</li>
+                                    <li>Contact our Trust & Safety team at <a href="mailto:trust@Collabora.com">trust@Collabora.com</a></li>
+                                    <li>For urgent issues, use the "Report Urgent Issue" form in the Help Center</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">9.2 What to Include</h4>
+                                <p>When reporting a violation, please include:</p>
+                                <ul>
+                                    <li>The specific content or behavior that violates the guidelines</li>
+                                    <li>The guideline(s) you believe are being violated</li>
+                                    <li>Any additional context or information that may be relevant</li>
+                                    <li>Screenshots or other evidence, if available</li>
+                                </ul>
+                                
+                                <h4 class="fw-bold mt-4 mb-3">9.3 Confidentiality</h4>
+                                <p>We treat all reports confidentially:</p>
+                                <ul>
+                                    <li>We do not disclose the identity of reporters to reported users</li>
+                                    <li>We handle all reports with discretion and respect for privacy</li>
+                                    <li>We may need to share report information with law enforcement in certain circumstances</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="changes" class="mb-5">
+                                <h3 class="fw-bold mb-3">10. Changes to Guidelines</h3>
+                                <p>We may update these Community Guidelines from time to time to reflect changes in our platform, user needs, or legal requirements.</p>
+                                <p>When we make significant changes, we will notify users through:</p>
+                                <ul>
+                                    <li>Email notifications</li>
+                                    <li>Platform announcements</li>
+                                    <li>Updates to the "Last updated" date at the top of these guidelines</li>
+                                </ul>
+                                <p>We encourage you to review these guidelines periodically to stay informed about our community standards and expectations.</p>
+                                <p>If you have questions or feedback about these guidelines, please contact us at <a href="mailto:community@Collabora.com">community@Collabora.com</a>.</p>
+                            </div>
+                            
+                            <div class="alert alert-light border p-4 mt-5">
+                                <p class="mb-0">By using Collabora, you acknowledge that you have read, understood, and agree to follow these Community Guidelines. Thank you for helping us maintain a positive, respectful, and valuable community for all users.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Legal Documents -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="fw-bold mb-4 text-center">Related Legal Documents</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="ri-file-list-3-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Terms of Service</h4>
+                            <p class="mb-4">Review the rules and guidelines for using the Collabora platform and services.</p>
+                            <a href="terms.html" class="btn btn-outline-primary">Read Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="ri-lock-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Privacy Policy</h4>
+                            <p class="mb-4">Learn how we collect, use, and protect your personal information when you use our Services.</p>
+                            <a href="privacy.html" class="btn btn-outline-primary">Read Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="ri-cookie-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Cookie Policy</h4>
+                            <p class="mb-4">Understand how we use cookies and similar technologies to enhance your experience on our platform.</p>
+                            <a href="cookies.html" class="btn btn-outline-primary">Read Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Contact Us - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-3">Get in Touch</h1>
+                    <p class="lead mb-4">Have questions or need assistance? We're here to help you connect, collaborate, and succeed.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="vender/images/48-600x400.jpg" alt="Contact Us" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="fw-bold mb-4">Send Us a Message</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your last name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="" selected disabled>Select a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="support">Technical Support</option>
+                                            <option value="partnership">Partnership Opportunities</option>
+                                            <option value="billing">Billing Questions</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a subject.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please enter your message.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                            <label class="form-check-label" for="privacyCheck">
+                                                I agree to the <a href="privacy.html">Privacy Policy</a> and consent to having my data processed.
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Contact Information</h3>
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3">
+                                        <i class="ri-map-pin-line ri-lg"></i>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="fw-bold">Headquarters</h5>
+                                    <p class="mb-0">123 Innovation Way<br>San Francisco, CA 94103<br>United States</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3">
+                                        <i class="ri-phone-line ri-lg"></i>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="fw-bold">Phone</h5>
+                                    <p class="mb-0">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3">
+                                        <i class="ri-mail-line ri-lg"></i>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="fw-bold">Email</h5>
+                                    <p class="mb-0">hello@Collabora.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3">
+                                        <i class="ri-time-line ri-lg"></i>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="fw-bold">Business Hours</h5>
+                                    <p class="mb-0">Monday - Friday: 9:00 AM - 6:00 PM PST<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Connect With Us</h3>
+                            <div class="d-flex gap-3 mb-4">
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                                    <i class="ri-instagram-line ri-lg"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                                    <i class="ri-twitter-x-line ri-lg"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                                    <i class="ri-facebook-circle-line ri-lg"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                                    <i class="ri-linkedin-box-line ri-lg"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                                    <i class="ri-youtube-line ri-lg"></i>
+                                </a>
+                            </div>
+                            <p class="mb-0">Follow us on social media for the latest updates, industry insights, and success stories.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Locations</h2>
+                <p class="lead">Find us around the world</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1031-600x300.jpg" class="card-img-top" alt="San Francisco">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">San Francisco</h4>
+                            <p class="text-muted mb-3">Headquarters</p>
+                            <p>123 Innovation Way<br>San Francisco, CA 94103<br>United States</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1032-600x300.jpg" class="card-img-top" alt="London">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">London</h4>
+                            <p class="text-muted mb-3">European Office</p>
+                            <p>45 Tech Square<br>London, EC2A 4BX<br>United Kingdom</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1033-600x300.jpg" class="card-img-top" alt="Singapore">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">Singapore</h4>
+                            <p class="text-muted mb-3">Asia-Pacific Office</p>
+                            <p>78 Digital Avenue<br>Singapore, 018956<br>Singapore</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="lead">Quick answers to common questions</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="contactFAQ">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How quickly can I expect a response to my inquiry?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    We strive to respond to all inquiries within 24 business hours. For urgent matters, please indicate this in the subject line of your message, and we'll prioritize your request.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    I'm having technical issues with the platform. Who should I contact?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    For technical support, please select "Technical Support" in the subject dropdown of our contact form. Alternatively, you can email support@Collabora.com with details of the issue you're experiencing, including screenshots if possible.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How can I schedule a demo of the platform?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    To schedule a personalized demo, please select "Partnership Opportunities" in the subject dropdown and mention that you're interested in a demo. One of our team members will reach out to arrange a convenient time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    I'm interested in working at Collabora. Where can I find job openings?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    You can view all current job openings on our <a href="careers.html">Careers page</a>. If you don't see a position that matches your skills but are still interested in joining our team, feel free to send your resume to careers@Collabora.com.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How can I report inappropriate content or behavior on the platform?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    We take the safety and integrity of our platform seriously. To report inappropriate content or behavior, please select "Feedback" in the subject dropdown and provide details of the issue. Our trust and safety team will investigate promptly.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="mb-3">Still have questions?</p>
+                <a href="faq.html" class="btn btn-outline-primary">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

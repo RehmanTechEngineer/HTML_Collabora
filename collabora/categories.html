@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Categories - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-3">Explore Influencer Categories</h1>
+                    <p class="lead mb-4">Discover influencers across various niches and platforms to find the perfect match for your brand</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search categories...">
+                        <button class="btn btn-primary" type="button">
+                            <i class="ri-search-line me-1"></i> Search
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="vender/images/1-600x400.jpg" class="img-fluid rounded-4 shadow" alt="Categories">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Popular Categories</h2>
+            <div class="row g-4">
+                <!-- Fashion Category -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 category-card">
+                        <div class="position-relative">
+                            <img src="vender/images/64-600x300.jpg" class="card-img-top" alt="Fashion">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.5); border-radius: 12px;">
+                                    <h3 class="fw-bold mb-0">Fashion</h3>
+                                    <p class="mb-0">2,450 Influencers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Fashion influencers showcase the latest trends, styles, and brands in clothing, accessories, and footwear.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-light text-dark me-1">Clothing</span>
+                                    <span class="badge bg-light text-dark me-1">Style</span>
+                                    <span class="badge bg-light text-dark">Accessories</span>
+                                </div>
+                                <a href="browse.html?category=fashion" class="btn btn-sm btn-outline-primary">
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beauty Category -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 category-card">
+                        <div class="position-relative">
+                            <img src="vender/images/342-600x300.jpg" class="card-img-top" alt="Beauty">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.5); border-radius: 12px;">
+                                    <h3 class="fw-bold mb-0">Beauty</h3>
+                                    <p class="mb-0">1,980 Influencers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Beauty influencers focus on makeup, skincare, haircare, and other beauty products and techniques.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-light text-dark me-1">Makeup</span>
+                                    <span class="badge bg-light text-dark me-1">Skincare</span>
+                                    <span class="badge bg-light text-dark">Haircare</span>
+                                </div>
+                                <a href="browse.html?category=beauty" class="btn btn-sm btn-outline-primary">
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Category -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 category-card">
+                        <div class="position-relative">
+                            <img src="vender/images/26-600x300.jpg" class="card-img-top" alt="Fitness">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.5); border-radius: 12px;">
+                                    <h3 class="fw-bold mb-0">Fitness</h3>
+                                    <p class="mb-0">1,650 Influencers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Fitness influencers share workout routines, nutrition advice, and healthy lifestyle tips to inspire their audience.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-light text-dark me-1">Workouts</span>
+                                    <span class="badge bg-light text-dark me-1">Nutrition</span>
+                                    <span class="badge bg-light text-dark">Wellness</span>
+                                </div>
+                                <a href="browse.html?category=fitness" class="btn btn-sm btn-outline-primary">
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Travel Category -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 category-card">
+                        <div class="position-relative">
+                            <img src="vender/images/177-600x300.jpg" class="card-img-top" alt="Travel">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.5); border-radius: 12px;">
+                                    <h3 class="fw-bold mb-0">Travel</h3>
+                                    <p class="mb-0">1,420 Influencers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Travel influencers document their adventures around the world, sharing destinations, tips, and experiences.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-light text-dark me-1">Adventure</span>
+                                    <span class="badge bg-light text-dark me-1">Destinations</span>
+                                    <span class="badge bg-light text-dark">Tips</span>
+                                </div>
+                                <a href="browse.html?category=travel" class="btn btn-sm btn-outline-primary">
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Category -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 category-card">
+                        <div class="position-relative">
+                            <img src="vender/images/292-600x300.jpg" class="card-img-top" alt="Food">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.5); border-radius: 12px;">
+                                    <h3 class="fw-bold mb-0">Food</h3>
+                                    <p class="mb-0">1,280 Influencers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Food influencers share recipes, restaurant reviews, cooking techniques, and culinary adventures with their audience.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-light text-dark me-1">Recipes</span>
+                                    <span class="badge bg-light text-dark me-1">Cooking</span>
+                                    <span class="badge bg-light text-dark">Restaurants</span>
+                                </div>
+                                <a href="browse.html?category=food" class="btn btn-sm btn-outline-primary">
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tech Category -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 category-card">
+                        <div class="position-relative">
+                            <img src="vender/images/96-600x300.jpg" class="card-img-top" alt="Tech">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.5); border-radius: 12px;">
+                                    <h3 class="fw-bold mb-0">Tech</h3>
+                                    <p class="mb-0">1,150 Influencers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Tech influencers review gadgets, software, and emerging technologies, providing insights and recommendations.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-light text-dark me-1">Gadgets</span>
+                                    <span class="badge bg-light text-dark me-1">Reviews</span>
+                                    <span class="badge bg-light text-dark">Innovation</span>
+                                </div>
+                                <a href="browse.html?category=tech" class="btn btn-sm btn-outline-primary">
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold mb-4">All Categories</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=fashion" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-t-shirt-line ri-2x"></i>
+                        </div>
+                        <h5>Fashion</h5>
+                        <p class="text-muted small mb-0">2,450 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=beauty" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-briefcase-4-fill ri-2x"></i>
+                        </div>
+                        <h5>Beauty</h5>
+                        <p class="text-muted small mb-0">1,980 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=fitness" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-success bg-opacity-10 text-success d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-heart-pulse-line ri-2x"></i>
+                        </div>
+                        <h5>Fitness</h5>
+                        <p class="text-muted small mb-0">1,650 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=travel" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-plane-line ri-2x"></i>
+                        </div>
+                        <h5>Travel</h5>
+                        <p class="text-muted small mb-0">1,420 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=food" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-restaurant-line ri-2x"></i>
+                        </div>
+                        <h5>Food</h5>
+                        <p class="text-muted small mb-0">1,280 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=tech" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-info bg-opacity-10 text-info d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-computer-line ri-2x"></i>
+                        </div>
+                        <h5>Tech</h5>
+                        <p class="text-muted small mb-0">1,150 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=gaming" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-gamepad-line ri-2x"></i>
+                        </div>
+                        <h5>Gaming</h5>
+                        <p class="text-muted small mb-0">980 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=lifestyle" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-success bg-opacity-10 text-success d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-home-heart-line ri-2x"></i>
+                        </div>
+                        <h5>Lifestyle</h5>
+                        <p class="text-muted small mb-0">1,850 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=parenting" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-parent-line ri-2x"></i>
+                        </div>
+                        <h5>Parenting</h5>
+                        <p class="text-muted small mb-0">720 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=business" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-info bg-opacity-10 text-info d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-briefcase-line ri-2x"></i>
+                        </div>
+                        <h5>Business</h5>
+                        <p class="text-muted small mb-0">850 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=education" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-book-open-line ri-2x"></i>
+                        </div>
+                        <h5>Education</h5>
+                        <p class="text-muted small mb-0">680 Influencers</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="browse.html?category=entertainment" class="card border-0 shadow-sm text-center p-4 h-100 text-decoration-none category-link">
+                        <div class="rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="ri-movie-line ri-2x"></i>
+                        </div>
+                        <h5>Entertainment</h5>
+                        <p class="text-muted small mb-0">1,120 Influencers</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Browse by Platform</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="ri-instagram-line ri-3x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">Instagram</h4>
+                            <p class="text-muted mb-3">5,280 Influencers</p>
+                            <p>Visual content creators sharing photos and short videos with engaged communities.</p>
+                            <a href="browse.html?platform=instagram" class="btn btn-outline-primary mt-2">Browse Instagram Influencers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-dark bg-opacity-10 text-dark d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="ri-tiktok-line ri-3x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">TikTok</h4>
+                            <p class="text-muted mb-3">4,150 Influencers</p>
+                            <p>Short-form video creators known for viral trends, challenges, and entertaining content.</p>
+                            <a href="browse.html?platform=tiktok" class="btn btn-outline-primary mt-2">Browse TikTok Influencers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="ri-youtube-line ri-3x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">YouTube</h4>
+                            <p class="text-muted mb-3">3,780 Influencers</p>
+                            <p>Long-form video content creators with dedicated subscribers and in-depth content.</p>
+                            <a href="browse.html?platform=youtube" class="btn btn-outline-primary mt-2">Browse YouTube Influencers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-info bg-opacity-10 text-info d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="ri-twitter-x-line ri-3x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">Twitter</h4>
+                            <p class="text-muted mb-3">2,950 Influencers</p>
+                            <p>Thought leaders and content creators sharing opinions, news, and trending topics.</p>
+                            <a href="browse.html?platform=twitter" class="btn btn-outline-primary mt-2">Browse Twitter Influencers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="ri-twitch-line ri-3x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">Twitch</h4>
+                            <p class="text-muted mb-3">1,820 Influencers</p>
+                            <p>Live streamers focused on gaming, music, art, and interactive entertainment.</p>
+                            <a href="browse.html?platform=twitch" class="btn btn-outline-primary mt-2">Browse Twitch Influencers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="ri-linkedin-box-line ri-3x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">LinkedIn</h4>
+                            <p class="text-muted mb-3">1,450 Influencers</p>
+                            <p>Professional thought leaders sharing business insights, career advice, and industry trends.</p>
+                            <a href="browse.html?platform=linkedin" class="btn btn-outline-primary mt-2">Browse LinkedIn Influencers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Ready to find the perfect influencers for your brand?</h2>
+                    <p class="lead mb-0">Sign up today and connect with thousands of influencers across all categories and platforms.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="auth.html?register=true" class="btn btn-light btn-lg">
+                        <i class="ri-user-add-line me-2"></i>Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

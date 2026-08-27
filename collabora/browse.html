@@ -1,0 +1,931 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Browse Influencers - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold">Find the Perfect Influencer</h1>
+                    <p class="lead">Browse through thousands of influencers across various platforms and niches</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="keywordSearch" placeholder="Keywords">
+                                            <label for="keywordSearch">Keywords</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="categorySelect">
+                                                <option value="" selected>All Categories</option>
+                                                <option value="fashion">Fashion</option>
+                                                <option value="beauty">Beauty</option>
+                                                <option value="fitness">Fitness</option>
+                                                <option value="travel">Travel</option>
+                                                <option value="food">Food</option>
+                                                <option value="tech">Tech</option>
+                                                <option value="gaming">Gaming</option>
+                                                <option value="lifestyle">Lifestyle</option>
+                                            </select>
+                                            <label for="categorySelect">Category</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="platformSelect">
+                                                <option value="" selected>All Platforms</option>
+                                                <option value="instagram">Instagram</option>
+                                                <option value="tiktok">TikTok</option>
+                                                <option value="youtube">YouTube</option>
+                                                <option value="twitter">Twitter</option>
+                                                <option value="twitch">Twitch</option>
+                                            </select>
+                                            <label for="platformSelect">Platform</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="followersSelect">
+                                                <option value="" selected>Any Followers</option>
+                                                <option value="micro">Micro (10K-50K)</option>
+                                                <option value="mid">Mid-Tier (50K-500K)</option>
+                                                <option value="macro">Macro (500K-1M)</option>
+                                                <option value="mega">Mega (1M+)</option>
+                                            </select>
+                                            <label for="followersSelect">Followers</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100 py-3">
+                                            <i class="ri-search-line me-2"></i>Search Influencers
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tags -->
+    <section class="py-3 bg-white border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+                <span class="me-3 text-muted">Active Filters:</span>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border px-3 py-2 rounded-pill">
+                        Fashion <i class="ri-close-line ms-1 cursor-pointer"></i>
+                    </span>
+                    <span class="badge bg-light text-dark border px-3 py-2 rounded-pill">
+                        Instagram <i class="ri-close-line ms-1 cursor-pointer"></i>
+                    </span>
+                    <span class="badge bg-light text-dark border px-3 py-2 rounded-pill">
+                        50K+ Followers <i class="ri-close-line ms-1 cursor-pointer"></i>
+                    </span>
+                </div>
+                <a href="#" class="ms-auto text-decoration-none small">Clear All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="fw-bold mb-1">245 Influencers Found</h2>
+                    <p class="text-muted">Showing 1-12 of 245 results</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <label for="sortSelect" class="me-2">Sort by:</label>
+                    <select class="form-select form-select-sm" id="sortSelect" style="width: auto;">
+                        <option value="relevance">Relevance</option>
+                        <option value="followers_high">Followers (High to Low)</option>
+                        <option value="followers_low">Followers (Low to High)</option>
+                        <option value="engagement_high">Engagement (High to Low)</option>
+                        <option value="rate_low">Rate (Low to High)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid/List View Toggle -->
+            <div class="d-flex justify-content-end mb-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary active" id="gridViewBtn">
+                        <i class="ri-grid-fill me-1"></i> Grid
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" id="listViewBtn">
+                        <i class="ri-list-check me-1"></i> List
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid View (Default) -->
+            <div class="row g-4" id="gridView">
+                <!-- Influencer Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/64-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                <i class="ri-verified-badge-fill"></i> Verified
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-instagram-line me-1"></i> Instagram
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Sophia Martinez</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.9</span>
+                                    <small class="text-muted">(124)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Fashion & Lifestyle</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>1.2M</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>4.8%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$1.5K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/91-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                <i class="ri-verified-badge-fill"></i> Verified
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-youtube-line me-1"></i> YouTube
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">James Wilson</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.7</span>
+                                    <small class="text-muted">(98)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Tech & Gaming</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>3.5M</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>6.2%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$3.2K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/65-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                <i class="ri-verified-badge-fill"></i> Verified
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-tiktok-line me-1"></i> TikTok
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn active">
+                                <i class="ri-heart-fill text-danger"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Emma Johnson</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.8</span>
+                                    <small class="text-muted">(156)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Dance & Entertainment</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>5.8M</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>8.7%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$4.5K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/65-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                <i class="ri-verified-badge-fill"></i> Verified
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-twitter-x-line me-1"></i> Twitter
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Alex Chen</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.6</span>
+                                    <small class="text-muted">(87)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Fitness & Health</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>950K</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>5.3%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$1.8K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/342-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-instagram-line me-1"></i> Instagram
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Olivia Taylor</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.5</span>
+                                    <small class="text-muted">(76)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Beauty & Skincare</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>780K</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>4.2%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$1.2K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/177-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                <i class="ri-verified-badge-fill"></i> Verified
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-youtube-line me-1"></i> YouTube
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Daniel Brown</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.9</span>
+                                    <small class="text-muted">(112)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Travel & Adventure</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>2.1M</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>5.7%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$2.8K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/237-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-tiktok-line me-1"></i> TikTok
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Mia Rodriguez</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.4</span>
+                                    <small class="text-muted">(63)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Pets & Animals</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>620K</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>7.1%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$950</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 influencer-card">
+                        <div class="position-relative">
+                            <img src="vender/images/349-400x300.jpg" class="card-img-top" alt="Influencer">
+                            <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                <i class="ri-verified-badge-fill"></i> Verified
+                            </span>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                <span class="badge bg-dark bg-opacity-75 px-2 py-1">
+                                    <i class="ri-twitch-line me-1"></i> Twitch
+                                </span>
+                            </div>
+                            <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn active">
+                                <i class="ri-heart-fill text-danger"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Ryan Park</h5>
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-1">4.8</span>
+                                    <small class="text-muted">(142)</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">Gaming & Esports</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="d-block text-muted">Followers</small>
+                                    <strong>1.8M</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Engagement</small>
+                                    <strong>6.9%</strong>
+                                </div>
+                                <div>
+                                    <small class="d-block text-muted">Rate</small>
+                                    <strong>$2.5K</strong>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary flex-grow-1">View Profile</a>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                    <i class="ri-message-3-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List View (Hidden by default) -->
+            <div class="d-none" id="listView">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <div class="position-relative h-100">
+                                <img src="vender/images/64-400x300.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Influencer">
+                                <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                    <i class="ri-verified-badge-fill"></i> Verified
+                                </span>
+                                <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body d-flex flex-column h-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h4 class="card-title mb-1">Sophia Martinez</h4>
+                                        <p class="card-text text-muted mb-2">Fashion & Lifestyle</p>
+                                        <span class="badge bg-dark bg-opacity-75 px-2 py-1 mb-2">
+                                            <i class="ri-instagram-line me-1"></i> Instagram
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-success rounded-pill me-1">4.9</span>
+                                        <small class="text-muted">(124)</small>
+                                    </div>
+                                </div>
+                                <p class="card-text">Lifestyle content creator specializing in sustainable fashion, home decor, and mindful living. Based in Los Angeles with a global audience.</p>
+                                <div class="row mt-auto">
+                                    <div class="col-md-8">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <small class="d-block text-muted">Followers</small>
+                                                <strong>1.2M</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Engagement</small>
+                                                <strong>4.8%</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Rate</small>
+                                                <strong>$1.5K</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Languages</small>
+                                                <strong>EN, ES</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-end justify-content-end mt-3 mt-md-0">
+                                        <div class="d-flex gap-2">
+                                            <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                            <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                                <i class="ri-message-3-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <div class="position-relative h-100">
+                                <img src="vender/images/91-400x300.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Influencer">
+                                <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                    <i class="ri-verified-badge-fill"></i> Verified
+                                </span>
+                                <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body d-flex flex-column h-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h4 class="card-title mb-1">James Wilson</h4>
+                                        <p class="card-text text-muted mb-2">Tech & Gaming</p>
+                                        <span class="badge bg-dark bg-opacity-75 px-2 py-1 mb-2">
+                                            <i class="ri-youtube-line me-1"></i> YouTube
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-success rounded-pill me-1">4.7</span>
+                                        <small class="text-muted">(98)</small>
+                                    </div>
+                                </div>
+                                <p class="card-text">Tech reviewer and gaming enthusiast creating in-depth product reviews, gaming content, and tech tutorials. Known for honest opinions and detailed analysis.</p>
+                                <div class="row mt-auto">
+                                    <div class="col-md-8">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <small class="d-block text-muted">Followers</small>
+                                                <strong>3.5M</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Engagement</small>
+                                                <strong>6.2%</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Rate</small>
+                                                <strong>$3.2K</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Languages</small>
+                                                <strong>EN</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-end justify-content-end mt-3 mt-md-0">
+                                        <div class="d-flex gap-2">
+                                            <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                            <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                                <i class="ri-message-3-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <div class="position-relative h-100">
+                                <img src="vender/images/65-400x300.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Influencer">
+                                <span class="position-absolute top-0 end-0 badge bg-primary m-3">
+                                    <i class="ri-verified-badge-fill"></i> Verified
+                                </span>
+                                <button class="btn btn-sm btn-light position-absolute top-0 start-0 m-3 rounded-circle p-2 favorite-btn active">
+                                    <i class="ri-heart-fill text-danger"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body d-flex flex-column h-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h4 class="card-title mb-1">Emma Johnson</h4>
+                                        <p class="card-text text-muted mb-2">Dance & Entertainment</p>
+                                        <span class="badge bg-dark bg-opacity-75 px-2 py-1 mb-2">
+                                            <i class="ri-tiktok-line me-1"></i> TikTok
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="badge bg-success rounded-pill me-1">4.8</span>
+                                        <small class="text-muted">(156)</small>
+                                    </div>
+                                </div>
+                                <p class="card-text">Professional dancer and choreographer creating viral dance challenges and entertainment content. Collaborates with major music artists and brands.</p>
+                                <div class="row mt-auto">
+                                    <div class="col-md-8">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <small class="d-block text-muted">Followers</small>
+                                                <strong>5.8M</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Engagement</small>
+                                                <strong>8.7%</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Rate</small>
+                                                <strong>$4.5K</strong>
+                                            </div>
+                                            <div>
+                                                <small class="d-block text-muted">Languages</small>
+                                                <strong>EN, FR</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-end justify-content-end mt-3 mt-md-0">
+                                        <div class="d-flex gap-2">
+                                            <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                            <button class="btn btn-primary" data-bs-toggle="tooltip" title="Contact Influencer">
+                                                <i class="ri-message-3-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Stay Updated with Influencer Trends</h2>
+                    <p class="lead mb-4">Subscribe to our newsletter for the latest industry insights and platform updates</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form class="d-flex">
+                                <input type="email" class="form-control form-control-lg me-2" placeholder="Your email address">
+                                <button type="submit" class="btn btn-primary px-4">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Press & Media - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="fw-bold display-4 mb-3">Press & Media</h1>
+                    <p class="lead mb-4">Latest news, press releases, and media resources about Collabora</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#press-releases" class="btn btn-light">Press Releases</a>
+                        <a href="#media-coverage" class="btn btn-light">Media Coverage</a>
+                        <a href="#media-kit" class="btn btn-light">Media Kit</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="vender/images/48-600x400.jpg" class="img-fluid rounded shadow" alt="Press & Media">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Press Contact -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Press Contact</h2>
+                    <p class="mb-4">For press inquiries, interview requests, or additional information, please contact our media relations team.</p>
+                    <div class="d-flex mb-3">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="ri-user-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Emily Rodriguez</h6>
+                            <p class="mb-0">Head of Public Relations</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="ri-mail-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email</h6>
+                            <p class="mb-0">press@Collabora.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="ri-phone-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Phone</h6>
+                            <p class="mb-0">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Media Inquiry Form</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="organization" class="form-label">Organization</label>
+                                    <input type="text" class="form-control" id="organization" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inquiry" class="form-label">Inquiry Type</label>
+                                    <select class="form-select" id="inquiry" required>
+                                        <option value="" selected disabled>Select an option</option>
+                                        <option value="interview">Interview Request</option>
+                                        <option value="press-kit">Press Kit Request</option>
+                                        <option value="statement">Statement Request</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="deadline">
+                                    <label class="form-check-label" for="deadline">I have a deadline</label>
+                                </div>
+                                <div class="mb-3 deadline-details d-none">
+                                    <label for="deadline-date" class="form-label">Deadline Date</label>
+                                    <input type="date" class="form-control" id="deadline-date">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Releases -->
+    <section class="py-5 bg-light" id="press-releases">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Press Releases</h2>
+                <p class="lead">The latest announcements from Collabora</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Company News</span>
+                                <small class="text-muted">June 15, 2025</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collabora Raises $30M in Series B Funding</h4>
+                            <p>Collabora, the leading influencer marketing platform, today announced it has raised $30 million in Series B funding led by Venture Partners, with participation from existing investors.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Full Release</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success">Product Launch</span>
+                                <small class="text-muted">May 22, 2025</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collabora Launches AI-Powered Campaign Analytics</h4>
+                            <p>Collabora today announced the launch of its new AI-powered campaign analytics platform, designed to help brands measure and optimize their influencer marketing ROI with unprecedented accuracy.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Full Release</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info">Partnership</span>
+                                <small class="text-muted">April 10, 2025</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collabora Partners with Global Retail Chain</h4>
+                            <p>Collabora today announced a strategic partnership with GlobalRetail, one of the world's largest retail chains, to power their influencer marketing initiatives across 20 countries.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Full Release</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-warning">Milestone</span>
+                                <small class="text-muted">March 5, 2025</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collabora Reaches 100,000 Influencer Milestone</h4>
+                            <p>Collabora today announced that it has reached a significant milestone of 100,000 verified influencers on its platform, representing a 200% year-over-year growth.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Full Release</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-danger">Expansion</span>
+                                <small class="text-muted">February 18, 2025</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collabora Expands to Asia-Pacific Region</h4>
+                            <p>Collabora today announced its expansion into the Asia-Pacific region with new offices in Singapore and Sydney, bringing its innovative influencer marketing platform to brands and creators across the region.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Full Release</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-secondary">Award</span>
+                                <small class="text-muted">January 25, 2025</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collabora Named "Best Marketing Platform" at Tech Awards</h4>
+                            <p>Collabora has been recognized as the "Best Marketing Platform" at the 2025 Global Tech Awards, highlighting the company's innovation and impact in the influencer marketing industry.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Full Release</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Press Releases</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Coverage -->
+    <section class="py-5" id="media-coverage">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Media Coverage</h2>
+                <p class="lead">Collabora in the news</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="vender/images/239-300x300.jpg" class="img-fluid h-100 object-fit-cover" alt="Media Coverage" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="mb-0 fw-bold">Tech Insider</h6>
+                                        <small class="text-muted">June 20, 2025</small>
+                                    </div>
+                                    <h4 class="fw-bold mb-3">How Collabora is Revolutionizing Influencer Marketing</h4>
+                                    <p>Tech Insider explores how Collabora's AI-powered platform is changing the way brands connect with influencers and measure campaign performance.</p>
+                                    <a href="#" class="btn btn-outline-primary mt-3">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="vender/images/160-300x300.jpg" class="img-fluid h-100 object-fit-cover" alt="Media Coverage" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="mb-0 fw-bold">Marketing Today</h6>
+                                        <small class="text-muted">May 28, 2025</small>
+                                    </div>
+                                    <h4 class="fw-bold mb-3">Collabora CEO Discusses Future of Social Commerce</h4>
+                                    <p>In an exclusive interview, Collabora's CEO shares insights on the convergence of influencer marketing and e-commerce in the coming years.</p>
+                                    <a href="#" class="btn btn-outline-primary mt-3">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="vender/images/180-300x300.jpg" class="img-fluid h-100 object-fit-cover" alt="Media Coverage" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="mb-0 fw-bold">Business Weekly</h6>
+                                        <small class="text-muted">April 15, 2025</small>
+                                    </div>
+                                    <h4 class="fw-bold mb-3">Collabora's $30M Funding Round: What It Means for the Industry</h4>
+                                    <p>Business Weekly analyzes Collabora's recent funding round and its implications for the broader influencer marketing landscape.</p>
+                                    <a href="#" class="btn btn-outline-primary mt-3">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4">
+                                <img src="vender/images/119-300x300.jpg" class="img-fluid h-100 object-fit-cover" alt="Media Coverage" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="mb-0 fw-bold">Social Media Today</h6>
+                                        <small class="text-muted">March 10, 2025</small>
+                                    </div>
+                                    <h4 class="fw-bold mb-3">The Rise of Micro-Influencers: Collabora's Data Reveals New Trends</h4>
+                                    <p>Social Media Today examines Collabora's latest industry report on the growing impact of micro-influencers in marketing campaigns.</p>
+                                    <a href="#" class="btn btn-outline-primary mt-3">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Media Coverage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Kit -->
+    <section class="py-5 bg-light" id="media-kit">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Media Kit</h2>
+                <p class="lead">Download official assets and information about Collabora</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-file-text-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Company Fact Sheet</h5>
+                            <p class="mb-4">Key information about Collabora, including company history, mission, and key statistics.</p>
+                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-image-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Logo Package</h5>
+                            <p class="mb-4">Official Collabora logos in various formats and resolutions for media use.</p>
+                            <a href="#" class="btn btn-outline-primary">Download ZIP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-user-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Executive Bios</h5>
+                            <p class="mb-4">Biographies and high-resolution photos of Collabora's leadership team.</p>
+                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-pie-chart-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Industry Report</h5>
+                            <p class="mb-4">Collabora's latest research on influencer marketing trends and insights.</p>
+                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-gallery-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Product Screenshots</h5>
+                            <p class="mb-4">High-resolution screenshots of the Collabora platform and key features.</p>
+                            <a href="#" class="btn btn-outline-primary">Download ZIP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-video-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Brand Video</h5>
+                            <p class="mb-4">Official Collabora brand video showcasing our mission and platform.</p>
+                            <a href="#" class="btn btn-outline-primary">Download MP4</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-award-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Awards & Recognition</h5>
+                            <p class="mb-4">Information about awards and industry recognition received by Collabora.</p>
+                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-customer-service-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Customer Success Stories</h5>
+                            <p class="mb-4">Case studies and testimonials from brands and influencers using Collabora.</p>
+                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-3">Need a custom media kit?</h4>
+                        <p class="mb-4">If you need specific assets or information not included in our standard media kit, please contact our press team.</p>
+                        <a href="#" class="btn btn-primary">Contact Press Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In The News -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured In</h2>
+                <p class="lead">Collabora has been featured in leading publications</p>
+            </div>
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/0-150x50.jpg" class="img-fluid opacity-75" alt="Publication Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/1-150x50.jpg" class="img-fluid opacity-75" alt="Publication Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/2-150x50.jpg" class="img-fluid opacity-75" alt="Publication Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/3-150x50.jpg" class="img-fluid opacity-75" alt="Publication Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/4-150x50.jpg" class="img-fluid opacity-75" alt="Publication Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/5-150x50.jpg" class="img-fluid opacity-75" alt="Publication Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Need more information?</h2>
+                    <p class="lead mb-0">Our press team is ready to assist with any media inquiries or interview requests.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-light btn-lg">Contact Press Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

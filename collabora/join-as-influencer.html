@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Join as an Influencer - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="fw-bold display-4 mb-3">Grow Your Influence, Monetize Your Passion</h1>
+                    <p class="lead mb-4">Join Collabora and connect with top brands looking for creators like you. Turn your content into income with brand partnerships that match your style and values.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#join-now" class="btn btn-light btn-lg">Join Now - It's Free</a>
+                        <a href="#how-it-works" class="btn btn-outline-light btn-lg">How It Works</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="vender/images/1005-600x400.jpg" class="img-fluid rounded shadow" alt="Influencer">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-building-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">5K+</h2>
+                        <p class="mb-0">Active Brands</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-shake-hands-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">25K+</h2>
+                        <p class="mb-0">Collaborations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-money-dollar-circle-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">$50M+</h2>
+                        <p class="mb-0">Paid to Influencers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-global-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">150+</h2>
+                        <p class="mb-0">Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5 bg-light" id="how-it-works">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">How It Works</h2>
+                <p class="lead">Simple steps to start earning with your influence</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <h3 class="fw-bold mb-0">1</h3>
+                            </div>
+                            <h4 class="fw-bold mb-3">Create Your Profile</h4>
+                            <p>Sign up and build your influencer profile showcasing your content, audience demographics, and engagement metrics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <h3 class="fw-bold mb-0">2</h3>
+                            </div>
+                            <h4 class="fw-bold mb-3">Get Discovered</h4>
+                            <p>Brands search our platform for influencers that match their campaign needs and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <h3 class="fw-bold mb-0">3</h3>
+                            </div>
+                            <h4 class="fw-bold mb-3">Receive Offers</h4>
+                            <p>Review collaboration offers from brands that align with your content style and values.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <h3 class="fw-bold mb-0">4</h3>
+                            </div>
+                            <h4 class="fw-bold mb-3">Get Paid</h4>
+                            <p>Create content, complete campaigns, and receive secure payments through our platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Join Collabora?</h2>
+                <p class="lead">Benefits that help you grow and monetize your influence</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                                <i class="ri-money-dollar-circle-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Higher Earnings</h4>
+                            <p>Our influencers earn 30% more on average compared to other platforms. Set your own rates and negotiate directly with brands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                                <i class="ri-shield-check-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Verified Brands</h4>
+                            <p>Work with vetted, legitimate brands that value your content and audience. No more unpaid collaborations or scams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                                <i class="ri-hand-heart-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Brand Matching</h4>
+                            <p>Our AI matching technology connects you with brands that align with your content style, values, and audience demographics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                                <i class="ri-secure-payment-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Secure Payments</h4>
+                            <p>Get paid on time, every time with our secure payment system. No more chasing brands for payment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                                <i class="ri-line-chart-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Analytics Dashboard</h4>
+                            <p>Track your performance, engagement metrics, and earnings with our comprehensive analytics dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                                <i class="ri-book-open-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Free Resources</h4>
+                            <p>Access exclusive guides, webinars, and tools to help you grow your audience and improve your content strategy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Success Stories</h2>
+                <p class="lead">Hear from influencers who are thriving on our platform</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="vender/images/1001-60x60.jpg" class="rounded-circle" alt="Influencer">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Jessica Williams</h5>
+                                    <p class="text-muted mb-0">Fashion & Lifestyle | 250K Followers</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"Since joining Collabora, I've been able to turn my passion into a full-time career. The quality of brands I work with has improved dramatically, and I've increased my monthly income by 200%."</p>
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="vender/images/1012-60x60.jpg" class="rounded-circle" alt="Influencer">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Marcus Johnson</h5>
+                                    <p class="text-muted mb-0">Fitness & Wellness | 120K Followers</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"As a micro-influencer, I struggled to get noticed by brands. Collabora changed that completely. Now I receive relevant collaboration offers weekly, and the platform handles all the paperwork and payments."</p>
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="vender/images/1027-60x60.jpg" class="rounded-circle" alt="Influencer">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Sophia Chen</h5>
+                                    <p class="text-muted mb-0">Travel & Photography | 500K Followers</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"The resources and support from Collabora have been invaluable. Their negotiation tips helped me increase my rates by 50%, and the analytics tools give me insights I never had before."</p>
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Top Brands on Our Platform</h2>
+                <p class="lead">Connect with industry-leading brands looking for influencers like you</p>
+            </div>
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/0-150x50.jpg" class="img-fluid opacity-75" alt="Brand Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/1-150x50.jpg" class="img-fluid opacity-75" alt="Brand Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/2-150x50.jpg" class="img-fluid opacity-75" alt="Brand Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/3-150x50.jpg" class="img-fluid opacity-75" alt="Brand Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/4-150x50.jpg" class="img-fluid opacity-75" alt="Brand Logo">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 text-center">
+                    <img src="vender/images/5-150x50.jpg" class="img-fluid opacity-75" alt="Brand Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="lead">Get answers to common questions about joining as an influencer</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="influencerFAQ">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Is it free to join Collabora as an influencer?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#influencerFAQ">
+                                <div class="accordion-body">
+                                    Yes, it's completely free to create an influencer profile on Collabora. We only take a small commission when you successfully complete paid collaborations with brands. There are no monthly fees or hidden charges.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How many followers do I need to join?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#influencerFAQ">
+                                <div class="accordion-body">
+                                    We welcome influencers of all sizes, from nano-influencers (1K-10K followers) to mega-influencers (1M+ followers). What matters most is having an engaged, authentic audience and quality content. Many brands specifically look for micro and nano-influencers due to their higher engagement rates and niche audiences.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I get paid for collaborations?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#influencerFAQ">
+                                <div class="accordion-body">
+                                    When you complete a collaboration, the brand releases payment through our secure payment system. You can withdraw your earnings via direct bank transfer, PayPal, or other payment methods. Payments are typically processed within 7 business days after campaign completion and approval.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What types of brands can I work with?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#influencerFAQ">
+                                <div class="accordion-body">
+                                    Collabora partners with brands across various industries, including fashion, beauty, tech, food, travel, fitness, lifestyle, and more. All brands on our platform are verified and vetted to ensure they're legitimate and reliable partners for our influencers.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can I reject collaboration offers?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#influencerFAQ">
+                                <div class="accordion-body">
+                                    You have complete control over which brands you work with. You can review all collaboration offers and accept only those that align with your content, values, and audience. There's no obligation to accept any offer you receive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    What social media platforms do you support?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#influencerFAQ">
+                                <div class="accordion-body">
+                                    We support all major social media platforms, including Instagram, TikTok, YouTube, Twitter, Facebook, Pinterest, Twitch, and LinkedIn. You can connect multiple platforms to your profile to showcase your full online presence and reach.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Now Section -->
+    <section class="py-5" id="join-now">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Ready to Start Earning?</h2>
+                    <p class="lead mb-4">Create your influencer profile in minutes and start receiving collaboration offers from top brands.</p>
+                    <div class="mb-4">
+                        <div class="d-flex mb-3">
+                            <div class="text-primary me-3">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="mb-0">Free to join, no subscription fees</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="text-primary me-3">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="mb-0">Connect all your social media accounts</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="text-primary me-3">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="mb-0">Set your own rates and collaboration terms</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="text-primary me-3">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="mb-0">Access exclusive brand opportunities</p>
+                        </div>
+                        <div class="d-flex">
+                            <div class="text-primary me-3">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="mb-0">Get paid securely and on time</p>
+                        </div>
+                    </div>
+                    <p class="text-muted small">By joining, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="fw-bold mb-4 text-center">Create Your Influencer Profile</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="password" class="form-label">Create Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <div class="form-text">Must be at least 8 characters with a number and special character.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="primaryPlatform" class="form-label">Primary Social Platform</label>
+                                        <select class="form-select" id="primaryPlatform" required>
+                                            <option value="" selected disabled>Select your main platform</option>
+                                            <option value="instagram">Instagram</option>
+                                            <option value="tiktok">TikTok</option>
+                                            <option value="youtube">YouTube</option>
+                                            <option value="twitter">Twitter</option>
+                                            <option value="facebook">Facebook</option>
+                                            <option value="twitch">Twitch</option>
+                                            <option value="pinterest">Pinterest</option>
+                                            <option value="linkedin">LinkedIn</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="username" class="form-label">Username/Handle</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" class="form-control" id="username" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="category" class="form-label">Content Category</label>
+                                        <select class="form-select" id="category" required>
+                                            <option value="" selected disabled>Select your primary content category</option>
+                                            <option value="fashion">Fashion</option>
+                                            <option value="beauty">Beauty</option>
+                                            <option value="lifestyle">Lifestyle</option>
+                                            <option value="travel">Travel</option>
+                                            <option value="food">Food & Cooking</option>
+                                            <option value="fitness">Fitness & Wellness</option>
+                                            <option value="tech">Technology</option>
+                                            <option value="gaming">Gaming</option>
+                                            <option value="business">Business & Entrepreneurship</option>
+                                            <option value="education">Education</option>
+                                            <option value="entertainment">Entertainment</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="followerCount" class="form-label">Follower Count (Approximate)</label>
+                                        <select class="form-select" id="followerCount" required>
+                                            <option value="" selected disabled>Select your follower range</option>
+                                            <option value="1k-10k">1K - 10K</option>
+                                            <option value="10k-50k">10K - 50K</option>
+                                            <option value="50k-100k">50K - 100K</option>
+                                            <option value="100k-500k">100K - 500K</option>
+                                            <option value="500k-1m">500K - 1M</option>
+                                            <option value="1m+">1M+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                            <label class="form-check-label" for="termsCheck">
+                                                I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100 btn-lg">Create Your Profile</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center mt-4">
+                                <p class="mb-0">Already have an account? <a href="auth.html">Log In</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Influencer Resources Preview -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Resources for Influencers</h2>
+                <p class="lead">Free guides and tools to help you succeed</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/20-600x300.jpg" class="card-img-top" alt="Resource">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-2">Guide</span>
+                            <h4 class="fw-bold mb-3">How to Price Your Content</h4>
+                            <p>Learn how to calculate your rates based on engagement, reach, and content type to maximize your earnings.</p>
+                            <a href="influencer-resources.html" class="btn btn-outline-primary mt-3">Read Guide</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/180-600x300.jpg" class="card-img-top" alt="Resource">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Tutorial</span>
+                            <h4 class="fw-bold mb-3">Creating a Media Kit That Converts</h4>
+                            <p>Step-by-step guide to creating a professional media kit that attracts brands and showcases your value.</p>
+                            <a href="influencer-resources.html" class="btn btn-outline-primary mt-3">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/160-600x300.jpg" class="card-img-top" alt="Resource">
+                        <div class="card-body p-4">
+                            <span class="badge bg-info mb-2">Tool</span>
+                            <h4 class="fw-bold mb-3">Content Calendar Template</h4>
+                            <p>Download our free content calendar template to plan and organize your sponsored and organic content.</p>
+                            <a href="influencer-resources.html" class="btn btn-outline-primary mt-3">Download Template</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="influencer-resources.html" class="btn btn-primary">View All Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Ready to monetize your influence?</h2>
+                    <p class="lead mb-0">Join thousands of creators who are turning their passion into profit.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#join-now" class="btn btn-light btn-lg">Join Now - It's Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1798 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Sophia Martinez - Fashion Influencer | Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <section class="py-5 bg-light position-relative overflow-hidden">
+        <div class="position-absolute top-0 end-0 w-50 h-100 bg-gradient-light opacity-10 rounded-start-circle"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center" data-aos="fade-up">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+                        <div class="position-relative mb-4 mb-md-0">
+                            <div class="profile-image-wrapper">
+                                <img src="vender/images/64-200x200.jpg" class="rounded-circle border border-4 border-white shadow" width="180" height="180" alt="Sophia Martinez">
+                                <span class="position-absolute bottom-0 end-0 badge bg-gradient rounded-circle p-2 border border-2 border-white">
+                                    <i class="ri-verified-badge-fill fs-5"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ms-0 ms-md-4 text-center text-md-start">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-1">
+                                <h1 class="fw-bold mb-0 display-5">Sophia Martinez</h1>
+                                <span class="badge bg-success rounded-pill ms-3 px-3 py-2">4.9 <i class="ri-star-fill ms-1"></i></span>
+                            </div>
+                            <p class="lead mb-2 text-primary fw-semibold">Fashion & Lifestyle Influencer</p>
+                            <div class="d-flex align-items-center text-muted justify-content-center justify-content-md-start flex-wrap">
+                                <div class="me-4 mb-2 mb-md-0">
+                                    <i class="ri-map-pin-line me-1"></i>
+                                    <span>Los Angeles, CA</span>
+                                </div>
+                                <div class="me-4 mb-2 mb-md-0">
+                                    <i class="ri-time-line me-1"></i>
+                                    <span>Joined Jan 2020</span>
+                                </div>
+                                <div>
+                                    <i class="ri-translate-2 me-1"></i>
+                                    <span>English, Spanish</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 flex-wrap justify-content-center justify-content-md-start">
+                                <a href="https://www.instagram.com/lifeunscripted.in/" target="_blank" class="btn btn-sm btn-outline-dark me-2 mb-2">
+                                    <i class="ri-instagram-line me-1"></i> 850K Followers
+                                </a>
+                                <a href="https://youtube.com/@lifescripted?si=w-wRO-FWyhTOqBuA" target="_blank" class="btn btn-sm btn-outline-dark me-2 mb-2">
+                                    <i class="ri-tiktok-line me-1"></i> 1.2M Followers
+                                </a>
+                                <a href="https://youtube.com/@lifescripted?si=w-wRO-FWyhTOqBuA" target="_blank" class="btn btn-sm btn-outline-dark mb-2">
+                                    <i class="ri-youtube-line me-1"></i> 500K Subscribers
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card border-0 shadow-sm" data-aos="fade-left" data-aos-delay="100">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Contact Sophia</h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    <i class="ri-message-3-line me-0 me-0 me-2"></i>Send Message
+                                </button>
+                                <button class="btn btn-outline-primary" id="favoriteBtn">
+                                    <i class="ri-heart-line me-2" id="favoriteIcon"></i><span id="favoriteText">Add to Favorites</span>
+                                </button>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                    <i class="ri-share-line me-2"></i>Share Profile
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">Response Rate</span>
+                                <span class="fw-bold">98%</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="text-muted">Response Time</span>
+                                <span class="fw-bold">< 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Tabs -->
+    <section class="py-2 bg-white border-bottom sticky-top" style="top: 66px; z-index: 99;">
+        <div class="container">
+            <ul class="nav nav-pills-soft justify-content-center justify-content-md-start flex-nowrap overflow-auto hide-scrollbar" id="profileTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-4" id="about-tab" data-bs-toggle="pill" data-bs-target="#about" type="button" role="tab">About</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4" id="content-tab" data-bs-toggle="pill" data-bs-target="#content" type="button" role="tab">Content</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4" id="collaborations-tab" data-bs-toggle="pill" data-bs-target="#collaborations" type="button" role="tab">Collaborations</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab">Reviews</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4" id="audience-tab" data-bs-toggle="pill" data-bs-target="#audience" type="button" role="tab">Audience</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="tab-content" id="profileTabsContent">
+                <!-- About Tab -->
+                <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <div class="row">
+                        <!-- Main Content -->
+                        <div class="col-lg-8">
+                            <!-- About Section -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-up">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">About</h4>
+                                    <p>Hi there! I'm Sophia, a fashion and lifestyle content creator based in Los Angeles. With over 5 years of experience in the industry, I specialize in sustainable fashion, home decor, and mindful living.</p>
+                                    <p>My content focuses on helping my audience make conscious choices while still looking stylish and feeling confident. I believe that fashion should be accessible, sustainable, and fun!</p>
+                                    <p>I've worked with numerous global brands to create authentic content that resonates with my engaged community. My audience is primarily women aged 25-34 who are interested in fashion, sustainability, and lifestyle content.</p>
+                                    
+                                    <div class="mt-4">
+                                        <h5 class="fw-bold mb-3">Areas of Expertise</h5>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Sustainable Fashion</span>
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Ethical Brands</span>
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Capsule Wardrobes</span>
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Minimalist Living</span>
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Home Decor</span>
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Vegan Lifestyle</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Services Section -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Services Offered</h4>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <div class="bg-primary-subtle rounded-circle text-primary p-2 px-3">
+                                                        <i class="ri-instagram-line fs-4"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h5 class="fw-bold">Instagram Posts</h5>
+                                                    <p class="mb-0">High-quality, authentic content featuring your products or services in my signature aesthetic.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <div class="bg-primary-subtle rounded-circle p-2 px-3 text-primary">
+                                                        <i class="ri-video-line fs-4"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h5 class="fw-bold">Video Content</h5>
+                                                    <p class="mb-0">Engaging video content for TikTok, Instagram Reels, and YouTube that showcases your brand.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <div class="bg-primary-subtle rounded-circle p-2 px-3 text-primary">
+                                                        <i class="ri-store-line fs-4"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h5 class="fw-bold">Brand Ambassadorship</h5>
+                                                    <p class="mb-0">Long-term partnerships that include regular content creation and brand advocacy.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <div class="bg-primary-subtle rounded-circle p-2 px-3 text-primary">
+                                                        <i class="ri-camera-line fs-4"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h5 class="fw-bold">Product Photography</h5>
+                                                    <p class="mb-0">Professional product photography that you can use on your website and social media.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sidebar -->
+                        <div class="col-lg-4">
+                            <!-- Collaboration Details -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-left">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Collaboration Details</h4>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0 py-3 d-flex justify-content-between">
+                                            <span>Starting Rate</span>
+                                            <span class="fw-bold">$1,500</span>
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 d-flex justify-content-between">
+                                            <span>Content Types</span>
+                                            <div>
+                                                <span class="badge bg-light text-dark me-1">Photos</span>
+                                                <span class="badge bg-light text-dark me-1">Videos</span>
+                                                <span class="badge bg-light text-dark">Stories</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 d-flex justify-content-between">
+                                            <span>Usage Rights</span>
+                                            <span class="fw-bold">6 months</span>
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 d-flex justify-content-between">
+                                            <span>Exclusivity</span>
+                                            <span class="fw-bold">Available</span>
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 d-flex justify-content-between">
+                                            <span>Revisions</span>
+                                            <span class="fw-bold">2 included</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Availability Calendar -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4 class="fw-bold mb-0">Availability</h4>
+                                        <span class="badge bg-success">Available</span>
+                                    </div>
+                                    <p class="text-muted mb-3">Currently accepting new collaborations for Q3 2023</p>
+                                    <div class="calendar-preview bg-light p-3 rounded">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="fw-bold">July 2023</span>
+                                            <div>
+                                                <button class="btn btn-sm btn-link p-0 text-muted"><i class="ri-arrow-left-s-line"></i></button>
+                                                <button class="btn btn-sm btn-link p-0 text-primary"><i class="ri-arrow-right-s-line"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row g-1 text-center">
+                                            <div class="col">S</div>
+                                            <div class="col">M</div>
+                                            <div class="col">T</div>
+                                            <div class="col">W</div>
+                                            <div class="col">T</div>
+                                            <div class="col">F</div>
+                                            <div class="col">S</div>
+                                        </div>
+                                        <div class="row g-1 text-center">
+                                            <div class="col text-muted">25</div>
+                                            <div class="col text-muted">26</div>
+                                            <div class="col text-muted">27</div>
+                                            <div class="col text-muted">28</div>
+                                            <div class="col text-muted">29</div>
+                                            <div class="col text-muted">30</div>
+                                            <div class="col">1</div>
+                                        </div>
+                                        <div class="row g-1 text-center">
+                                            <div class="col">2</div>
+                                            <div class="col">3</div>
+                                            <div class="col">4</div>
+                                            <div class="col">5</div>
+                                            <div class="col"><span class="bg-danger text-white rounded-circle p-1 px-2 date-circle"> 6 </span></div>
+                                            <div class="col"><span class="bg-danger text-white rounded-circle p-1 px-2 date-circle"> 7 </span></div>
+                                            <div class="col">8</div>
+                                        </div>
+                                        <div class="row g-1 text-center">
+                                            <div class="col">9</div>
+                                            <div class="col">10</div>
+                                            <div class="col">11</div>
+                                            <div class="col">12</div>
+                                            <div class="col">13</div>
+                                            <div class="col">14</div>
+                                            <div class="col">15</div>
+                                        </div>
+                                        <!-- More calendar rows would go here -->
+                                    </div>
+                                    <div class="d-grid mt-3">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#availabilityModal">
+                                            <i class="ri-calendar-line me-0 me-2"></i>Check Full Availability
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Tab -->
+                <div class="tab-pane fade" id="content" role="tabpanel" aria-labelledby="content-tab">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h4 class="fw-bold mb-0">Content Showcase</h4>
+                                        <div class="nav nav-pills-soft" id="content-subtab" role="tablist">
+                                            <button class="nav-link active px-3 py-2" id="photos-subtab" data-bs-toggle="pill" data-bs-target="#photos" type="button" role="tab">Photos</button>
+                                            <button class="nav-link px-3 py-2" id="videos-subtab" data-bs-toggle="pill" data-bs-target="#videos" type="button" role="tab">Videos</button>
+                                            <button class="nav-link px-3 py-2" id="reels-subtab" data-bs-toggle="pill" data-bs-target="#reels" type="button" role="tab">Reels</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content" id="content-subtabContent">
+                                        <div class="tab-pane fade show active" id="photos" role="tabpanel">
+                                            <div class="row g-3">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="content-card position-relative rounded overflow-hidden" data-aos="fade-up">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#contentModal" class="d-block">
+                                                            <img src="vender/images/237-600x600.jpg" class="img-fluid w-100" alt="Content">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-heart-fill me-1"></i> 15.2K
+                                                                        <i class="ri-chat-3-line ms-3 me-1"></i> 342
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Summer fashion essentials for sustainable wardrobes 🌿 #SustainableFashion</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="content-card position-relative rounded overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#contentModal" class="d-block">
+                                                            <img src="vender/images/238-600x600.jpg" class="img-fluid w-100" alt="Content">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-heart-fill me-1"></i> 12.8K
+                                                                        <i class="ri-chat-3-line ms-3 me-1"></i> 287
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Morning routine with @ecobrand's new skincare line ✨ #SelfCare</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="content-card position-relative rounded overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#contentModal" class="d-block">
+                                                            <img src="vender/images/239-600x600.jpg" class="img-fluid w-100" alt="Content">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-heart-fill me-1"></i> 18.5K
+                                                                        <i class="ri-chat-3-line ms-3 me-1"></i> 412
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Weekend getaway essentials - packing light and sustainably 🧳 #TravelTips</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="content-card position-relative rounded overflow-hidden" data-aos="fade-up">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#contentModal" class="d-block">
+                                                            <img src="vender/images/240-600x600.jpg" class="img-fluid w-100" alt="Content">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-heart-fill me-1"></i> 14.3K
+                                                                        <i class="ri-chat-3-line ms-3 me-1"></i> 325
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Home office makeover with @homedesign pieces 🏡 #WorkFromHome</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="content-card position-relative rounded overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#contentModal" class="d-block">
+                                                            <img src="vender/images/241-600x600.jpg" class="img-fluid w-100" alt="Content">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-heart-fill me-1"></i> 16.7K
+                                                                        <i class="ri-chat-3-line ms-3 me-1"></i> 378
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">5 ways to style this versatile @fashionbrand dress 👗 #StyleTips</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="content-card position-relative rounded overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#contentModal" class="d-block">
+                                                            <img src="vender/images/242-600x600.jpg" class="img-fluid w-100" alt="Content">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-heart-fill me-1"></i> 13.9K
+                                                                        <i class="ri-chat-3-line ms-3 me-1"></i> 301
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Plant-based meal prep ideas for busy weekdays 🥗 #VeganRecipes</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <button class="btn btn-outline-primary px-4">Load More</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="videos" role="tabpanel">
+                                            <div class="row g-4">
+                                                <div class="col-md-6" data-aos="fade-up">
+                                                    <div class="card border-0 shadow-sm h-100">
+                                                        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title fw-bold">Sustainable Fashion Haul: Summer Edition</h5>
+                                                            <p class="card-text text-muted">Exploring the latest sustainable fashion pieces for summer from my favorite ethical brands.</p>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <i class="ri-eye-line text-muted me-1"></i>
+                                                                    <span class="text-muted">245K views</span>
+                                                                </div>
+                                                                <small class="text-muted">June 12, 2023</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                                    <div class="card border-0 shadow-sm h-100">
+                                                        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title fw-bold">My Morning Skincare Routine with EcoBeauty</h5>
+                                                            <p class="card-text text-muted">A detailed walkthrough of my morning skincare routine featuring EcoBeauty's organic product line.</p>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <i class="ri-eye-line text-muted me-1"></i>
+                                                                    <span class="text-muted">187K views</span>
+                                                                </div>
+                                                                <small class="text-muted">May 28, 2023</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <button class="btn btn-outline-primary px-4">View All Videos</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="reels" role="tabpanel">
+                                            <div class="row g-3">
+                                                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up">
+                                                    <div class="content-card position-relative rounded overflow-hidden" style="aspect-ratio: 9/16;">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#reelModal" class="d-block h-100">
+                                                            <img src="vender/images/237-400x700.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Reel">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-play-fill me-1"></i> 1.2M
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">3 ways to style a white tee #FashionTips</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+                                                    <div class="content-card position-relative rounded overflow-hidden" style="aspect-ratio: 9/16;">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#reelModal" class="d-block h-100">
+                                                            <img src="vender/images/238-400x700.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Reel">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-play-fill me-1"></i> 950K
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Quick morning routine #SelfCare</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+                                                    <div class="content-card position-relative rounded overflow-hidden" style="aspect-ratio: 9/16;">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#reelModal" class="d-block h-100">
+                                                            <img src="vender/images/239-400x700.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Reel">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-play-fill me-1"></i> 1.5M
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">5-minute makeup look #BeautyHacks</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+                                                    <div class="content-card position-relative rounded overflow-hidden" style="aspect-ratio: 9/16;">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#reelModal" class="d-block h-100">
+                                                            <img src="vender/images/240-400x700.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Reel">
+                                                            <div class="content-overlay d-flex align-items-end p-3">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center text-white mb-2">
+                                                                        <i class="ri-play-fill me-1"></i> 875K
+                                                                    </div>
+                                                                    <p class="text-white mb-0 small">Room transformation #HomeDecor</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <button class="btn btn-outline-primary px-4">View All Reels</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collaborations Tab -->
+                <div class="tab-pane fade" id="collaborations" role="tabpanel" aria-labelledby="collaborations-tab">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-4">Previous Collaborations</h4>
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                                            <div class="card h-100 border-0 shadow-sm">
+                                                <img src="vender/images/96-600x300.jpg" class="card-img-top" alt="Collaboration">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="vender/images/1-40x40.jpg" class="rounded-circle me-2" alt="Brand">
+                                                        <h6 class="mb-0">EcoFashion</h6>
+                                                        <span class="badge bg-success ms-auto">Verified</span>
+                                                    </div>
+                                                    <h5 class="card-title fw-bold">Summer Collection Campaign</h5>
+                                                    <p class="card-text">Promoted EcoFashion's sustainable summer collection through Instagram posts and Stories, highlighting eco-friendly materials.</p>
+                                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                                        <div>
+                                                            <span class="badge bg-primary-subtle text-primary me-2">Instagram</span>
+                                                            <span class="badge bg-primary-subtle text-primary">Stories</span>
+                                                        </div>
+                                                        <small class="text-muted">May 2023</small>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer bg-white border-top-0 pt-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <i class="ri-eye-line text-muted me-1"></i>
+                                                            <span class="text-muted">125K+ reach</span>
+                                                        </div>
+                                                        <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="card h-100 border-0 shadow-sm">
+                                                <img src="vender/images/94-600x300.jpg" class="card-img-top" alt="Collaboration">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="vender/images/2-40x40.jpg" class="rounded-circle me-2" alt="Brand">
+                                                        <h6 class="mb-0">BeautyGlow</h6>
+                                                        <span class="badge bg-success ms-auto">Verified</span>
+                                                    </div>
+                                                    <h5 class="card-title fw-bold">Skincare Routine Video</h5>
+                                                    <p class="card-text">Created a detailed skincare routine video featuring BeautyGlow's new organic product line on YouTube and TikTok.</p>
+                                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                                        <div>
+                                                            <span class="badge bg-primary-subtle text-primary me-2">YouTube</span>
+                                                            <span class="badge bg-primary-subtle text-primary">TikTok</span>
+                                                        </div>
+                                                        <small class="text-muted">March 2023</small>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer bg-white border-top-0 pt-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <i class="ri-eye-line text-muted me-1"></i>
+                                                            <span class="text-muted">250K+ views</span>
+                                                        </div>
+                                                        <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="card h-100 border-0 shadow-sm">
+                                                <img src="vender/images/92-600x300.jpg" class="card-img-top" alt="Collaboration">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="vender/images/3-40x40.jpg" class="rounded-circle me-2" alt="Brand">
+                                                        <h6 class="mb-0">HomeStyle</h6>
+                                                        <span class="badge bg-success ms-auto">Verified</span>
+                                                    </div>
+                                                    <h5 class="card-title fw-bold">Home Office Makeover</h5>
+                                                    <p class="card-text">Partnered with HomeStyle to showcase their sustainable furniture collection in a home office makeover series.</p>
+                                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                                        <div>
+                                                            <span class="badge bg-primary-subtle text-primary me-2">Instagram</span>
+                                                            <span class="badge bg-primary-subtle text-primary">Blog</span>
+                                                        </div>
+                                                        <small class="text-muted">February 2023</small>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer bg-white border-top-0 pt-0">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <i class="ri-eye-line text-muted me-1"></i>
+                                                            <span class="text-muted">180K+ reach</span>
+                                                        </div>
+                                                        <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <button class="btn btn-outline-primary px-4">View All Collaborations</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Case Studies -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-up">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-4">Featured Case Studies</h4>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="card h-100 border-0 bg-light">
+                                                <div class="card-body p-4">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="vender/images/1-50x50.jpg" class="rounded-circle me-3" alt="Brand">
+                                                        <div>
+                                                            <h5 class="fw-bold mb-0">EcoFashion Partnership</h5>
+                                                            <p class="text-muted mb-0">6-month Brand Ambassador</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="text-muted">Engagement Rate</span>
+                                                            <span class="fw-bold text-success">5.2%</span>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="text-muted">Click-through Rate</span>
+                                                            <span class="fw-bold text-success">3.8%</span>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="text-muted">Conversion Rate</span>
+                                                            <span class="fw-bold text-success">2.1%</span>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                                        <div>
+                                                            <span class="badge bg-success text-white">42% ROI</span>
+                                                        </div>
+                                                        <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card h-100 border-0 bg-light">
+                                                <div class="card-body p-4">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="vender/images/2-50x50.jpg" class="rounded-circle me-3" alt="Brand">
+                                                        <div>
+                                                            <h5 class="fw-bold mb-0">BeautyGlow Campaign</h5>
+                                                            <p class="text-muted mb-0">Product Launch Series</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="text-muted">Engagement Rate</span>
+                                                            <span class="fw-bold text-success">4.9%</span>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="text-muted">Click-through Rate</span>
+                                                            <span class="fw-bold text-success">4.2%</span>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 78%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="text-muted">Conversion Rate</span>
+                                                            <span class="fw-bold text-success">2.5%</span>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mt-4">
+                                                        <div>
+                                                            <span class="badge bg-success text-white">38% ROI</span>
+                                                        </div>
+                                                        <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reviews Tab -->
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h4 class="fw-bold mb-0">Client Reviews</h4>
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="text-warning me-2">
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-half-fill"></i>
+                                                    </div>
+                                                    <span class="fw-bold">4.9</span>
+                                                </div>
+                                                <small class="text-muted">Based on 124 reviews</small>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="sortReviews" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Sort by: Recent
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sortReviews">
+                                                    <li><a class="dropdown-item active" href="#">Recent</a></li>
+                                                    <li><a class="dropdown-item" href="#">Highest Rating</a></li>
+                                                    <li><a class="dropdown-item" href="#">Lowest Rating</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Review 1 -->
+                                    <div class="card border mb-4" data-aos="fade-up">
+                                        <div class="card-body">
+                                            <div class="d-flex mb-3">
+                                                <img src="vender/images/1001-60x60.jpg" width="60px" height="60px" class="rounded-circle" alt="Reviewer">
+                                                <div class="ms-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="mb-0">Sarah Johnson</h5>
+                                                        <span class="badge bg-primary-subtle text-primary ms-2">Verified Client</span>
+                                                    </div>
+                                                    <p class="text-muted mb-1">Marketing Director, EcoFashion</p>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-warning">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                        <small class="text-muted ms-2">June 15, 2023</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h6 class="fw-bold mb-2">Exceeded our expectations!</h6>
+                                            <p>Working with Sophia was an absolute pleasure! Her content was delivered on time, exceeded our expectations, and perfectly captured our brand's essence. The engagement on her posts was impressive, and we saw a significant increase in website traffic. We'll definitely be working with her again!</p>
+                                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                                <span class="badge bg-light text-dark">On-time delivery</span>
+                                                <span class="badge bg-light text-dark">High engagement</span>
+                                                <span class="badge bg-light text-dark">Brand alignment</span>
+                                                <span class="badge bg-light text-dark">Professional</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Review 2 -->
+                                    <div class="card border mb-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="card-body">
+                                            <div class="d-flex mb-3">
+                                                <img src="vender/images/1002-60x60.jpg" width="60px" height="60px" class="rounded-circle" alt="Reviewer">
+                                                <div class="ms-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="mb-0">Michael Chen</h5>
+                                                        <span class="badge bg-primary-subtle text-primary ms-2">Verified Client</span>
+                                                    </div>
+                                                    <p class="text-muted mb-1">Founder, BeautyGlow</p>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-warning">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                        <small class="text-muted ms-2">April 3, 2023</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h6 class="fw-bold mb-2">Amazing results for our product launch</h6>
+                                            <p>Sophia created an amazing skincare routine video for our brand. Her attention to detail and authentic approach resonated with her audience. The video not only looked professional but also effectively communicated our product benefits. We saw a 40% increase in sales during the campaign period!</p>
+                                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                                <span class="badge bg-light text-dark">Increased sales</span>
+                                                <span class="badge bg-light text-dark">Authentic content</span>
+                                                <span class="badge bg-light text-dark">Professional quality</span>
+                                                <span class="badge bg-light text-dark">Great communication</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Review 3 -->
+                                    <div class="card border" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="card-body">
+                                            <div class="d-flex mb-3">
+                                                <img src="vender/images/1003-60x60.jpg" width="60px" height="60px" class="rounded-circle" alt="Reviewer">
+                                                <div class="ms-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="mb-0">Jessica Williams</h5>
+                                                        <span class="badge bg-primary-subtle text-primary ms-2">Verified Client</span>
+                                                    </div>
+                                                    <p class="text-muted mb-1">CMO, HomeStyle</p>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-warning">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-half-fill"></i>
+                                                        </div>
+                                                        <small class="text-muted ms-2">February 20, 2023</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h6 class="fw-bold mb-2">Creative and beautifully styled content</h6>
+                                            <p>Sophia's home decor content for our brand was creative and beautifully styled. She has a great eye for design and knows how to showcase products in an appealing way. Communication was smooth throughout the process, and she was receptive to feedback. Would recommend!</p>
+                                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                                <span class="badge bg-light text-dark">Creative styling</span>
+                                                <span class="badge bg-light text-dark">Good communication</span>
+                                                <span class="badge bg-light text-dark">Receptive to feedback</span>
+                                                <span class="badge bg-light text-dark">Design expertise</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="text-center mt-4">
+                                        <button class="btn btn-outline-primary px-4">View All 124 Reviews</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <!-- Rating Breakdown -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-left">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Rating Breakdown</h4>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">5</span>
+                                                <i class="ri-star-fill text-warning"></i>
+                                            </div>
+                                            <span class="text-muted small">112 reviews</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">4</span>
+                                                <i class="ri-star-fill text-warning"></i>
+                                            </div>
+                                            <span class="text-muted small">10 reviews</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 8%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">3</span>
+                                                <i class="ri-star-fill text-warning"></i>
+                                            </div>
+                                            <span class="text-muted small">2 reviews</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 2%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">2</span>
+                                                <i class="ri-star-fill text-warning"></i>
+                                            </div>
+                                            <span class="text-muted small">0 reviews</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">1</span>
+                                                <i class="ri-star-fill text-warning"></i>
+                                            </div>
+                                            <span class="text-muted small">0 reviews</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Performance Metrics -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="100">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Performance Metrics</h4>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>Communication</span>
+                                            <div class="text-warning">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 98%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>Content Quality</span>
+                                            <div class="text-warning">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>Deadline Adherence</span>
+                                            <div class="text-warning">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>Brand Alignment</span>
+                                            <div class="text-warning">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>ROI</span>
+                                            <div class="text-warning">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Audience Tab -->
+                <div class="tab-pane fade" id="audience" role="tabpanel" aria-labelledby="audience-tab">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-4">Audience Demographics</h4>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <h5 class="fw-bold mb-3">Age Distribution</h5>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>18-24</span>
+                                                    <span>25%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>25-34</span>
+                                                    <span>45%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 45%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>35-44</span>
+                                                    <span>20%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 20%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>45+</span>
+                                                    <span>10%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 10%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="fw-bold mb-3">Gender Distribution</h5>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Male</span>
+                                                    <span>25%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Female</span>
+                                                    <span>45%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 45%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Others</span>
+                                                    <span>20%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 20%"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-4">Geographic Distribution</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5 class="fw-bold mb-3">Top Countries</h5>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>United States</span>
+                                                    <span>65%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 65%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>United Kingdom</span>
+                                                    <span>15%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Canada</span>
+                                                    <span>10%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 10%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Australia</span>
+                                                    <span>5%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 5%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="fw-bold mb-3">Top Cities</h5>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Los Angeles</span>
+                                                    <span>18%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 18%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>New York</span>
+                                                    <span>15%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>London</span>
+                                                    <span>12%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 12%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Toronto</span>
+                                                    <span>8%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 8%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-4">Interests & Affinities</h4>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <h5 class="fw-bold mb-3">Top Interests</h5>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Sustainable Fashion</span>
+                                                    <span>78%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 78%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Ethical Beauty</span>
+                                                    <span>65%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 65%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Home Decor</span>
+                                                    <span>58%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 58%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between mb-1">
+                                                    <span>Plant-based Living</span>
+                                                    <span>52%</span>
+                                                </div>
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 52%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="fw-bold mb-3">Brand Affinities</h5>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <div class="card border p-3 text-center">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                                        <img src="vender/images/1-40x40.jpg" class="rounded-circle" alt="Brand">
+                                                    </div>
+                                                    <h6 class="mb-0">EcoFashion</h6>
+                                                    <small class="text-muted">72% affinity</small>
+                                                </div>
+                                                <div class="card border p-3 text-center">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                                        <img src="vender/images/2-40x40.jpg" class="rounded-circle" alt="Brand">
+                                                    </div>
+                                                    <h6 class="mb-0">BeautyGlow</h6>
+                                                    <small class="text-muted">68% affinity</small>
+                                                </div>
+                                                <div class="card border p-3 text-center">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                                        <img src="vender/images/3-40x40.jpg" class="rounded-circle" alt="Brand">
+                                                    </div>
+                                                    <h6 class="mb-0">HomeStyle</h6>
+                                                    <small class="text-muted">65% affinity</small>
+                                                </div>
+                                                <div class="card border p-3 text-center">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                                        <img src="vender/images/4-40x40.jpg" class="rounded-circle" alt="Brand">
+                                                    </div>
+                                                    <h6 class="mb-0">GreenLife</h6>
+                                                    <small class="text-muted">61% affinity</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <!-- Stats Card -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-left">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Audience Stats</h4>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div class="border rounded p-3 text-center">
+                                                <h3 class="fw-bold mb-0">1.2M</h3>
+                                                <p class="text-muted mb-0">Total Followers</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="border rounded p-3 text-center">
+                                                <h3 class="fw-bold mb-0">4.8%</h3>
+                                                <p class="text-muted mb-0">Engagement Rate</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="border rounded p-3 text-center">
+                                                <h3 class="fw-bold mb-0">85%</h3>
+                                                <p class="text-muted mb-0">Female Audience</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="border rounded p-3 text-center">
+                                                <h3 class="fw-bold mb-0">25-34</h3>
+                                                <p class="text-muted mb-0">Primary Age Range</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Platform Breakdown -->
+                            <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="100">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Platform Breakdown</h4>
+                                    <div class="mb-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="platform-icon bg-danger-subtle text-danger rounded-circle me-3">
+                                                <i class="ri-instagram-line"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold mb-0">Instagram</h5>
+                                                <p class="text-muted mb-0">@sophiamartinez</p>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <span class="fw-bold">850K</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="text-muted">Engagement Rate</span>
+                                                <span class="fw-bold text-success">5.2%</span>
+                                            </div>
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="platform-icon bg-dark-subtle text-dark rounded-circle me-3">
+                                                <i class="ri-tiktok-line"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold mb-0">TikTok</h5>
+                                                <p class="text-muted mb-0">@sophiamartinez</p>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <span class="fw-bold">1.2M</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="text-muted">Engagement Rate</span>
+                                                <span class="fw-bold text-success">6.8%</span>
+                                            </div>
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="platform-icon bg-danger-subtle text-danger rounded-circle me-3">
+                                                <i class="ri-youtube-line"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold mb-0">YouTube</h5>
+                                                <p class="text-muted mb-0">Sophia Martinez</p>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <span class="fw-bold">500K</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="text-muted">Engagement Rate</span>
+                                                <span class="fw-bold text-success">4.5%</span>
+                                            </div>
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 78%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Audience Growth -->
+                            <div class="card border-0 shadow-sm" data-aos="fade-left" data-aos-delay="200">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-3">Audience Growth</h4>
+                                    <p class="text-muted mb-3">Monthly follower growth across all platforms</p>
+                                    <div class="chart-placeholder bg-light rounded p-3 mb-3" style="height: 200px;">
+                                        <!-- This would be a chart in a real implementation -->
+                                        <div class="h-100 d-flex flex-column justify-content-end">
+                                            <div class="d-flex justify-content-between" style="height: 80%;">
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 40%;"></div>
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 50%;"></div>
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 45%;"></div>
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 60%;"></div>
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 70%;"></div>
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 85%;"></div>
+                                                <div class="bg-primary rounded-top" style="width: 8%; height: 100%;"></div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <small>Jan</small>
+                                                <small>Feb</small>
+                                                <small>Mar</small>
+                                                <small>Apr</small>
+                                                <small>May</small>
+                                                <small>Jun</small>
+                                                <small>Jul</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="fw-bold mb-0">+15.8%</h5>
+                                            <p class="text-muted mb-0">Monthly Growth</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <h5 class="fw-bold mb-0">+187K</h5>
+                                            <p class="text-muted mb-0">New Followers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Sophia Martinez</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="campaignType" class="form-label">Campaign Type</label>
+                            <select class="form-select" id="campaignType" required>
+                                <option value="" selected disabled>Select campaign type</option>
+                                <option value="sponsored_post">Sponsored Post</option>
+                                <option value="brand_ambassador">Brand Ambassador</option>
+                                <option value="product_review">Product Review</option>
+                                <option value="event">Event Promotion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select class="form-select" id="budget" required>
+                                <option value="" selected disabled>Select budget range</option>
+                                <option value="1000_3000">$1,000 - $3,000</option>
+                                <option value="3000_5000">$3,000 - $5,000</option>
+                                <option value="5000_10000">$5,000 - $10,000</option>
+                                <option value="10000_plus">$10,000+</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="messageSubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageContent" class="form-label">Message</label>
+                            <textarea class="form-control" id="messageContent" rows="5" required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Share Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center gap-3 mb-4">
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                            <i class="ri-facebook-circle-line ri-xl"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                            <i class="ri-twitter-x-line ri-xl"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                            <i class="ri-linkedin-box-line ri-xl"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle p-3">
+                            <i class="ri-mail-line ri-xl"></i>
+                        </a>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" value="https://Collabora.com/profile/sophia-martinez" id="shareLink" readonly>
+                        <button class="btn btn-outline-primary" type="button" id="copyLinkBtn">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Modal -->
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Content Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="vender/images/237-800x600.jpg" class="img-fluid rounded" alt="Content">
+                    <div class="mt-3">
+                        <p class="mb-1">Summer fashion essentials for sustainable wardrobes 🌿 #SustainableFashion #EcoFriendly</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="ri-heart-fill text-danger"></i> 15.2K
+                                <i class="ri-chat-3-line ms-3"></i> 342
+                            </div>
+                            <small class="text-muted">Posted on June 12, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reel Modal -->
+    <div class="modal fade" id="reelModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm modal-fullscreen-sm-down">
+            <div class="modal-content" style="height: 80vh;">
+                <div class="modal-body p-0 position-relative">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3 bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="ratio ratio-9x16 h-100">
+                        <video class="object-fit-cover" controls>
+                            <source src="#" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark text-white">
+                        <p class="mb-1">3 ways to style a white tee #FashionTips</p>
+                        <div class="d-flex align-items-center">
+                            <i class="ri-play-fill me-1"></i> 1.2M views
+                            <i class="ri-heart-fill ms-3 me-1 text-danger"></i> 85.2K
+                            <i class="ri-chat-3-line ms-3 me-1"></i> 1.2K
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Availability Modal -->
+    <div class="modal fade" id="availabilityModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Availability Calendar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="calendar-full bg-light p-3 rounded">
+                                <!-- This would be a full calendar in a real implementation -->
+                                <div class="text-center p-5">
+                                    <i class="ri-calendar-line me-0 fs-1 text-primary mb-3"></i>
+                                    <h5>Full Calendar View</h5>
+                                    <p class="text-muted">The calendar would be displayed here in a real implementation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 bg-primary-subtle p-3">
+                                <h5 class="fw-bold mb-3">Availability Status</h5>
+                                <p>Sophia is currently accepting new collaborations for Q3 2023.</p>
+                                <hr>
+                                <h6 class="fw-bold">Booking Lead Time</h6>
+                                <p class="mb-3">Please book at least 3 weeks in advance for standard content and 6 weeks for campaign series.</p>
+                                <h6 class="fw-bold">Unavailable Dates</h6>
+                                <ul class="mb-0">
+                                    <li>July 6-7, 2023</li>
+                                    <li>August 15-20, 2023</li>
+                                    <li>September 10-12, 2023</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact for Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><i class="ri-bubble-chart-fill me-2"></i>Collabora</h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="press.html">Press</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

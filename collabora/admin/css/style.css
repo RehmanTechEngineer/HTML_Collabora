@@ -1,0 +1,859 @@
+/* Main dashboard container */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px; /* Default width */
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+  z-index: 1030; /* Higher than content */
+  transition: all 0.3s ease; /* Smooth transitions */
+  overflow-y: auto; /* Scrollable if content overflows */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Take remaining space */
+  margin-left: 280px; /* Match sidebar width */
+  transition: all 0.3s ease;
+}
+
+/* -------------------------------
+   COLLAPSED SIDEBAR STATE 
+------------------------------- */
+.sidebar-collapsed .sidebar {
+  width: 80px; /* Collapsed width */
+}
+
+.sidebar-collapsed .main-content {
+  margin-left: 80px; /* Adjusted margin */
+}
+
+/* Hide text elements when collapsed */
+.sidebar-collapsed .nav-text,
+.sidebar-collapsed .sidebar-logo-text,
+.sidebar-collapsed .sidebar-footer span {
+  display: none;
+}
+
+/* Center elements in collapsed state */
+.sidebar-collapsed .sidebar-toggle,
+.sidebar-collapsed .nav-link,
+.sidebar-collapsed .sidebar-footer {
+  justify-content: center;
+}
+
+/* Adjust link padding */
+.sidebar-collapsed .nav-link {
+  padding: 0.75rem;
+}
+
+/* Rotate toggle icon when collapsed */
+.sidebar-collapsed .sidebar-toggle {
+  transform: rotate(180deg);
+}
+
+/* Hide titles in collapsed state */
+.sidebar-collapsed .sidebar-titles, 
+.sidebar-collapsed .sidebar-foot {
+  display: none;
+}
+
+/* -------------------------------
+   SIDEBAR COMPONENTS 
+------------------------------- */
+/* Header section */
+.sidebar-header {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e9f2; /* Divider line */
+}
+
+/* Logo styling */
+.sidebar-logo {
+  display: contents;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.header-full {
+    height: 40px;
+}
+
+.sidebar-collapsed .header-full {
+    display: none;
+}
+
+.sidebar-collapsed .header-sm {
+    display: block !important;
+}
+
+/* Toggle button */
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  color: #6c757d; /* Muted color */
+  margin-left: auto; /* Push to right */
+}
+
+/* Footer section */
+.sidebar-footer {
+  width: 100%;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Top divider */
+  display: flex;
+  align-items: center;
+}
+
+/* -------------------------------
+   NAVIGATION LINKS 
+------------------------------- */
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  color: #6c757d;
+  border-radius: 0.5rem;
+  margin: 0.25rem 0.75rem;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hover and active states */
+.nav-link:hover, 
+.nav-link.active {
+  color: #4361ee;
+  background-color: rgba(67, 97, 238, 0.1); /* Light primary bg */
+}
+
+/* Icon styling */
+.nav-link i {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* User avatar */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular shape */
+  margin-right: 1rem;
+}
+
+/* Dropdown avatar */
+.user-dropdown img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Search bar styling */
+.navbar-search .form-control {
+  padding-left: 2.5rem;
+  background-color: #f8f9fa; /* Light background */
+  border: none;
+}
+
+.navbar-search {
+  width: 350px; /* Fixed width */
+}
+
+/* Search icon positioning */
+.navbar-search .search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%); /* Vertical centering */
+  color: #6c757d;
+}
+
+/* =============================== */
+/* COMMON COMPONENT STYLES */
+/* =============================== */
+
+/* -------------------------------
+   CARD STYLES 
+------------------------------- */
+/* Unified card styling */
+.stat-card,
+.campaign-card,
+.roi-card,
+.filter-card,
+.influencer-card,
+.metric-card {
+  border-radius: 1rem;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effects */
+}
+
+/* Card hover effects */
+.stat-card:hover,
+.campaign-card:hover,
+.roi-card:hover,
+.influencer-card:hover,
+.metric-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow depth */
+}
+
+/* -------------------------------
+   ICON CONTAINERS 
+------------------------------- */
+/* Common icon styling */
+.stat-icon,
+.campaign-icon,
+.roi-icon,
+.metric-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  font-size: 1.5rem;
+}
+
+/* Specific icon sizes */
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+  font-size: 1.75rem;
+}
+
+.campaign-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.75rem;
+}
+
+.roi-icon,
+.metric-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.metric-icon {
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Circular icon helper */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Soft background helpers */
+.bg-primary-soft { background-color: rgba(67, 97, 238, 0.1); }
+.bg-success-soft { background-color: rgba(32, 201, 151, 0.1); }
+.bg-warning-soft { background-color: rgba(255, 193, 7, 0.1); }
+.bg-info-soft { background-color: rgba(13, 202, 240, 0.1); }
+.bg-danger-soft { background-color: rgba(220, 53, 69, 0.1); }
+.bg-purple-soft { background-color: rgba(111, 66, 193, 0.1); }
+
+/* -------------------------------
+   PROGRESS BARS 
+------------------------------- */
+.progress-sm {
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* =============================== */
+/* PAGE-SPECIFIC STYLES */
+/* =============================== */
+
+/* -------------------------------
+   CAMPAIGN PAGE 
+------------------------------- */
+.campaign-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; /* Top-right positioning */
+}
+
+/* -------------------------------
+   TIMELINE COMPONENT 
+------------------------------- */
+.timeline-item {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Vertical line */
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.25rem;
+  bottom: 0;
+  width: 2px;
+  background-color: #e9ecef; /* Light line */
+}
+
+/* Remove line from last item */
+.timeline-item:last-child:before {
+  display: none;
+}
+
+/* Timeline point */
+.timeline-point {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%; /* Circular marker */
+  background-color: #4361ee; /* Primary color */
+  z-index: 1;
+}
+
+/* Status colors */
+.timeline-point.completed { background-color: #20c997; }
+.timeline-point.pending { background-color: #fd7e14; }
+.timeline-point.upcoming { background-color: #adb5bd; }
+
+/* -------------------------------
+   INFLUENCERS PAGE 
+------------------------------- */
+.influencer-cover {
+  height: 120px;
+  background-size: cover;
+  background-position: center; /* Centered cover image */
+}
+
+/* Profile avatar positioning */
+.influencer-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid white; /* White border */
+  margin-top: -40px; /* Overlap cover image */
+  position: relative;
+  z-index: 1;
+}
+
+/* Verification badge */
+.verified-badge {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background-color: #4361ee;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  border: 2px solid white;
+  z-index: 9; /* Above avatar */
+}
+
+/* Category label */
+.category-badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem; /* Pill shape */
+}
+
+/* Stats container */
+.stat-item {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #6c757d; /* Muted text */
+  margin-bottom: 0;
+}
+
+/* Engagement meter */
+.engagement-bar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #e9ecef; /* Base bar */
+  margin-top: 0.5rem;
+}
+
+.engagement-value {
+  height: 100%;
+  border-radius: 3px;
+  background-color: #4361ee; /* Primary color */
+}
+
+/* -------------------------------
+   MESSAGES PAGE 
+------------------------------- */
+.messages-container {
+  height: calc(100vh - 70px); /* Viewport minus header */
+  display: flex;
+}
+
+/* Contacts sidebar */
+.contacts-sidebar {
+  width: 320px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow-y: auto; /* Scrollable */
+}
+
+/* Main chat area */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.chat-input {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Contact list items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover and active states */
+.contact-item:hover, 
+.contact-item.active {
+  background-color: rgba(67, 97, 238, 0.05); /* Subtle highlight */
+}
+
+.contact-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; /* Circular avatar */
+  margin-right: 1rem;
+}
+
+/* Message bubbles */
+.message-bubble {
+  max-width: 75%; /* Constrain width */
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Received message */
+.message-received {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* Sent message */
+.message-sent {
+  background-color: #4361ee;
+  color: #fff;
+  border-bottom-right-radius: 0.25rem;
+  align-self: flex-end; /* Right alignment */
+}
+
+/* Message timestamp */
+.message-time {
+  font-size: 0.75rem;
+  color: #adb5bd; /* Muted text */
+  margin-top: 0.25rem;
+}
+
+.message-sent .message-time {
+  color: rgba(255, 255, 255, 0.75); /* Light text on dark */
+}
+
+/* Typing indicator animation */
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #adb5bd;
+  border-radius: 50%;
+  margin-right: 3px;
+  animation: typing 1s infinite; /* Bouncing animation */
+}
+
+/* Dot animation delays */
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); /* Bounce effect */ }
+}
+
+/* Contacts search */
+.search-contacts {
+  position: sticky;
+  top: 0; /* Fixed position */
+  background-color: #fff;
+  z-index: 10;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Online status indicator */
+.contact-status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  border: 2px solid #fff; /* White border */
+}
+
+.status-online { background-color: #20c997; }
+.status-offline { background-color: #adb5bd; }
+.status-away { background-color: #fd7e14; }
+
+/* Attachment previews */
+.attachment-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.attachment-item {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.attachment-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.attachment-remove {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+/* -------------------------------
+   PROFILE PAGE 
+------------------------------- */
+.profile-cover {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Cover overlay gradient */
+.profile-cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+  border-radius: 15px;
+}
+
+/* Profile avatar */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #fff;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Avatar edit button */
+.profile-avatar-edit {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 9;
+}
+
+/* Cover edit button */
+.cover-edit-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+}
+
+/* -------------------------------
+   CHAT WIDGET 
+------------------------------- */
+.chat-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 350px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Floating effect */
+  display: flex;
+  flex-direction: column;
+  z-index: 1040; /* Highest z-index */
+  overflow: hidden;
+}
+
+.chat-widget .chat-header {
+  padding: 1rem;
+  background-color: #4361ee;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-widget .chat-body {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.chat-widget .chat-footer {
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* =============================== */
+/* UTILITY CLASSES */
+/* =============================== */
+
+/* Color utilities */
+.text-purple {
+  color: #6f42c1;
+}
+
+/* Hover card effect */
+.hover-card {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar groups */
+.avatar-group {
+  display: flex;
+}
+
+.avatar-group .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -8px; /* Overlap avatars */
+  border: 2px solid #fff;
+}
+
+.avatar-more {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Date filter component */
+.date-filter {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.date-filter:hover {
+  background-color: #e9ecef;
+}
+
+/* Chart container */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Table styling */
+.performance-table th,
+.roi-table th {
+  font-weight: 600;
+  color: #495057;
+}
+
+.performance-table td,
+.roi-table td {
+  vertical-align: middle;
+}
+
+/* Round icon helper */
+.round-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =============================== */
+/* RESPONSIVE DESIGN */
+/* =============================== */
+
+@media (max-width: 991.98px) {
+  /* Mobile sidebar handling */
+  .sidebar {
+    transform: translateX(-100%); /* Off-screen by default */
+  }
+  
+  /* Show sidebar when toggled */
+  .sidebar.show,
+  .sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  /* Mobile overlay */
+  .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1025;
+    display: none;
+  }
+  
+  .sidebar-open .mobile-overlay {
+    display: block;
+  }
+  
+  /* Contacts sidebar mobile behavior */
+  .contacts-sidebar {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 5;
+    background-color: #fff;
+  }
+  
+  .contacts-open .contacts-sidebar {
+    transform: translateX(0);
+  }
+  
+  .contacts-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    display: none;
+  }
+  
+  .contacts-open .contacts-overlay {
+    display: block;
+  }
+  
+  /* Full-width search on mobile */
+  .navbar-search {
+    width: 100%;
+  }
+}
+
+.header-logo.logo {
+    height: 40px;
+}

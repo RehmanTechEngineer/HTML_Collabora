@@ -1,0 +1,716 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Influencer Resources - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="fw-bold display-4 mb-3">Influencer Resources</h1>
+                    <p class="lead mb-4">Everything you need to grow your influence and monetize your content</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#guides" class="btn btn-light">Guides & Tutorials</a>
+                        <a href="#tools" class="btn btn-light">Tools & Templates</a>
+                        <a href="#webinars" class="btn btn-light">Webinars & Training</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="vender/images/1006-600x400.jpg" class="img-fluid rounded shadow" alt="Influencer Resources">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Resources -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Resources</h2>
+                <p class="lead">Our most popular guides and tools to help you succeed</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/20-600x400.jpg" class="card-img-top" alt="Resource Image">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-2">Guide</span>
+                            <h4 class="fw-bold mb-3">The Ultimate Guide to Negotiating Brand Deals</h4>
+                            <p>Learn how to confidently negotiate with brands and secure better deals for your content.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Guide</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/180-600x400.jpg" class="card-img-top" alt="Resource Image">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Template</span>
+                            <h4 class="fw-bold mb-3">Content Calendar Template</h4>
+                            <p>Stay organized and consistent with our customizable content calendar template for social media.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Download Template</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/160-600x400.jpg" class="card-img-top" alt="Resource Image">
+                        <div class="card-body p-4">
+                            <span class="badge bg-info mb-2">Webinar</span>
+                            <h4 class="fw-bold mb-3">Mastering Instagram Algorithm in 2025</h4>
+                            <p>Discover the latest Instagram algorithm changes and how to optimize your content for maximum reach.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Watch Webinar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="py-5 bg-light" id="guides">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Guides & Tutorials</h2>
+                <p class="lead">Comprehensive resources to help you grow your influence</p>
+            </div>
+            <div class="row g-4">
+                <!-- Getting Started Category -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Getting Started</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-user-star-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Building Your Personal Brand as an Influencer</h6>
+                                            <p class="text-muted small mb-0">10 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-profile-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Creating an Effective Influencer Media Kit</h6>
+                                            <p class="text-muted small mb-0">8 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-user-star-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Finding Your Niche: How to Stand Out in a Crowded Market</h6>
+                                            <p class="text-muted small mb-0">12 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Creation Category -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Content Creation</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-camera-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Smartphone Photography: Creating Professional Content on a Budget</h6>
+                                            <p class="text-muted small mb-0">15 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-video-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Video Editing Basics: Tips for Creating Engaging Content</h6>
+                                            <p class="text-muted small mb-0">20 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-calendar-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Content Planning: Creating a Consistent Posting Schedule</h6>
+                                            <p class="text-muted small mb-0">10 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monetization Category -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm mb-4 mb-lg-0">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Monetization</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-money-dollar-circle-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Diversifying Your Income: Beyond Brand Deals</h6>
+                                            <p class="text-muted small mb-0">18 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-price-tag-3-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Pricing Your Content: How Much to Charge for Sponsored Posts</h6>
+                                            <p class="text-muted small mb-0">12 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-file-list-3-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Understanding Contracts: What to Look for in Brand Agreements</h6>
+                                            <p class="text-muted small mb-0">15 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Growth Strategies Category -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Growth Strategies</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-line-chart-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Organic Growth Strategies for Instagram in 2025</h6>
+                                            <p class="text-muted small mb-0">14 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-group-line ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Building an Engaged Community: Beyond Follower Count</h6>
+                                            <p class="text-muted small mb-0">10 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                            <i class="ri-hashtag ri-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Hashtag Strategy: Maximizing Your Content's Reach</h6>
+                                            <p class="text-muted small mb-0">8 min read</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Guides</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Templates -->
+    <section class="py-5" id="tools">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tools & Templates</h2>
+                <p class="lead">Free resources to streamline your workflow</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-file-text-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Media Kit Template</h5>
+                            <p class="mb-4">A professional template to showcase your audience demographics and past collaborations.</p>
+                            <a href="#" class="btn btn-outline-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-calendar-check-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Content Calendar</h5>
+                            <p class="mb-4">Plan your content strategy with our customizable social media calendar template.</p>
+                            <a href="#" class="btn btn-outline-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-file-list-3-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Brand Contract Template</h5>
+                            <p class="mb-4">A customizable contract template for brand collaborations with key legal protections.</p>
+                            <a href="#" class="btn btn-outline-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-calculator-line ri-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Rate Calculator</h5>
+                            <p class="mb-4">Calculate fair rates for your sponsored content based on your metrics and industry standards.</p>
+                            <a href="#" class="btn btn-outline-primary">Use Calculator</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinars & Training -->
+    <section class="py-5 bg-light" id="webinars">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Webinars & Training</h2>
+                <p class="lead">Learn from industry experts and successful influencers</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/119-600x400.jpg" class="card-img-top" alt="Webinar Image">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Webinar</span>
+                                <small class="text-muted">60 min</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Mastering TikTok: From Zero to Hero</h4>
+                            <p>Learn how to create viral TikTok content and grow your following from scratch.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="vender/images/1012-40x40.jpg" class="rounded-circle me-2" alt="Speaker">
+                                <div>
+                                    <h6 class="mb-0 small">Emma Rodriguez</h6>
+                                    <p class="text-muted small mb-0">TikTok Creator with 2M+ followers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-4 pt-0">
+                            <a href="#" class="btn btn-primary w-100">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/160-600x400.jpg" class="card-img-top" alt="Webinar Image">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Workshop</span>
+                                <small class="text-muted">90 min</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Negotiation Masterclass for Influencers</h4>
+                            <p>Learn proven negotiation tactics to increase your rates and secure better brand deals.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="vender/images/1012-40x40.jpg" class="rounded-circle me-2" alt="Speaker">
+                                <div>
+                                    <h6 class="mb-0 small">Michael Chen</h6>
+                                    <p class="text-muted small mb-0">Influencer Business Coach</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-4 pt-0">
+                            <a href="#" class="btn btn-primary w-100">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/180-600x400.jpg" class="card-img-top" alt="Webinar Image">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Course</span>
+                                <small class="text-muted">5 modules</small>
+                            </div>
+                            <h4 class="fw-bold mb-3">Instagram Reels Masterclass</h4>
+                            <p>A comprehensive course on creating engaging Reels that increase your reach and engagement.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="vender/images/1012-40x40.jpg" class="rounded-circle me-2" alt="Speaker">
+                                <div>
+                                    <h6 class="mb-0 small">Sophia Williams</h6>
+                                    <p class="text-muted small mb-0">Instagram Growth Strategist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-4 pt-0">
+                            <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Webinars</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Success Stories</h2>
+                <p class="lead">See how other influencers have grown with Collabora</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="vender/images/1001-600x800.jpg" class="img-fluid h-100 object-fit-cover" alt="Success Story" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4 d-flex flex-column h-100">
+                                    <h4 class="fw-bold mb-3">From 10K to 500K Followers in One Year</h4>
+                                    <p>"Collabora connected me with brands that perfectly aligned with my content. The resources and support helped me grow my audience exponentially and turn my passion into a full-time career."</p>
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <img src="vender/images/1001-50x50.jpg" class="rounded-circle me-3" alt="Influencer">
+                                        <div>
+                                            <h6 class="mb-0">Jessica Lee</h6>
+                                            <p class="text-muted small mb-0">Travel & Lifestyle Creator</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary mt-3">Read Full Story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="vender/images/1012-600x800.jpg" class="img-fluid h-100 object-fit-cover" alt="Success Story" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4 d-flex flex-column h-100">
+                                    <h4 class="fw-bold mb-3">How I Quadrupled My Income as a Micro-Influencer</h4>
+                                    <p>"The negotiation strategies I learned through Collabora's resources helped me increase my rates and secure long-term partnerships. I'm now earning more while working with fewer brands."</p>
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <img src="vender/images/1012-50x50.jpg" class="rounded-circle me-3" alt="Influencer">
+                                        <div>
+                                            <h6 class="mb-0">Marcus Johnson</h6>
+                                            <p class="text-muted small mb-0">Fitness & Wellness Creator</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary mt-3">Read Full Story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="success-stories.html" class="btn btn-primary">View All Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="lead">Get answers to common questions about growing as an influencer</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="resourcesFAQ">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I know what to charge for sponsored content?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#resourcesFAQ">
+                                <div class="accordion-body">
+                                    Determining your rates depends on several factors including your follower count, engagement rate, content quality, niche, and the deliverables requested. As a general benchmark, many influencers use the "$100 per 10K followers" rule as a starting point, but this varies widely. Check out our <a href="#">Rate Calculator</a> tool and <a href="#">Pricing Guide</a> for more detailed guidance based on your specific metrics.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I improve my engagement rate?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#resourcesFAQ">
+                                <div class="accordion-body">
+                                    Improving engagement requires a combination of strategies: create content that encourages interaction (questions, polls, calls to action), respond to comments promptly, post consistently at optimal times, create authentic and relatable content, use relevant hashtags, collaborate with other creators, and experiment with different content formats. Our <a href="#">Engagement Boosting Guide</a> provides a comprehensive strategy for increasing meaningful interactions with your audience.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I approach brands for collaborations?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#resourcesFAQ">
+                                <div class="accordion-body">
+                                    When approaching brands, research the company thoroughly and customize your pitch to show how your audience aligns with their target market. Include your key metrics, content examples, and specific collaboration ideas. Be professional, concise, and highlight the value you can provide. Our <a href="#">Brand Outreach Templates</a> provide customizable email templates and follow-up strategies to help you secure partnerships.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What should I include in my media kit?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#resourcesFAQ">
+                                <div class="accordion-body">
+                                    A comprehensive media kit should include your bio and brand story, audience demographics and insights, engagement metrics, content categories and examples, past collaborations and testimonials, services and rates, and contact information. Keep it visually appealing and concise (typically 3-5 pages). Download our <a href="#">Media Kit Template</a> for a professionally designed layout that you can customize with your information.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="influencer-faq.html" class="btn btn-primary">View All FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Ready to grow your influence?</h2>
+                    <p class="lead mb-0">Join Collabora today and connect with brands looking for creators like you.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="join-as-influencer.html" class="btn btn-light btn-lg">Join as Influencer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Login & Sign Up - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Auth Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="row g-0">
+                            <!-- Left Column - Image -->
+                            <div class="col-md-5 d-none d-md-block">
+                                <div class="bg-primary h-100 d-flex flex-column justify-content-center text-white p-5" style="background-image: url('vender/images/1-600x800.jpg'); background-size: cover; background-position: center;">
+                                    <div style="background: rgba(67, 97, 238, 0.85); padding: 2rem; border-radius: 12px;">
+                                        <h2 class="fw-bold mb-3">Connect with Top Influencers</h2>
+                                        <p class="lead mb-4">Join thousands of brands and influencers already using our platform to create successful collaborations.</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <div class="text-warning mb-1">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-half-fill"></i>
+                                                </div>
+                                                <p class="mb-0">Rated 4.8/5 from over 10,000 users</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Column - Auth Forms -->
+                            <div class="col-md-7">
+                                <div class="p-4 p-lg-5">
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-pills nav-fill mb-4" id="authTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login" type="button" role="tab" aria-selected="true">Login</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#register" type="button" role="tab" aria-selected="false">Sign Up</button>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- Tab Content -->
+                                    <div class="tab-content" id="authTabContent">
+                                        <!-- Login Tab -->
+                                        <div class="tab-pane fade show active" id="login" role="tabpanel">
+                                            <h3 class="fw-bold mb-4 text-center">Welcome Back!</h3>
+                                            
+                                            <!-- Social Login Buttons -->
+                                            <div class="d-grid gap-2 mb-4">
+                                                <button class="btn btn-outline-dark">
+                                                    <i class="ri-google-fill me-2"></i>Continue with Google
+                                                </button>
+                                                <button class="btn btn-outline-dark">
+                                                    <i class="ri-facebook-circle-fill me-2"></i>Continue with Facebook
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center mb-4">
+                                                <hr class="flex-grow-1">
+                                                <span class="mx-3 text-muted">OR</span>
+                                                <hr class="flex-grow-1">
+                                            </div>
+                                            
+                                            <!-- Login Form -->
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="loginEmail" class="form-label">Email Address</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text bg-light">
+                                                            <i class="ri-mail-line"></i>
+                                                        </span>
+                                                        <input type="email" class="form-control" id="loginEmail" placeholder="your@email.com" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <label for="loginPassword" class="form-label">Password</label>
+                                                        <a href="#" class="text-decoration-none small">Forgot Password?</a>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text bg-light">
+                                                            <i class="ri-lock-line"></i>
+                                                        </span>
+                                                        <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" required>
+                                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                                            <i class="ri-eye-line"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary py-3">Login</button>
+                                                </div>
+                                            </form>
+                                            
+                                            <p class="text-center mt-4 mb-0">
+                                                Don't have an account? <a href="#" class="text-decoration-none" id="showRegisterTab">Sign Up</a>
+                                            </p>
+                                        </div>
+                                        
+                                        <!-- Register Tab -->
+                                        <div class="tab-pane fade" id="register" role="tabpanel">
+                                            <h3 class="fw-bold mb-4 text-center">Create Your Account</h3>
+                                            
+                                            <!-- Account Type Selection -->
+                                            <div class="btn-group w-100 mb-4" role="group">
+                                                <input type="radio" class="btn-check" name="accountType" id="brandAccount" autocomplete="off" checked>
+                                                <label class="btn btn-outline-primary" for="brandAccount">
+                                                    <i class="ri-building-line me-2"></i>I'm a Brand
+                                                </label>
+                                                <input type="radio" class="btn-check" name="accountType" id="influencerAccount" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="influencerAccount">
+                                                    <i class="ri-user-star-line me-2"></i>I'm an Influencer
+                                                </label>
+                                            </div>
+                                            
+                                            <!-- Social Register Buttons -->
+                                            <div class="d-grid gap-2 mb-4">
+                                                <button class="btn btn-outline-dark">
+                                                    <i class="ri-google-fill me-2"></i>Continue with Google
+                                                </button>
+                                                <button class="btn btn-outline-dark">
+                                                    <i class="ri-facebook-circle-fill me-2"></i>Continue with Facebook
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center mb-4">
+                                                <hr class="flex-grow-1">
+                                                <span class="mx-3 text-muted">OR</span>
+                                                <hr class="flex-grow-1">
+                                            </div>
+                                            
+                                            <!-- Register Form -->
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="firstName" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="firstName" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="lastName" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="lastName" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="registerEmail" class="form-label">Email Address</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text bg-light">
+                                                            <i class="ri-mail-line"></i>
+                                                        </span>
+                                                        <input type="email" class="form-control" id="registerEmail" placeholder="your@email.com" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="registerPassword" class="form-label">Password</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text bg-light">
+                                                            <i class="ri-lock-line"></i>
+                                                        </span>
+                                                        <input type="password" class="form-control" id="registerPassword" placeholder="••••••••" required>
+                                                        <button class="btn btn-outline-secondary" type="button" id="toggleRegisterPassword">
+                                                            <i class="ri-eye-line"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="password-strength mt-2">
+                                                        <div class="progress" style="height: 5px;">
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%"></div>
+                                                        </div>
+                                                        <small class="text-muted">Password strength: <span id="passwordStrength">Weak</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                                                    <label class="form-check-label" for="termsCheck">
+                                                        I agree to the <a href="terms.html" class="text-decoration-none">Terms of Service</a> and <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                                                    </label>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary py-3">Create Account</button>
+                                                </div>
+                                            </form>
+                                            
+                                            <p class="text-center mt-4 mb-0">
+                                                Already have an account? <a href="#" class="text-decoration-none" id="showLoginTab">Login</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <a class="d-inline-block text-white text-decoration-none mb-2 mb-md-0" href="index.html">
+                        <h5 class="mb-0"><i class="ri-bubble-chart-fill me-2"></i>Collabora</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

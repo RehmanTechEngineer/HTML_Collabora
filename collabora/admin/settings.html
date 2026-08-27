@@ -1,0 +1,1345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings | Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="../vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="../vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-logo">
+                 <img src="../img/footer-logo.png" class="img-fluid header-sm logo" style="display: none;">
+                <img src="../img/logo.png" class="img-fluid header-full logo">
+            </a>
+            <div class="sidebar-toggle">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+        </div>
+        <nav class="mb-4 mt-4">
+            <div class="nav-section mb-3">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Main</div>
+                <a href="dashboard.html" class="nav-link py-1">
+                    <i class="ri-dashboard-line me-0"></i>
+                    <span class="nav-text ms-2">Dashboard</span>
+                </a>
+                <a href="find-influencers.html" class="nav-link py-1">
+                    <i class="ri-user-search-line me-0"></i>
+                    <span class="nav-text ms-2">Find Influencers</span>
+                </a>
+                <a href="campaigns.html" class="nav-link py-1">
+                    <i class="ri-calendar-line me-0"></i>
+                    <span class="nav-text ms-2">Campaigns</span>
+                </a>
+                <a href="messages.html" class="nav-link position-relative py-1">
+                    <i class="ri-message-3-line me-0 me-0"></i>
+                    <span class="nav-text ms-2">Messages</span>
+                    <span class="badge bg-danger rounded-pill ms-auto message-badge p-2 py-1">3</span>
+                </a>
+            </div>
+            
+            <div class="nav-section mb-3">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Analytics</div>
+                <a href="performance.html" class="nav-link py-1">
+                    <i class="ri-line-chart-line me-0"></i>
+                    <span class="nav-text ms-2">Performance</span>
+                </a>
+                <a href="reports.html" class="nav-link py-1">
+                    <i class="ri-pie-chart-line me-0"></i>
+                    <span class="nav-text ms-2">Reports</span>
+                </a>
+                <a href="roi-tracking.html" class="nav-link py-1">
+                    <i class="ri-funds-line me-0"></i>
+                    <span class="nav-text ms-2">ROI Tracking</span>
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Account</div>
+                <a href="user-profile.html" class="nav-link py-1">
+                    <i class="ri-user-settings-line me-0"></i>
+                    <span class="nav-text ms-2">Profile</span>
+                </a>
+                <a href="settings.html" class="nav-link active py-1">
+                    <i class="ri-settings-3-line me-0"></i>
+                    <span class="nav-text ms-2">Settings</span>
+                </a>
+                <a href="support.html" class="nav-link py-1">
+                    <i class="ri-customer-service-2-line me-0"></i>
+                    <span class="nav-text ms-2">Support</span>
+                </a>
+            </div>
+        </nav>
+        <div class="px-4 py-3 border-top sidebar-foot">
+            <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                    <img src="../vender/images/1005-200x200.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                </div>
+                <div class="flex-grow-1 text-wrap ms-3">
+                    <h6 class="mb-0 fw-semibold">Michael Johnson</h6>
+                    <small class="text-muted">Brand Manager</small>
+                </div>
+            </div>
+            <a href="index.html" class="btn btn-outline-primary btn-sm d-flex align-items-center justify-content-center">
+                <i class="ri-logout-box-line me-2"></i> Sign Out
+            </a>
+        </div>
+    </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container-fluid px-4">
+                <button class="navbar-toggler border-0 p-0 me-3" type="button" id="mobile-toggle">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+                
+                <div class="d-flex align-items-center">
+                    <h5 class="mb-0">Account Settings</h5>
+                    <span class="badge bg-primary ms-2">Brand</span>
+                </div>
+                
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <div class="position-relative d-none d-lg-block navbar-search me-2">
+                            <i class="ri-search-line search-icon"></i>
+                            <input type="text" class="form-control rounded-pill" placeholder="Search for influencers, campaigns...">
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-1  my-2">
+                        <a class="nav-link position-relative m-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="ri-notification-3-line ri-lg me-0"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 py-1">
+                                5
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm" style="width: 300px;">
+                            <h6 class="dropdown-header">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2">
+                                        <i class="ri-message-3-line me-0 me-0"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small">New message from <strong>Sophia Martinez</strong></p>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-success bg-opacity-10 text-success rounded-circle p-2">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small">Campaign <strong>Summer Collection</strong> completed</p>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2">
+                                        <i class="ri-user-add-line"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Emma Johnson</strong> accepted your collaboration request</p>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center small" href="#">View all notifications</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-1  my-2">
+                        <a class="nav-link position-relative m-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="ri-mail-line ri-lg me-0"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 py-1">
+                                3
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm" style="width: 300px;">
+                            <h6 class="dropdown-header">Messages</h6>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1001-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Sophia Martinez</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">Thank you for the opportunity! I've reviewed the campaign brief...</p>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1002-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>James Wilson</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">I've uploaded the content for review. Please let me know if any changes...</p>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1003-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Emma Johnson</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">I'm excited to work with your brand! When can we discuss the details?</p>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center small" href="#">View all messages</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+              
+
+                <div class="ms-3 p-2 rounded border d-flex">
+            <img src="../vender/images/1005-100x100.jpg" alt="User" class="user-avatar">
+            <div>
+                <h6 class="mb-0">John Smith</h6>
+                <p class="text-muted small mb-0">Brand Manager</p>
+            </div>
+            <div class="dropdown ms-auto">
+                <button class="btn btn-link text-muted p-0 text-decoration-none" type="button" data-bs-toggle="dropdown">
+                    <i class="ri-more-2-fill"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#"><i class="ri-user-line me-2"></i>Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="ri-settings-3-line me-0 me-2"></i>Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="ri-logout-box-r-line me-2"></i>Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+            </div>
+        </nav>
+            
+            <!-- Content -->
+            <div class="container-fluid px-4 py-4 bg-light">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 mb-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-0 py-2">
+                                <div class="settings-nav nav flex-column nav-pills" id="settings-tab" role="tablist">
+                                    <button class="nav-link active" id="account-tab" data-bs-toggle="pill" data-bs-target="#account" type="button" role="tab">
+                                        <i class="ri-user-settings-line me-0"></i> Account Settings
+                                    </button>
+                                    <button class="nav-link" id="company-tab" data-bs-toggle="pill" data-bs-target="#company" type="button" role="tab">
+                                        <i class="ri-building-line"></i> Company Profile
+                                    </button>
+                                    <button class="nav-link" id="notifications-tab" data-bs-toggle="pill" data-bs-target="#notifications" type="button" role="tab">
+                                        <i class="ri-notification-3-line"></i> Notifications
+                                    </button>
+                                    <button class="nav-link" id="security-tab" data-bs-toggle="pill" data-bs-target="#security" type="button" role="tab">
+                                        <i class="ri-shield-keyhole-line"></i> Security
+                                    </button>
+                                    <button class="nav-link" id="billing-tab" data-bs-toggle="pill" data-bs-target="#billing" type="button" role="tab">
+                                        <i class="ri-bank-card-line"></i> Billing & Plans
+                                    </button>
+                                    <button class="nav-link" id="team-tab" data-bs-toggle="pill" data-bs-target="#team" type="button" role="tab">
+                                        <i class="ri-team-line"></i> Team Members
+                                    </button>
+                                    <button class="nav-link" id="integrations-tab" data-bs-toggle="pill" data-bs-target="#integrations" type="button" role="tab">
+                                        <i class="ri-plug-line"></i> Integrations
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-9">
+                        <div class="tab-content" id="settings-tabContent">
+                            <!-- Account Settings Tab -->
+                            <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Personal Information</h5>
+                                        <form>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6 mb-3 mb-md-0">
+                                                    <label for="firstName" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="firstName" value="Michael">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="lastName" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="lastName" value="Johnson">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email Address</label>
+                                                <input type="email" class="form-control" id="email" value="michael.johnson@techglobal.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" id="phone" value="+1 (555) 123-4567">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="jobTitle" class="form-label">Job Title</label>
+                                                <input type="text" class="form-control" id="jobTitle" value="Brand Manager">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="timezone" class="form-label">Timezone</label>
+                                                <select class="form-select" id="timezone">
+                                                    <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                                                    <option value="America/Anchorage">(GMT-09:00) Alaska</option>
+                                                    <option value="America/Los_Angeles" selected>(GMT-08:00) Pacific Time (US & Canada)</option>
+                                                    <option value="America/Denver">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                                    <option value="America/Chicago">(GMT-06:00) Central Time (US & Canada)</option>
+                                                    <option value="America/New_York">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                                    <option value="America/Halifax">(GMT-04:00) Atlantic Time (Canada)</option>
+                                                    <option value="Europe/London">(GMT+00:00) London</option>
+                                                    <option value="Europe/Paris">(GMT+01:00) Paris</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="bio" class="form-label">Bio</label>
+                                                <textarea class="form-control" id="bio" rows="4">Brand manager with over 8 years of experience in digital marketing and influencer collaborations. Specializing in tech product launches and lifestyle campaigns.</textarea>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Profile Picture</h5>
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="flex-shrink-0">
+                                                <img src="../vender/images/1005-200x200.jpg" class="rounded-circle" width="100" height="100" alt="Profile Picture">
+                                            </div>
+                                            <div class="flex-grow-1 ms-4">
+                                                <div class="mb-3">
+                                                    <input class="form-control" type="file" id="profilePicture">
+                                                </div>
+                                                <p class="text-muted small mb-0">Recommended size: 400x400 pixels. Maximum file size: 2MB.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-outline-danger me-2">Remove</button>
+                                            <button type="button" class="btn btn-primary">Upload New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Company Profile Tab -->
+                            <div class="tab-pane fade" id="company" role="tabpanel" aria-labelledby="company-tab">
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Company Information</h5>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="companyName" class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" id="companyName" value="TechGlobal Inc.">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="companyWebsite" class="form-label">Website</label>
+                                                <input type="url" class="form-control" id="companyWebsite" value="https://www.techglobal.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="industry" class="form-label">Industry</label>
+                                                <select class="form-select" id="industry">
+                                                    <option>Select Industry</option>
+                                                    <option selected>Technology</option>
+                                                    <option>Fashion & Apparel</option>
+                                                    <option>Health & Wellness</option>
+                                                    <option>Food & Beverage</option>
+                                                    <option>Beauty & Cosmetics</option>
+                                                    <option>Travel & Hospitality</option>
+                                                    <option>Entertainment</option>
+                                                    <option>Finance</option>
+                                                    <option>Education</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="companySize" class="form-label">Company Size</label>
+                                                <select class="form-select" id="companySize">
+                                                    <option>Select Company Size</option>
+                                                    <option>1-10 employees</option>
+                                                    <option>11-50 employees</option>
+                                                    <option selected>51-200 employees</option>
+                                                    <option>201-500 employees</option>
+                                                    <option>501-1000 employees</option>
+                                                    <option>1001+ employees</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="companyAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control mb-3" id="companyAddress" value="123 Tech Avenue">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3 mb-md-0">
+                                                        <input type="text" class="form-control" id="companyCity" placeholder="City" value="San Francisco">
+                                                    </div>
+                                                    <div class="col-md-3 mb-3 mb-md-0">
+                                                        <input type="text" class="form-control" id="companyState" placeholder="State" value="CA">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control" id="companyZip" placeholder="Zip Code" value="94105">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="companyDescription" class="form-label">Company Description</label>
+                                                <textarea class="form-control" id="companyDescription" rows="4">TechGlobal is a leading technology company specializing in innovative consumer electronics and software solutions. Founded in 2010, we've grown to become a trusted name in the tech industry with a focus on user-friendly design and cutting-edge technology.</textarea>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Company Logo</h5>
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="flex-shrink-0">
+                                                <img src="../vender/images/28-200x200.jpg" class="rounded" width="100" height="100" alt="Company Logo">
+                                            </div>
+                                            <div class="flex-grow-1 ms-4">
+                                                <div class="mb-3">
+                                                    <input class="form-control" type="file" id="companyLogo">
+                                                </div>
+                                                <p class="text-muted small mb-0">Recommended size: 400x400 pixels. Maximum file size: 2MB.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-outline-danger me-2">Remove</button>
+                                            <button type="button" class="btn btn-primary">Upload New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Notifications Tab -->
+                            <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Notification Preferences</h5>
+                                        
+                                        <div class="mb-4">
+                                            <h6 class="fw-bold mb-3">Email Notifications</h6>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="emailCampaignUpdates" checked>
+                                                <label class="form-check-label" for="emailCampaignUpdates">Campaign updates and status changes</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="emailInfluencerMessages" checked>
+                                                <label class="form-check-label" for="emailInfluencerMessages">New messages from influencers</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="emailNewInfluencers" checked>
+                                                <label class="form-check-label" for="emailNewInfluencers">New influencer matches based on your criteria</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="emailPerformanceReports">
+                                                <label class="form-check-label" for="emailPerformanceReports">Weekly performance reports</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="emailProductUpdates" checked>
+                                                <label class="form-check-label" for="emailProductUpdates">Product updates and new features</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="emailMarketing">
+                                                <label class="form-check-label" for="emailMarketing">Marketing and promotional emails</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <h6 class="fw-bold mb-3">In-App Notifications</h6>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="appCampaignUpdates" checked>
+                                                <label class="form-check-label" for="appCampaignUpdates">Campaign updates and status changes</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="appInfluencerMessages" checked>
+                                                <label class="form-check-label" for="appInfluencerMessages">New messages from influencers</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="appNewInfluencers" checked>
+                                                <label class="form-check-label" for="appNewInfluencers">New influencer matches based on your criteria</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="appPerformanceAlerts" checked>
+                                                <label class="form-check-label" for="appPerformanceAlerts">Performance alerts and milestones</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="appProductUpdates" checked>
+                                                <label class="form-check-label" for="appProductUpdates">Product updates and new features</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <h6 class="fw-bold mb-3">SMS Notifications</h6>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="smsCampaignUpdates">
+                                                <label class="form-check-label" for="smsCampaignUpdates">Campaign updates and status changes</label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="smsInfluencerMessages">
+                                                <label class="form-check-label" for="smsInfluencerMessages">New messages from influencers</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="smsSecurityAlerts" checked>
+                                                <label class="form-check-label" for="smsSecurityAlerts">Security alerts</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-primary">Save Preferences</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Security Tab -->
+                            <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Change Password</h5>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="currentPassword" class="form-label">Current Password</label>
+                                                <input type="password" class="form-control" id="currentPassword">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="newPassword" class="form-label">New Password</label>
+                                                <input type="password" class="form-control" id="newPassword">
+                                                <div class="form-text">Password must be at least 8 characters and include a mix of letters, numbers, and symbols.</div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                                <input type="password" class="form-control" id="confirmPassword">
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary">Update Password</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Two-Factor Authentication</h5>
+                                        <p class="mb-4">Add an extra layer of security to your account by enabling two-factor authentication.</p>
+                                        
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="twoFactorAuth">
+                                                <label class="form-check-label fw-semibold" for="twoFactorAuth">Enable Two-Factor Authentication</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="alert alert-info d-flex align-items-center" role="alert">
+                                            <i class="ri-information-line me-3 fs-5"></i>
+                                            <div>
+                                                When enabled, you'll be required to enter a verification code sent to your phone or email when signing in from a new device.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Login Sessions</h5>
+                                        <p class="mb-4">These are the devices that are currently logged into your account.</p>
+                                        
+                                        <div class="list-group mb-4">
+                                            <div class="list-group-item border-0 bg-light mb-2 rounded">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6 class="mb-1 fw-semibold">MacBook Pro - Chrome</h6>
+                                                        <p class="mb-0 small text-muted">San Francisco, CA - Current Session</p>
+                                                    </div>
+                                                    <span class="badge bg-success">Active Now</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light mb-2 rounded">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6 class="mb-1 fw-semibold">iPhone 13 - Safari</h6>
+                                                        <p class="mb-0 small text-muted">San Francisco, CA - Last active 2 hours ago</p>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-danger">Log Out</button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light rounded">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6 class="mb-1 fw-semibold">Windows PC - Firefox</h6>
+                                                        <p class="mb-0 small text-muted">New York, NY - Last active 3 days ago</p>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-danger">Log Out</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-danger">Log Out of All Devices</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Account Activity</h5>
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Activity</th>
+                                                        <th>Location</th>
+                                                        <th>Device</th>
+                                                        <th>Date & Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Login Successful</td>
+                                                        <td>San Francisco, CA</td>
+                                                        <td>MacBook Pro - Chrome</td>
+                                                        <td>Today, 9:32 AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Password Changed</td>
+                                                        <td>San Francisco, CA</td>
+                                                        <td>MacBook Pro - Chrome</td>
+                                                        <td>May 12, 2023, 2:45 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Login Successful</td>
+                                                        <td>San Francisco, CA</td>
+                                                        <td>iPhone 13 - Safari</td>
+                                                        <td>May 10, 2023, 8:15 AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Login Successful</td>
+                                                        <td>New York, NY</td>
+                                                        <td>Windows PC - Firefox</td>
+                                                        <td>May 7, 2023, 11:20 AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Profile Updated</td>
+                                                        <td>San Francisco, CA</td>
+                                                        <td>MacBook Pro - Chrome</td>
+                                                        <td>May 5, 2023, 3:10 PM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Billing & Plans Tab -->
+                            <div class="tab-pane fade" id="billing" role="tabpanel" aria-labelledby="billing-tab">
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
+                                            <h5 class="fw-bold mb-0">Current Plan</h5>
+                                            <span class="badge bg-primary py-2 px-3">Business Pro</span>
+                                        </div>
+                                        
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <span class="text-muted">Billing Cycle</span>
+                                                    <p class="mb-0 fw-semibold">Annual (Billed yearly)</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <span class="text-muted">Next Billing Date</span>
+                                                    <p class="mb-0 fw-semibold">March 15, 2024</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <span class="text-muted">Amount</span>
+                                                    <p class="mb-0 fw-semibold">$2,388.00 / year</p>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted">Plan Status</span>
+                                                    <p class="mb-0 fw-semibold text-success">Active</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <button type="button" class="btn btn-outline-primary">Change Plan</button>
+                                            <button type="button" class="btn btn-outline-danger">Cancel Subscription</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Payment Methods</h5>
+                                        
+                                        <div class="list-group mb-4">
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-visa-line fs-2 text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Visa ending in 4242</h6>
+                                                            <p class="mb-0 small text-muted">Expires 05/2025</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Default</span>
+                                                        <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-mastercard-line fs-2 text-warning"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Mastercard ending in 8790</h6>
+                                                            <p class="mb-0 small text-muted">Expires 11/2024</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-secondary me-2">Make Default</button>
+                                                        <button class="btn btn-sm btn-outline-danger">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="button" class="btn btn-outline-primary">
+                                            <i class="ri-add-line me-1"></i> Add Payment Method
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Billing History</h5>
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Invoice #</th>
+                                                        <th>Date</th>
+                                                        <th>Amount</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>INV-2023-0045</td>
+                                                        <td>Mar 15, 2023</td>
+                                                        <td>$2,388.00</td>
+                                                        <td><span class="badge bg-success">Paid</span></td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-outline-secondary">
+                                                                <i class="ri-download-line me-1"></i> PDF
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>INV-2022-0038</td>
+                                                        <td>Mar 15, 2022</td>
+                                                        <td>$1,988.00</td>
+                                                        <td><span class="badge bg-success">Paid</span></td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-outline-secondary">
+                                                                <i class="ri-download-line me-1"></i> PDF
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>INV-2021-0027</td>
+                                                        <td>Mar 15, 2021</td>
+                                                        <td>$1,788.00</td>
+                                                        <td><span class="badge bg-success">Paid</span></td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-outline-secondary">
+                                                                <i class="ri-download-line me-1"></i> PDF
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Billing Information</h5>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="billingName" class="form-label">Name</label>
+                                                <input type="text" class="form-control" id="billingName" value="TechGlobal Inc.">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="billingEmail" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="billingEmail" value="billing@techglobal.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="billingAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control mb-3" id="billingAddress" value="123 Tech Avenue">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3 mb-md-0">
+                                                        <input type="text" class="form-control" id="billingCity" placeholder="City" value="San Francisco">
+                                                    </div>
+                                                    <div class="col-md-3 mb-3 mb-md-0">
+                                                        <input type="text" class="form-control" id="billingState" placeholder="State" value="CA">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input type="text" class="form-control" id="billingZip" placeholder="Zip Code" value="94105">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="billingCountry" class="form-label">Country</label>
+                                                <select class="form-select" id="billingCountry">
+                                                    <option>Select Country</option>
+                                                    <option selected>United States</option>
+                                                    <option>Canada</option>
+                                                    <option>United Kingdom</option>
+                                                    <option>Australia</option>
+                                                    <option>Germany</option>
+                                                    <option>France</option>
+                                                    <option>Japan</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="taxId" class="form-label">Tax ID / VAT Number (Optional)</label>
+                                                <input type="text" class="form-control" id="taxId" value="US123456789">
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Members Tab -->
+                            <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
+                                            <h5 class="fw-bold mb-0">Team Members</h5>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTeamMemberModal">
+                                                <i class="ri-user-add-line me-1"></i> Add Team Member
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                                                        <th>Role</th>
+                                                        <th>Status</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <img src="../vender/images/1005-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="User">
+                                                                <div>
+                                                                    <h6 class="mb-0 fw-semibold">Michael Johnson</h6>
+                                                                    <small class="text-muted">Added on Mar 10, 2023</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>mic@global.com</td>
+                                                        <td>Admin</td>
+                                                        <td><span class="badge bg-success">Active</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="teamAction1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Actions
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="teamAction1">
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-edit-line me-2"></i> Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-lock-line me-2"></i> Change Role</a></li>
+                                                                    <li><hr class="dropdown-divider"></li>
+                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="ri-delete-bin-line me-2"></i> Remove</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <img src="../vender/images/1001-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="User">
+                                                                <div>
+                                                                    <h6 class="mb-0 fw-semibold">Sarah Williams</h6>
+                                                                    <small class="text-muted">Added on Apr 5, 2023</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>mic@global.com</td>
+                                                        <td>Marketing Director</td>
+                                                        <td><span class="badge bg-success">Active</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="teamAction2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Actions
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="teamAction2">
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-edit-line me-2"></i> Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-lock-line me-2"></i> Change Role</a></li>
+                                                                    <li><hr class="dropdown-divider"></li>
+                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="ri-delete-bin-line me-2"></i> Remove</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <img src="../vender/images/1002-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="User">
+                                                                <div>
+                                                                    <h6 class="mb-0 fw-semibold">David Chen</h6>
+                                                                    <small class="text-muted">Added on May 12, 2023</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                       <td>mic@global.com</td>
+                                                        <td>Content Strategist</td>
+                                                        <td><span class="badge bg-success">Active</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="teamAction3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Actions
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="teamAction3">
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-edit-line me-2"></i> Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-lock-line me-2"></i> Change Role</a></li>
+                                                                    <li><hr class="dropdown-divider"></li>
+                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="ri-delete-bin-line me-2"></i> Remove</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <img src="../vender/images/1003-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="User">
+                                                                <div>
+                                                                    <h6 class="mb-0 fw-semibold">Jessica Taylor</h6>
+                                                                    <small class="text-muted">Added on Jun 3, 2023</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>mic@global.com</td>
+                                                        <td>Social Media Manager</td>
+                                                        <td><span class="badge bg-success">Active</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="teamAction4" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Actions
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="teamAction4">
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-edit-line me-2"></i> Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#"><i class="ri-lock-line me-2"></i> Change Role</a></li>
+                                                                    <li><hr class="dropdown-divider"></li>
+                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="ri-delete-bin-line me-2"></i> Remove</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                                                    <i class="ri-user-add-line text-primary"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 fw-semibold">james@techglobal.com</h6>
+                                                                    <small class="text-muted">Invited on Jul 8, 2023</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>mic@global.com</td>
+                                                        <td>Campaign Manager</td>
+                                                        <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-primary p-0 me-2 px-1">
+                                                                <i class="ri-mail-line me-1"></i> Resend Invit..
+                                                            </button>
+                                                            <button class="btn btn-sm btn-danger p-0 px-2">
+                                                                <i class="ri-close-line me-1"></i> Cancel Invitation
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Team Roles & Permissions</h5>
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="fw-bold mb-0">Admin</h6>
+                                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <p class="mb-2">Full access to all features and settings.</p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-light text-dark">Manage Team</span>
+                                                <span class="badge bg-light text-dark">Billing & Subscriptions</span>
+                                                <span class="badge bg-light text-dark">Campaign Management</span>
+                                                <span class="badge bg-light text-dark">Influencer Management</span>
+                                                <span class="badge bg-light text-dark">Analytics & Reports</span>
+                                                <span class="badge bg-light text-dark">Account Settings</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="fw-bold mb-0">Marketing Director</h6>
+                                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <p class="mb-2">Can manage campaigns and view analytics.</p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-light text-dark">Campaign Management</span>
+                                                <span class="badge bg-light text-dark">Influencer Management</span>
+                                                <span class="badge bg-light text-dark">Analytics & Reports</span>
+                                                <span class="badge bg-light text-dark">Limited Account Settings</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="fw-bold mb-0">Content Strategist</h6>
+                                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <p class="mb-2">Can create and manage content for campaigns.</p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-light text-dark">Content Creation</span>
+                                                <span class="badge bg-light text-dark">Campaign Viewing</span>
+                                                <span class="badge bg-light text-dark">Limited Analytics</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="fw-bold mb-0">Social Media Manager</h6>
+                                                <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <p class="mb-2">Can manage social media aspects of campaigns.</p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-light text-dark">Social Media Management</span>
+                                                <span class="badge bg-light text-dark">Campaign Viewing</span>
+                                                <span class="badge bg-light text-dark">Limited Analytics</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Integrations Tab -->
+                            <div class="tab-pane fade" id="integrations" role="tabpanel" aria-labelledby="integrations-tab">
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Connected Platforms</h5>
+                                        
+                                        <div class="list-group mb-4">
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-instagram-line fs-2 text-danger"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Instagram</h6>
+                                                            <p class="mb-0 small text-muted">Connected as @techglobal</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Connected</span>
+                                                        <button class="btn btn-sm btn-outline-danger">Disconnect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-twitter-x-line fs-2 text-dark"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Twitter</h6>
+                                                            <p class="mb-0 small text-muted">Connected as @techglobal</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Connected</span>
+                                                        <button class="btn btn-sm btn-outline-danger">Disconnect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-youtube-line fs-2 text-danger"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">YouTube</h6>
+                                                            <p class="mb-0 small text-muted">Not connected</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-tiktok-line fs-2"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">TikTok</h6>
+                                                            <p class="mb-0 small text-muted">Not connected</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-linkedin-box-line fs-2 text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">LinkedIn</h6>
+                                                            <p class="mb-0 small text-muted">Connected as TechGlobal Inc.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Connected</span>
+                                                        <button class="btn btn-sm btn-outline-danger">Disconnect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Analytics Integrations</h5>
+                                        
+                                        <div class="list-group mb-4">
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-google-line fs-2 text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Google Analytics</h6>
+                                                            <p class="mb-0 small text-muted">Connected to UA-12345678-1</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Connected</span>
+                                                        <button class="btn btn-sm btn-outline-secondary">Configure</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-facebook-box-line fs-2 text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Facebook Pixel</h6>
+                                                            <p class="mb-0 small text-muted">Not connected</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-line-chart-line me-0 fs-2 text-success"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Mixpanel</h6>
+                                                            <p class="mb-0 small text-muted">Not connected</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-4">Marketing Integrations</h5>
+                                        
+                                        <div class="list-group">
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-mail-line fs-2 text-warning"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Mailchimp</h6>
+                                                            <p class="mb-0 small text-muted">Connected to marketing@techglobal.com</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Connected</span>
+                                                        <button class="btn btn-sm btn-outline-secondary">Configure</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light mb-3 rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-customer-service-2-line me-0 fs-2 text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Zendesk</h6>
+                                                            <p class="mb-0 small text-muted">Not connected</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item border-0 bg-light rounded p-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-3">
+                                                            <i class="ri-slack-line fs-2 text-danger"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-1 fw-semibold">Slack</h6>
+                                                            <p class="mb-0 small text-muted">Connected to TechGlobal workspace</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="badge bg-success me-2">Connected</span>
+                                                        <button class="btn btn-sm btn-outline-secondary">Configure</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Add Team Member Modal -->
+    <div class="modal fade" id="addTeamMemberModal" tabindex="-1" aria-labelledby="addTeamMemberModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="addTeamMemberModalLabel">Add Team Member</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="memberEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="memberEmail" placeholder="Enter email address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="memberRole" class="form-label">Role</label>
+                            <select class="form-select" id="memberRole">
+                                <option selected>Select Role</option>
+                                <option>Admin</option>
+                                <option>Marketing Director</option>
+                                <option>Content Strategist</option>
+                                <option>Social Media Manager</option>
+                                <option>Campaign Manager</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="memberMessage" class="form-label">Personal Message (Optional)</label>
+                            <textarea class="form-control" id="memberMessage" rows="3" placeholder="Add a personal message to the invitation email"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send Invitation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

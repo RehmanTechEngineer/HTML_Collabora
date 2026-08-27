@@ -1,0 +1,832 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Case Studies - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="fw-bold display-4 mb-3">Case Studies</h1>
+                    <p class="lead mb-4">Discover how brands are achieving remarkable results with influencer marketing</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#featured" class="btn btn-light">Featured Studies</a>
+                        <a href="#categories" class="btn btn-light">Browse by Industry</a>
+                        <a href="#results" class="btn btn-light">Results & Metrics</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="vender/images/20-600x400.jpg" class="img-fluid rounded shadow" alt="Case Studies">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Case Studies -->
+    <section class="py-5" id="featured">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Case Studies</h2>
+                <p class="lead">Our most impressive influencer marketing success stories</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="vender/images/26-600x800.jpg" class="img-fluid h-100 object-fit-cover" alt="Case Study" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4 d-flex flex-column h-100 bg-light">
+                                    <span class="badge bg-success mb-2">Fashion & Beauty</span>
+                                    <h4 class="fw-bold mb-3">How EcoLife Increased Sales by 200% with Micro-Influencers</h4>
+                                    <p>EcoLife, a sustainable lifestyle brand, partnered with 50 micro-influencers to promote their new product line, resulting in a 200% increase in sales and 150% growth in social media following.</p>
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <div>
+                                            <h6 class="mb-0">Results:</h6>
+                                            <ul class="mt-2">
+                                                <li>200% increase in sales</li>
+                                                <li>150% growth in social media following</li>
+                                                <li>15% increase in website traffic</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="#ecolife" class="btn btn-outline-primary mt-3">Read Full Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="vender/images/96-600x800.jpg" class="img-fluid h-100 object-fit-cover" alt="Case Study" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4 d-flex flex-column h-100 bg-light">
+                                    <span class="badge bg-info mb-2">Technology</span>
+                                    <h4 class="fw-bold mb-3">TechGadget's Product Launch Strategy with Influencers</h4>
+                                    <p>TechGadget leveraged a mix of tech influencers to create buzz around their new product launch, resulting in a sold-out inventory within 48 hours and significant brand awareness growth.</p>
+                                    <div class="d-flex align-items-center mt-auto">
+                                        <div>
+                                            <h6 class="mb-0">Results:</h6>
+                                            <ul class="mt-2">
+                                                <li>Sold out inventory within 48 hours</li>
+                                                <li>300% increase in social media mentions</li>
+                                                <li>25% increase in brand search volume</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="#techgadget" class="btn btn-outline-primary mt-3">Read Full Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Categories -->
+    <section class="py-5 bg-light" id="categories">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Browse by Industry</h2>
+                <p class="lead">Explore case studies relevant to your business</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-t-shirt-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Fashion & Beauty</h5>
+                                <p class="text-muted mb-0">12 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-smartphone-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Technology</h5>
+                                <p class="text-muted mb-0">8 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-restaurant-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Food & Beverage</h5>
+                                <p class="text-muted mb-0">10 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-hotel-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Travel & Hospitality</h5>
+                                <p class="text-muted mb-0">7 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-heart-pulse-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Health & Wellness</h5>
+                                <p class="text-muted mb-0">9 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-gamepad-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Gaming & Entertainment</h5>
+                                <p class="text-muted mb-0">6 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-home-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Home & Lifestyle</h5>
+                                <p class="text-muted mb-0">8 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-bank-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Finance & Fintech</h5>
+                                <p class="text-muted mb-0">5 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Metrics -->
+    <section class="py-5" id="results">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Results & Metrics</h2>
+                <p class="lead">Filter case studies by the metrics that matter most to you</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-line-chart-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Sales Growth</h5>
+                                <p class="text-muted mb-0">15 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-user-add-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Audience Growth</h5>
+                                <p class="text-muted mb-0">12 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-award-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Brand Awareness</h5>
+                                <p class="text-muted mb-0">18 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                                    <i class="ri-customer-service-line ri-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Customer Engagement</h5>
+                                <p class="text-muted mb-0">14 Case Studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Case Study -->
+    <section class="py-5 bg-light" id="ecolife">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Case Study: EcoLife</h2>
+                <p class="lead">How a sustainable lifestyle brand leveraged micro-influencers to drive sales</p>
+            </div>
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row mb-5">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <img src="vender/images/26-800x500.jpg" class="img-fluid rounded" alt="EcoLife Case Study">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold mb-3">Company Overview</h3>
+                            <p>EcoLife is a sustainable lifestyle brand that offers eco-friendly products for everyday use. Founded in 2020, the company aims to make sustainable living accessible and affordable for everyone.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-check-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Industry</h6>
+                                    <p class="text-muted small mb-0">Sustainable Consumer Goods</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-check-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Company Size</h6>
+                                    <p class="text-muted small mb-0">25 employees</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-check-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Campaign Duration</h6>
+                                    <p class="text-muted small mb-0">3 months</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <h3 class="fw-bold mb-3">The Challenge</h3>
+                            <p>EcoLife was preparing to launch a new line of sustainable home products but faced several challenges:</p>
+                            <ul>
+                                <li class="mb-2">Limited marketing budget compared to larger competitors</li>
+                                <li class="mb-2">Need to build credibility in a market dominated by established brands</li>
+                                <li class="mb-2">Difficulty reaching environmentally conscious consumers across different demographics</li>
+                                <li>Educating consumers about the benefits of sustainable products</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <h3 class="fw-bold mb-3">The Strategy</h3>
+                            <p>EcoLife partnered with Collabora to develop a micro-influencer strategy that would:</p>
+                            <ul>
+                                <li class="mb-2">Identify and collaborate with 50 micro-influencers (10K-50K followers) in the sustainability, lifestyle, and home decor niches</li>
+                                <li class="mb-2">Focus on authentic content creation rather than traditional advertising</li>
+                                <li class="mb-2">Provide influencers with product samples and educational materials</li>
+                                <li>Create a consistent campaign hashtag (#EcoLifeAtHome) to track performance</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3 class="fw-bold mb-3">The Execution</h3>
+                            <p>The campaign was executed in three phases:</p>
+                            <ul>
+                                <li class="mb-2"><strong>Phase 1:</strong> Teaser content and educational posts about sustainability</li>
+                                <li class="mb-2"><strong>Phase 2:</strong> Product unboxing and first impressions</li>
+                                <li class="mb-2"><strong>Phase 3:</strong> In-depth reviews and lifestyle integration content</li>
+                                <li>Each influencer created 3-5 pieces of content across multiple platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h3 class="fw-bold mb-3">The Results</h3>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-primary bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-primary mb-2">200%</h2>
+                                            <p class="mb-0">Increase in sales during the campaign period</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-primary bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-primary mb-2">150%</h2>
+                                            <p class="mb-0">Growth in social media following</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-primary bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-primary mb-2">15%</h2>
+                                            <p class="mb-0">Increase in website traffic</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-primary bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-primary mb-2">25%</h2>
+                                            <p class="mb-0">Higher conversion rate than previous campaigns</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold mb-3">Key Insights</h3>
+                            <div class="d-flex mb-4">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Authenticity Drives Engagement</h6>
+                                    <p class="mb-0">Content that showed the products in real-life settings performed 3x better than staged product photos.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Micro-Influencers Deliver Higher ROI</h6>
+                                    <p class="mb-0">The campaign achieved a 5x higher ROI compared to previous campaigns with macro-influencers.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Educational Content Matters</h6>
+                                    <p class="mb-0">Posts that explained the environmental impact of the products saw 40% higher engagement than purely promotional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary bg-opacity-10 p-4 rounded">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="vender/images/1012-60x60.jpg" class="rounded-circle me-3" alt="Testimonial">
+                                    <div>
+                                        <h5 class="fw-bold mb-0">Sarah Johnson</h5>
+                                        <p class="text-muted small mb-0">Marketing Director, EcoLife</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 fst-italic">"Working with Collabora transformed our approach to influencer marketing. The micro-influencer strategy allowed us to connect with our target audience in an authentic way, and the results exceeded our expectations. The detailed analytics and reporting helped us understand what worked and why, allowing us to refine our strategy for future campaigns."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Case Study 2 -->
+    <section class="py-5" id="techgadget">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Case Study: TechGadget</h2>
+                <p class="lead">How a tech startup created buzz for their product launch with influencer marketing</p>
+            </div>
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row mb-5">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <img src="vender/images/96-800x500.jpg" class="img-fluid rounded" alt="TechGadget Case Study">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold mb-3">Company Overview</h3>
+                            <p>TechGadget is a tech startup that develops innovative smart home devices. Founded in 2022, the company was preparing to launch its flagship product, a smart home hub that integrates with multiple devices and platforms.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-check-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Industry</h6>
+                                    <p class="text-muted small mb-0">Consumer Technology</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-check-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Company Size</h6>
+                                    <p class="text-muted small mb-0">15 employees</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-check-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Campaign Duration</h6>
+                                    <p class="text-muted small mb-0">6 weeks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <h3 class="fw-bold mb-3">The Challenge</h3>
+                            <p>As a new player in a competitive market, TechGadget faced several challenges:</p>
+                            <ul>
+                                <li class="mb-2">Building brand awareness from scratch</li>
+                                <li class="mb-2">Establishing credibility in the tech community</li>
+                                <li class="mb-2">Creating excitement for a product launch</li>
+                                <li class="mb-2">Competing with established smart home brands</li>
+                                <li class="mb-2">Creating excitement for a product launch</li>
+                                <li>Competing with established smart home brands</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <h3 class="fw-bold mb-3">The Strategy</h3>
+                            <p>TechGadget worked with Collabora to develop a multi-tier influencer strategy:</p>
+                            <ul>
+                                <li class="mb-2">Partner with 5 tech macro-influencers (500K+ followers) for major announcements</li>
+                                <li class="mb-2">Engage 15 mid-tier tech reviewers (100K-500K followers) for in-depth product reviews</li>
+                                <li class="mb-2">Collaborate with 30 micro-influencers (10K-100K followers) for authentic user experiences</li>
+                                <li>Create a coordinated launch day strategy with synchronized content</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3 class="fw-bold mb-3">The Execution</h3>
+                            <p>The campaign was executed in three phases:</p>
+                            <ul>
+                                <li class="mb-2"><strong>Phase 1:</strong> Teaser content and "coming soon" announcements from macro-influencers</li>
+                                <li class="mb-2"><strong>Phase 2:</strong> Technical reviews and demonstrations from mid-tier influencers</li>
+                                <li class="mb-2"><strong>Phase 3:</strong> Real-life use cases and integration examples from micro-influencers</li>
+                                <li>All influencers directed traffic to a special pre-order landing page with exclusive discounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h3 class="fw-bold mb-3">The Results</h3>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-info bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-info mb-2">48 hrs</h2>
+                                            <p class="mb-0">Sold out initial inventory within 48 hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-info bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-info mb-2">300%</h2>
+                                            <p class="mb-0">Increase in social media mentions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-info bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-info mb-2">25%</h2>
+                                            <p class="mb-0">Increase in brand search volume</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 bg-info bg-opacity-10 h-100">
+                                        <div class="card-body p-4 text-center">
+                                            <h2 class="fw-bold text-info mb-2">10,000+</h2>
+                                            <p class="mb-0">Waitlist sign-ups for the next production batch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold mb-3">Key Insights</h3>
+                            <div class="d-flex mb-4">
+                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Multi-Tier Approach Maximizes Impact</h6>
+                                    <p class="mb-0">The combination of macro, mid-tier, and micro-influencers created a comprehensive narrative that reached different audience segments.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Technical Credibility is Essential</h6>
+                                    <p class="mb-0">In-depth technical reviews from trusted influencers were crucial for building product credibility in the tech community.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Coordinated Launch Creates Momentum</h6>
+                                    <p class="mb-0">The synchronized content release created a "wave" effect that dominated social media feeds on launch day.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-info bg-opacity-10 p-4 rounded">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="vender/images/1012-60x60.jpg" class="rounded-circle me-3" alt="Testimonial">
+                                    <div>
+                                        <h5 class="fw-bold mb-0">Michael Chen</h5>
+                                        <p class="text-muted small mb-0">CEO, TechGadget</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 fst-italic">"As a startup with limited resources, we needed to make a big impact quickly. Collabora's strategic approach to influencer marketing helped us create the perfect launch strategy. The platform's targeting capabilities allowed us to find influencers who truly understood our product and could explain its benefits authentically. The results were beyond our expectations, and we've continued to work with Collabora for all our product launches."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Case Studies -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">More Success Stories</h2>
+                <p class="lead">Explore additional case studies from various industries</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/42-600x400.jpg" class="card-img-top" alt="Case Study">
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning mb-2">Food & Beverage</span>
+                            <h4 class="fw-bold mb-3">SmoothBlend's Influencer Recipe Campaign</h4>
+                            <p>How a blender brand increased sales by 150% through influencer-created recipes and tutorials.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/177-600x400.jpg" class="card-img-top" alt="Case Study">
+                        <div class="card-body p-4">
+                            <span class="badge bg-danger mb-2">Travel & Hospitality</span>
+                            <h4 class="fw-bold mb-3">AdventureStays' Destination Marketing</h4>
+                            <p>How a boutique hotel chain increased bookings by 200% through travel influencer partnerships.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/366-600x400.jpg" class="card-img-top" alt="Case Study">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Health & Wellness</span>
+                            <h4 class="fw-bold mb-3">VitaBoost's Micro-Influencer Strategy</h4>
+                            <p>How a supplement brand built credibility and trust through partnerships with health and wellness micro-influencers.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Ready to create your own success story?</h2>
+                    <p class="lead mb-0">Join Collabora today and connect with the perfect influencers for your brand.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="auth.html?register=true" class="btn btn-light btn-lg">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

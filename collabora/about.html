@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>About Us - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="vender/aos/aos.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" class="img-fluid header-logo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="brand-resources.html">For Brands</a></li>
+                            <li><a class="dropdown-item" href="join-as-brand.html">Join As Brand</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="influencer-resources.html">For Influencers</a></li>
+                            <li><a class="dropdown-item" href="join-as-influencer.html">Join As Influencer</a></li>
+                            <li><a class="dropdown-item" href="influencer-support.html">Influencer Support</a></li>
+                            <li><a class="dropdown-item" href="influencer-faq.html">Influencer Faq</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="success-stories.html">Success Stories</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Otherpages" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Otherpages">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>                
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="guidelines.html">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/dashboard.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0 d-flex">
+                    <a href="auth.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="auth.html?register=true" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Our <span class="text-primary">Mission</span></h1>
+                    <p class="lead mb-4">Connecting brands with authentic influencers to create meaningful collaborations that drive results.</p>
+                    <p class="mb-4">At Collabora, we're revolutionizing influencer marketing by making it more transparent, efficient, and effective for both brands and content creators.</p>
+                    <div class="d-flex">
+                        <a href="browse.html" class="btn btn-primary me-3">Find Influencers</a>
+                        <a href="auth.html?register=true&type=influencer" class="btn btn-outline-dark">Join as Influencer</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="vender/images/20-600x400.jpg" alt="About Collabora" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="vender/images/180-600x400.jpg" alt="Our Story" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Our Story</h2>
+                    <p class="lead mb-4">Founded in 2020, Collabora was born from a simple observation: influencer marketing was too complicated.</p>
+                    <p>Our founders, Sarah Johnson and Michael Chen, experienced the challenges of influencer marketing firsthand—brands struggled to find the right influencers, while content creators had difficulty connecting with relevant brands.</p>
+                    <p>They envisioned a platform that would streamline the entire process, from discovery to collaboration to measurement, all while ensuring authenticity and transparency.</p>
+                    <p>Today, Collabora has grown into a global community of over 10,000 influencers and 5,000 brands, facilitating meaningful collaborations that drive real business results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Core Values</h2>
+                <p class="lead">The principles that guide everything we do</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-hand-heart-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Authenticity</h4>
+                            <p>We believe in genuine connections between brands and influencers. We prioritize authentic content that resonates with audiences and drives meaningful engagement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-scales-3-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Transparency</h4>
+                            <p>We provide clear, data-driven insights for both brands and influencers. No hidden fees, no inflated metrics—just honest, actionable information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-group-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Community</h4>
+                            <p>We're building more than a platform—we're creating a community where brands and influencers can learn, grow, and succeed together.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-lightbulb-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Innovation</h4>
+                            <p>We're constantly evolving our platform with cutting-edge technology to stay ahead of industry trends and provide the best possible experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-shield-check-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Trust</h4>
+                            <p>We've built our platform on a foundation of trust, ensuring secure transactions, verified profiles, and reliable performance metrics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="ri-global-line ri-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Diversity</h4>
+                            <p>We celebrate diversity in all forms and are committed to creating an inclusive platform that represents voices from all backgrounds and communities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Meet Our Team</h2>
+                <p class="lead">The passionate people behind Collabora</p>
+            </div>
+            <div class="row g-4">
+                <!-- Team Member 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1005-300x300.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-1">Sarah Johnson</h5>
+                            <p class="text-primary mb-3">Co-Founder & CEO</p>
+                            <p class="card-text">Former marketing executive with 15+ years of experience in digital marketing and brand partnerships.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="text-muted mx-2"><i class="ri-linkedin-box-fill ri-lg"></i></a>
+                                <a href="#" class="text-muted mx-2"><i class="ri-twitter-x-fill ri-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1012-300x300.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-1">Michael Chen</h5>
+                            <p class="text-primary mb-3">Co-Founder & CTO</p>
+                            <p class="card-text">Tech entrepreneur with a background in AI and data analytics. Previously founded two successful startups.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="text-muted mx-2"><i class="ri-linkedin-box-fill ri-lg"></i></a>
+                                <a href="#" class="text-muted mx-2"><i class="ri-twitter-x-fill ri-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1000-300x300.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-1">Jessica Williams</h5>
+                            <p class="text-primary mb-3">Chief Marketing Officer</p>
+                            <p class="card-text">Former influencer with 2M+ followers. Brings firsthand experience and industry insights to our marketing strategy.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="text-muted mx-2"><i class="ri-linkedin-box-fill ri-lg"></i></a>
+                                <a href="#" class="text-muted mx-2"><i class="ri-twitter-x-fill ri-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="vender/images/1074-300x300.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-1">David Rodriguez</h5>
+                            <p class="text-primary mb-3">Head of Partnerships</p>
+                            <p class="card-text">10+ years in business development. Specializes in creating strategic partnerships that drive platform growth.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="text-muted mx-2"><i class="ri-linkedin-box-fill ri-lg"></i></a>
+                                <a href="#" class="text-muted mx-2"><i class="ri-twitter-x-fill ri-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Journey</h2>
+                <p class="lead">How we've grown over the years</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px;">
+                                        <span> <i class="ri-flag-line ri-lg"></i></span>
+                                    </div>
+                                    <h4 class="fw-bold mb-2"> 2020 - The Beginning</h4>
+                                    <p>Collabora was founded in San Francisco with a mission to revolutionize influencer marketing. We launched with a beta version of our platform and 100 early adopters.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px;">
+                                        <span> <i class="ri-rocket-line ri-lg"></i> </span>
+                                    </div>
+                                    <h4 class="fw-bold mb-2">2021 - Rapid Growth</h4>
+                                    <p>Secured $5M in Series A funding. Expanded our team to 25 employees and reached 1,000 influencers and 500 brands on the platform. Launched our mobile app.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px;">
+                                        <span> <i class="ri-global-line ri-lg"></i> </span>
+                                    </div>
+                                    <h4 class="fw-bold mb-2">2022 - Global Expansion</h4>
+                                    <p>Opened offices in London and Singapore. Reached 5,000 influencers and 2,000 brands. Introduced advanced analytics and campaign management tools.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px;">
+                                        <span> <i class="ri-award-line ri-lg"></i> </span>
+                                    </div>
+                                    <h4 class="fw-bold mb-2">2023 - Industry Recognition</h4>
+                                    <p>Named "Best Influencer Marketing Platform" at the Digital Marketing Awards. Secured $20M in Series B funding. Reached 8,000 influencers and 4,000 brands.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px;">
+                                        <span> <i class="ri-ai-generate ri-lg"></i> </span> 
+                                    </div>
+                                    <h4 class="fw-bold mb-2">2024 - Innovation & Growth</h4>
+                                    <p>Launched AI-powered matching algorithm. Surpassed 10,000 influencers and 5,000 brands. Expanded to 150+ countries. Introduced blockchain-based verification system.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Stats Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-user-star-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">10K+</h2>
+                        <p class="mb-0">Active Influencers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-building-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">5K+</h2>
+                        <p class="mb-0">Brands</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-shake-hands-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">25K+</h2>
+                        <p class="mb-0">Collaborations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 border rounded-4 shadow-sm h-100">
+                        <i class="ri-global-line ri-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold">150+</h2>
+                        <p class="mb-0">Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What People Say</h2>
+                <p class="lead">Testimonials from our community</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="vender/images/1001-60x60.jpg" class="rounded-circle" alt="Client">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Sarah Johnson</h5>
+                                    <p class="text-muted mb-0">Marketing Director, FashionBrand</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"Collabora has transformed how we approach influencer marketing. The platform's data-driven approach and seamless collaboration tools have helped us increase our ROI by 40% in just six months."</p>
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="vender/images/1002-60x60.jpg" class="rounded-circle" alt="Client">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Michael Chen</h5>
+                                    <p class="text-muted mb-0">Founder, TechGadgets</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"As a startup with limited resources, finding the right influencers was always a challenge. Collabora's AI matching algorithm connected us with perfect partners for our brand, saving us time and money."</p>
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="vender/images/1003-60x60.jpg" class="rounded-circle" alt="Client">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Jessica Williams</h5>
+                                    <p class="text-muted mb-0">Influencer, 2.3M Followers</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"Collabora has been a game-changer for my career. The platform connects me with brands that align with my values, handles all the paperwork, and ensures I get paid on time. It's the complete package."</p>
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Ready to Join the Collabora Community?</h2>
+                    <p class="lead mb-0">Whether you're a brand looking to grow or an influencer ready to collaborate, we're here to help you succeed.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="auth.html?register=true" class="btn btn-light btn-lg me-2 mb-2 mb-md-0">Sign Up Free</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block text-white text-decoration-none mb-4" href="index.html">
+                        <h3 class="fw-bold"><img src="img/logo.png" class="img-fluid header-logo logo"></h3>
+                    </a>
+                    <p>Connect with the world's top social media influencers to grow your brand and reach new audiences.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-facebook-circle-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" class="social-icon text-decoration-none"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="press.html" class="text-white text-decoration-none">Press</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Brands</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="how-it-works.html" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="case-studies.html" class="text-white text-decoration-none">Case Studies</a></li>
+                        <li class="mb-2"><a href="brand-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">For Influencers</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="join-as-influencer.html" class="text-white text-decoration-none">Join as Influencer</a></li>
+                        <li class="mb-2"><a href="influencer-resources.html" class="text-white text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="success-stories.html" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li class="mb-2"><a href="influencer-faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="influencer-support.html" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="cookies.html" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="guidelines.html" class="text-white text-decoration-none">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Collabora. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">English</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Español</a>
+                        <a href="#" class="text-white text-decoration-none">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="vender/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

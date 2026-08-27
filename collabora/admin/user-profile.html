@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="../vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="../vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-logo">
+                <img src="../img/footer-logo.png" class="img-fluid header-sm logo" style="display: none;">
+                <img src="../img/logo.png" class="img-fluid header-full logo">
+            </a>
+            <div class="sidebar-toggle">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+        </div>
+        <nav class="mb-4 mt-4">
+            <div class="nav-section mb-3">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Main</div>
+                <a href="dashboard.html" class="nav-link py-1">
+                    <i class="ri-dashboard-line me-0"></i>
+                    <span class="nav-text ms-2">Dashboard</span>
+                </a>
+                <a href="find-influencers.html" class="nav-link py-1">
+                    <i class="ri-user-search-line me-0"></i>
+                    <span class="nav-text ms-2">Find Influencers</span>
+                </a>
+                <a href="campaigns.html" class="nav-link py-1">
+                    <i class="ri-calendar-line me-0"></i>
+                    <span class="nav-text ms-2">Campaigns</span>
+                </a>
+                <a href="messages.html" class="nav-link position-relative py-1">
+                    <i class="ri-message-3-line me-0 me-0"></i>
+                    <span class="nav-text ms-2">Messages</span>
+                    <span class="badge bg-danger rounded-pill ms-auto message-badge p-2 py-1">3</span>
+                </a>
+            </div>
+            
+            <div class="nav-section mb-3">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Analytics</div>
+                <a href="performance.html" class="nav-link py-1">
+                    <i class="ri-line-chart-line me-0"></i>
+                    <span class="nav-text ms-2">Performance</span>
+                </a>
+                <a href="reports.html" class="nav-link py-1">
+                    <i class="ri-pie-chart-line me-0"></i>
+                    <span class="nav-text ms-2">Reports</span>
+                </a>
+                <a href="roi-tracking.html" class="nav-link py-1">
+                    <i class="ri-funds-line me-0"></i>
+                    <span class="nav-text ms-2">ROI Tracking</span>
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Account</div>
+                <a href="user-profile.html" class="nav-link active py-1">
+                    <i class="ri-user-settings-line me-0"></i>
+                    <span class="nav-text ms-2">Profile</span>
+                </a>
+                <a href="settings.html" class="nav-link py-1">
+                    <i class="ri-settings-3-line me-0"></i>
+                    <span class="nav-text ms-2">Settings</span>
+                </a>
+                <a href="support.html" class="nav-link py-1">
+                    <i class="ri-customer-service-2-line me-0"></i>
+                    <span class="nav-text ms-2">Support</span>
+                </a>
+            </div>
+        </nav>
+        <div class="px-4 py-3 border-top sidebar-foot">
+            <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                    <img src="../vender/images/1005-200x200.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                </div>
+                <div class="flex-grow-1 text-wrap ms-3">
+                    <h6 class="mb-0 fw-semibold">Michael Johnson</h6>
+                    <small class="text-muted">Brand Manager</small>
+                </div>
+            </div>
+            <a href="index.html" class="btn btn-outline-primary btn-sm d-flex align-items-center justify-content-center">
+                <i class="ri-logout-box-line me-2"></i> Sign Out
+            </a>
+        </div>
+    </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+           <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container-fluid px-4">
+                <button class="navbar-toggler border-0 p-0 me-3" type="button" id="mobile-toggle">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+                
+                <div class="d-flex align-items-center">
+                    <h5 class="mb-0">User Profile</h5>
+                    <span class="badge bg-primary ms-2">Brand</span>
+                </div>
+                
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <div class="position-relative d-none d-lg-block navbar-search me-2">
+                            <i class="ri-search-line search-icon"></i>
+                            <input type="text" class="form-control rounded-pill" placeholder="Search for influencers, campaigns...">
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-1  my-2">
+                        <a class="nav-link position-relative m-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="ri-notification-3-line ri-lg me-0"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 py-1">
+                                5
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm" style="width: 300px;">
+                            <h6 class="dropdown-header">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2">
+                                        <i class="ri-message-3-line me-0 me-0"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small">New message from <strong>Sophia Martinez</strong></p>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-success bg-opacity-10 text-success rounded-circle p-2">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small">Campaign <strong>Summer Collection</strong> completed</p>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2">
+                                        <i class="ri-user-add-line"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Emma Johnson</strong> accepted your collaboration request</p>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center small" href="#">View all notifications</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-1  my-2">
+                        <a class="nav-link position-relative m-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="ri-mail-line ri-lg me-0"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 py-1">
+                                3
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm" style="width: 300px;">
+                            <h6 class="dropdown-header">Messages</h6>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1001-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Sophia Martinez</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">Thank you for the opportunity! I've reviewed the campaign brief...</p>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1002-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>James Wilson</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">I've uploaded the content for review. Please let me know if any changes...</p>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1003-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Emma Johnson</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">I'm excited to work with your brand! When can we discuss the details?</p>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center small" href="#">View all messages</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+              
+
+                <div class="ms-3 p-2 rounded border d-flex">
+            <img src="../vender/images/1005-100x100.jpg" alt="User" class="user-avatar">
+            <div>
+                <h6 class="mb-0">John Smith</h6>
+                <p class="text-muted small mb-0">Brand Manager</p>
+            </div>
+            <div class="dropdown ms-auto">
+                <button class="btn btn-link text-muted p-0 text-decoration-none" type="button" data-bs-toggle="dropdown">
+                    <i class="ri-more-2-fill"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#"><i class="ri-user-line me-2"></i>Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="ri-settings-3-line me-0 me-2"></i>Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="ri-logout-box-r-line me-2"></i>Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+            </div>
+        </nav>
+            
+            <!-- Content -->
+            <div class="container-fluid px-4 py-4 bg-light">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="profile-cover rounded-4" style="background-image: url('../vender/images/1048/1200/400');">
+                            <div class="profile-cover-overlay"></div>
+                            <button class="btn btn-sm btn-light cover-edit-btn">
+                                <i class="ri-camera-line me-1"></i> Change Cover
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="d-flex justify-content-center">
+                                    <div class="position-relative">
+                                        <img src="../vender/images/1005-200x200.jpg" class="rounded-circle profile-avatar" alt="Profile Avatar">
+                                        <div class="profile-avatar-edit">
+                                            <i class="ri-camera-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="fw-bold mt-3 mb-1">Michael Johnson</h4>
+                                <p class="text-muted mb-3">Brand Manager at TechGlobal</p>
+                                <div class="d-flex justify-content-center gap-2 mb-4">
+                                    <a href="#" class="btn btn-sm btn-outline-primary px-3">
+                                        <i class="ri-edit-line me-1"></i> Edit Profile
+                                    </a>
+                                    <a href="settings.html" class="btn btn-sm btn-outline-secondary px-3">
+                                        <i class="ri-settings-3-line me-0 me-1"></i> Settings
+                                    </a>
+                                </div>
+                                <div class="border-top pt-3">
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <h5 class="fw-bold mb-0">12</h5>
+                                            <small class="text-muted">Campaigns</small>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="fw-bold mb-0">28</h5>
+                                            <small class="text-muted">Influencers</small>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="fw-bold mb-0">4.8</h5>
+                                            <small class="text-muted">Rating</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mt-4">
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-3">Contact Information</h5>
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="ri-mail-line text-muted me-2"></i>
+                                        <span class="text-muted">Email</span>
+                                    </div>
+                                    <p class="mb-0">michael.johnson@techglobal.com</p>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="ri-phone-line text-muted me-2"></i>
+                                        <span class="text-muted">Phone</span>
+                                    </div>
+                                    <p class="mb-0">+1 (555) 123-4567</p>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="ri-building-line text-muted me-2"></i>
+                                        <span class="text-muted">Company</span>
+                                    </div>
+                                    <p class="mb-0">TechGlobal Inc.</p>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="ri-map-pin-line text-muted me-2"></i>
+                                        <span class="text-muted">Location</span>
+                                    </div>
+                                    <p class="mb-0">San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mt-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="fw-bold mb-0">Team Members</h5>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="ri-user-add-line me-1"></i> Add
+                                    </button>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="../vender/images/1001-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="Team Member">
+                                    <div>
+                                        <h6 class="mb-0">Sarah Williams</h6>
+                                        <small class="text-muted">Marketing Director</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="../vender/images/1002-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="Team Member">
+                                    <div>
+                                        <h6 class="mb-0">David Chen</h6>
+                                        <small class="text-muted">Content Strategist</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="../vender/images/1003-50x50.jpg" class="rounded-circle me-3" width="40" height="40" alt="Team Member">
+                                    <div>
+                                        <h6 class="mb-0">Jessica Taylor</h6>
+                                        <small class="text-muted">Social Media Manager</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-4">About</h5>
+                                <p>Brand manager with over 8 years of experience in digital marketing and influencer collaborations. Specializing in tech product launches and lifestyle campaigns. Passionate about creating authentic brand experiences through strategic partnerships with influencers.</p>
+                                <p>At TechGlobal, I lead a team focused on expanding our brand reach through innovative influencer marketing strategies. We've successfully launched 12 major campaigns in the past year, resulting in a 35% increase in brand awareness and a 28% boost in conversion rates.</p>
+                                <div class="mt-4">
+                                    <h6 class="fw-bold mb-3">Areas of Expertise</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-light text-dark py-2 px-3">Influencer Marketing</span>
+                                        <span class="badge bg-light text-dark py-2 px-3">Campaign Management</span>
+                                        <span class="badge bg-light text-dark py-2 px-3">Brand Strategy</span>
+                                        <span class="badge bg-light text-dark py-2 px-3">Content Creation</span>
+                                        <span class="badge bg-light text-dark py-2 px-3">Performance Analytics</span>
+                                        <span class="badge bg-light text-dark py-2 px-3">Social Media</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h5 class="fw-bold mb-0">Recent Campaigns</h5>
+                                    <a href="campaigns.html" class="btn btn-sm btn-outline-primary">View All</a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Campaign</th>
+                                                <th>Status</th>
+                                                <th>Influencers</th>
+                                                <th>Budget</th>
+                                                <th>Performance</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="bg-primary bg-opacity-10 rounded p-2 me-3">
+                                                            <i class="ri-rocket-line text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-0">Summer Tech Launch</h6>
+                                                            <small class="text-muted">Jun 15 - Jul 30, 2023</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-success">Active</span></td>
+                                                <td>8</td>
+                                                <td>$45,000</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="progress flex-grow-1 me-2" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%"></div>
+                                                        </div>
+                                                        <span>85%</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="bg-info bg-opacity-10 rounded p-2 me-3">
+                                                            <i class="ri-hashtag-line text-info"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-0">Back to School</h6>
+                                                            <small class="text-muted">Aug 1 - Sep 15, 2023</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                <td>12</td>
+                                                <td>$60,000</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="progress flex-grow-1 me-2" style="height: 6px;">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%"></div>
+                                                        </div>
+                                                        <span>25%</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="bg-success bg-opacity-10 rounded p-2 me-3">
+                                                            <i class="ri-award-line text-success"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-0">Eco-Friendly Initiative</h6>
+                                                            <small class="text-muted">Apr 22 - May 31, 2023</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-secondary">Completed</span></td>
+                                                <td>5</td>
+                                                <td>$32,000</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="progress flex-grow-1 me-2" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+                                                        </div>
+                                                        <span>100%</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                   
+                            <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h5 class="fw-bold mb-0">Performance Overview</h5>
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="timeRangeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Last 30 Days
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="timeRangeDropdown">
+                                            <li><a class="dropdown-item active" href="#">Last 30 Days</a></li>
+                                            <li><a class="dropdown-item" href="#">Last 3 Months</a></li>
+                                            <li><a class="dropdown-item" href="#">Last 6 Months</a></li>
+                                            <li><a class="dropdown-item" href="#">Last Year</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-md-3 col-6">
+                                        <div class="text-center">
+                                            <h3 class="fw-bold mb-1">28</h3>
+                                            <p class="text-muted mb-0">Active Influencers</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="text-center">
+                                            <h3 class="fw-bold mb-1">3</h3>
+                                            <p class="text-muted mb-0">Active Campaigns</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="text-center">
+                                            <h3 class="fw-bold mb-1">4.8%</h3>
+                                            <p class="text-muted mb-0">Avg. Engagement</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="text-center">
+                                            <h3 class="fw-bold mb-1">32%</h3>
+                                            <p class="text-muted mb-0">ROI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-container mt-4" style="height: 250px;">
+                                    <!-- This would be a chart in a real implementation -->
+                                    <div class="d-flex align-items-end h-100">
+                                        <div class="w-100 h-100 bg-light rounded d-flex align-items-center justify-content-center">
+                                            <div class="text-center">
+                                                <i class="ri-line-chart-line me-0 text-primary fs-1"></i>
+                                                <p class="mt-2 mb-0">Performance chart would be displayed here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

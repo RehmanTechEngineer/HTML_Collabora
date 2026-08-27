@@ -1,0 +1,843 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Influencers - Collabora - HTML Webiste Template</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="../vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link href="../vender/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-logo">
+                 <img src="../img/footer-logo.png" class="img-fluid header-sm logo" style="display: none;">
+                <img src="../img/logo.png" class="img-fluid header-full logo">
+            </a>
+            <div class="sidebar-toggle">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+        </div>
+        <nav class="mb-4 mt-4">
+            <div class="nav-section mb-3">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Main</div>
+                <a href="dashboard.html" class="nav-link py-1">
+                    <i class="ri-dashboard-line me-0"></i>
+                    <span class="nav-text ms-2">Dashboard</span>
+                </a>
+                <a href="find-influencers.html" class="nav-link active py-1">
+                    <i class="ri-user-search-line me-0"></i>
+                    <span class="nav-text ms-2">Find Influencers</span>
+                </a>
+                <a href="campaigns.html" class="nav-link py-1">
+                    <i class="ri-calendar-line me-0"></i>
+                    <span class="nav-text ms-2">Campaigns</span>
+                </a>
+                <a href="messages.html" class="nav-link position-relative py-1">
+                    <i class="ri-message-3-line me-0 me-0"></i>
+                    <span class="nav-text ms-2">Messages</span>
+                    <span class="badge bg-danger rounded-pill ms-auto message-badge p-2 py-1">3</span>
+                </a>
+            </div>
+            
+            <div class="nav-section mb-3">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Analytics</div>
+                <a href="performance.html" class="nav-link py-1">
+                    <i class="ri-line-chart-line me-0"></i>
+                    <span class="nav-text ms-2">Performance</span>
+                </a>
+                <a href="reports.html" class="nav-link py-1">
+                    <i class="ri-pie-chart-line me-0"></i>
+                    <span class="nav-text ms-2">Reports</span>
+                </a>
+                <a href="roi-tracking.html" class="nav-link py-1">
+                    <i class="ri-funds-line me-0"></i>
+                    <span class="nav-text ms-2">ROI Tracking</span>
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <div class="text-uppercase text-muted small fw-bold px-4 mb-2 sidebar-titles">Account</div>
+                <a href="user-profile.html" class="nav-link py-1">
+                    <i class="ri-user-settings-line me-0"></i>
+                    <span class="nav-text ms-2">Profile</span>
+                </a>
+                <a href="settings.html" class="nav-link py-1">
+                    <i class="ri-settings-3-line me-0"></i>
+                    <span class="nav-text ms-2">Settings</span>
+                </a>
+                <a href="support.html" class="nav-link py-1">
+                    <i class="ri-customer-service-2-line me-0"></i>
+                    <span class="nav-text ms-2">Support</span>
+                </a>
+            </div>
+        </nav>
+        <div class="px-4 py-3 border-top sidebar-foot">
+            <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0">
+                    <img src="../vender/images/1005-200x200.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                </div>
+                <div class="flex-grow-1 text-wrap ms-3">
+                    <h6 class="mb-0 fw-semibold">Michael Johnson</h6>
+                    <small class="text-muted">Brand Manager</small>
+                </div>
+            </div>
+            <a href="index.html" class="btn btn-outline-primary btn-sm d-flex align-items-center justify-content-center">
+                <i class="ri-logout-box-line me-2"></i> Sign Out
+            </a>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container-fluid px-4">
+                <button class="navbar-toggler border-0 p-0 me-3" type="button" id="mobile-toggle">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+                
+                <div class="d-flex align-items-center">
+                    <h5 class="mb-0">Find Influencers</h5>
+                    <span class="badge bg-primary ms-2">Brand</span>
+                </div>
+                
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <div class="position-relative d-none d-lg-block navbar-search me-2">
+                            <i class="ri-search-line search-icon"></i>
+                            <input type="text" class="form-control rounded-pill" placeholder="Search for influencers, campaigns...">
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-1  my-2">
+                        <a class="nav-link position-relative m-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="ri-notification-3-line ri-lg me-0"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 py-1">
+                                5
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm" style="width: 300px;">
+                            <h6 class="dropdown-header">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2">
+                                        <i class="ri-message-3-line me-0 me-0"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small">New message from <strong>Sophia Martinez</strong></p>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-success bg-opacity-10 text-success rounded-circle p-2">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small">Campaign <strong>Summer Collection</strong> completed</p>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2">
+                                        <i class="ri-user-add-line"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Emma Johnson</strong> accepted your collaboration request</p>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center small" href="#">View all notifications</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-1  my-2">
+                        <a class="nav-link position-relative m-0" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="ri-mail-line ri-lg me-0"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 py-1">
+                                3
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm" style="width: 300px;">
+                            <h6 class="dropdown-header">Messages</h6>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1001-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Sophia Martinez</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">Thank you for the opportunity! I've reviewed the campaign brief...</p>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1002-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>James Wilson</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">I've uploaded the content for review. Please let me know if any changes...</p>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                <div class="flex-shrink-0">
+                                    <img src="../vender/images/1003-100x100.jpg" class="rounded-circle" width="40" height="40" alt="User">
+                                </div>
+                                <div class="flex-grow-1 text-wrap ms-3">
+                                    <p class="mb-0 small"><strong>Emma Johnson</strong></p>
+                                    <p class="mb-0 small text-muted text-truncate" style="max-width: 200px;">I'm excited to work with your brand! When can we discuss the details?</p>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center small" href="#">View all messages</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+              
+
+                <div class="ms-3 p-2 rounded border d-flex">
+            <img src="../vender/images/1005-100x100.jpg" alt="User" class="user-avatar">
+            <div>
+                <h6 class="mb-0">John Smith</h6>
+                <p class="text-muted small mb-0">Brand Manager</p>
+            </div>
+            <div class="dropdown ms-auto">
+                <button class="btn btn-link text-muted p-0 text-decoration-none" type="button" data-bs-toggle="dropdown">
+                    <i class="ri-more-2-fill"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#"><i class="ri-user-line me-2"></i>Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="ri-settings-3-line me-0 me-2"></i>Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="ri-logout-box-r-line me-2"></i>Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+            </div>
+        </nav>
+        
+        <!-- Find Influencers Content -->
+        <div class="container-fluid px-4 py-4 bg-light">
+            <!-- Search and Filter Section -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-lg-8 mb-3 mb-lg-0">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0">
+                                    <i class="ri-search-line"></i>
+                                </span>
+                                <input type="text" class="form-control border-start-0" placeholder="Search influencers by name, category, or keyword...">
+                                <button class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex">
+                            <button class="btn btn-outline-secondary me-2 flex-grow-1">
+                                <i class="ri-filter-3-line me-1"></i>Filters
+                            </button>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    <i class="ri-sort-desc me-1"></i>Sort by
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Relevance</a></li>
+                                    <li><a class="dropdown-item" href="#">Followers: High to Low</a></li>
+                                    <li><a class="dropdown-item" href="#">Engagement Rate: High to Low</a></li>
+                                    <li><a class="dropdown-item" href="#">Recently Active</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filters Section -->
+            <div class="card border-0 shadow-sm filter-card mb-4">
+                <div class="card-body p-4">
+                    <h6 class="card-title mb-3">Advanced Filters</h6>
+                    <div class="row g-3">
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Category</label>
+                            <select class="form-select">
+                                <option selected>All Categories</option>
+                                <option>Fashion</option>
+                                <option>Beauty</option>
+                                <option>Lifestyle</option>
+                                <option>Travel</option>
+                                <option>Food</option>
+                                <option>Fitness</option>
+                                <option>Technology</option>
+                                <option>Gaming</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Followers Range</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>Nano (1K - 10K)</option>
+                                <option>Micro (10K - 50K)</option>
+                                <option>Mid-tier (50K - 500K)</option>
+                                <option>Macro (500K - 1M)</option>
+                                <option>Mega (1M+)</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Engagement Rate</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>Above 1%</option>
+                                <option>Above 2%</option>
+                                <option>Above 3%</option>
+                                <option>Above 5%</option>
+                                <option>Above 7%</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Location</label>
+                            <select class="form-select">
+                                <option selected>Worldwide</option>
+                                <option>United States</option>
+                                <option>United Kingdom</option>
+                                <option>Canada</option>
+                                <option>Australia</option>
+                                <option>Germany</option>
+                                <option>France</option>
+                                <option>Japan</option>
+                                <option>Brazil</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-1">
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Age Range</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>18-24</option>
+                                <option>25-34</option>
+                                <option>35-44</option>
+                                <option>45+</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Gender</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>Female</option>
+                                <option>Male</option>
+                                <option>Non-binary</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Platform</label>
+                            <select class="form-select">
+                                <option selected>All Platforms</option>
+                                <option>Instagram</option>
+                                <option>TikTok</option>
+                                <option>YouTube</option>
+                                <option>Twitter</option>
+                                <option>Facebook</option>
+                                <option>Twitch</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label small fw-bold">Availability</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>Available Now</option>
+                                <option>Open to Collabs</option>
+                                <option>Limited Availability</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary">Reset Filters</button>
+                        <button class="btn btn-primary">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Section -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="mb-0">245 Influencers Found</h5>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary active">
+                        <i class="ri-layout-grid-line"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                        <i class="ri-list-check"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Influencer Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1015-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1001-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Sophia Martinez</h5>
+                                <p class="text-muted small mb-2">@sophia_style</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary category-badge">Fashion</span>
+                                    <span class="badge bg-info bg-opacity-10 text-info category-badge">Beauty</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">1.2M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">5.2%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$2.5K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">85%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1019-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1002-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">James Wilson</h5>
+                                <p class="text-muted small mb-2">@james_tech</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-success bg-opacity-10 text-success category-badge">Tech</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-secondary category-badge">Gaming</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">2.5M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">4.8%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$3.2K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">92%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1035-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1003-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Emma Johnson</h5>
+                                <p class="text-muted small mb-2">@emma_dance</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-info bg-opacity-10 text-info category-badge">Dance</span>
+                                    <span class="badge bg-danger bg-opacity-10 text-danger category-badge">Fitness</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">5.8M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">8.7%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$4.5K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">78%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1040-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1004-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Alex Chen</h5>
+                                <p class="text-muted small mb-2">@alex_foodie</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-warning bg-opacity-10 text-warning category-badge">Food</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success category-badge">Travel</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">950K</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">6.2%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$1.8K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">88%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More Influencer Cards -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1042-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1005-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Michael Brown</h5>
+                                <p class="text-muted small mb-2">@michael_fitness</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-danger bg-opacity-10 text-danger category-badge">Fitness</span>
+                                    <span class="badge bg-primary bg-opacity-10 text-primary category-badge">Lifestyle</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">3.2M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">5.9%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$3.8K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">75%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Influencer Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1035-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1003-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Emma Johnson</h5>
+                                <p class="text-muted small mb-2">@emma_dance</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-info bg-opacity-10 text-info category-badge">Dance</span>
+                                    <span class="badge bg-danger bg-opacity-10 text-danger category-badge">Fitness</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">5.8M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">8.7%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$4.5K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">78%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Influencer Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1035-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1003-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Emma Johnson</h5>
+                                <p class="text-muted small mb-2">@emma_dance</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-info bg-opacity-10 text-info category-badge">Dance</span>
+                                    <span class="badge bg-danger bg-opacity-10 text-danger category-badge">Fitness</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">5.8M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">8.7%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$4.5K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">78%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Influencer Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card influencer-card h-100">
+                        <div class="influencer-cover" style="background-image: url('../vender/images/1035-600x200.jpg');"></div>
+                        <div class="card-body pt-2">
+                            <div class="text-center mb-3">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../vender/images/1003-200x200.jpg" alt="Influencer" class="influencer-avatar">
+                                    <div class="verified-badge">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                </div>
+                                <h5 class="mt-2 mb-0">Emma Johnson</h5>
+                                <p class="text-muted small mb-2">@emma_dance</p>
+                                <div class="d-flex justify-content-center gap-1 mb-2">
+                                    <span class="badge bg-info bg-opacity-10 text-info category-badge">Dance</span>
+                                    <span class="badge bg-danger bg-opacity-10 text-danger category-badge">Fitness</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-0 border-top border-bottom py-2 mb-3">
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">5.8M</p>
+                                    <p class="stat-label">Followers</p>
+                                </div>
+                                <div class="col-4 stat-item border-end">
+                                    <p class="stat-value">8.7%</p>
+                                    <p class="stat-label">Engagement</p>
+                                </div>
+                                <div class="col-4 stat-item">
+                                    <p class="stat-value">$4.5K</p>
+                                    <p class="stat-label">Avg. Cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center small mb-1">
+                                    <span class="text-muted">Audience Match</span>
+                                    <span class="fw-bold">78%</span>
+                                </div>
+                                <div class="engagement-bar">
+                                    <div class="engagement-value" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-primary">View Profile</a>
+                                <button class="btn btn-primary">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
